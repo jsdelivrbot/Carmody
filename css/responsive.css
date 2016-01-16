@@ -1,0 +1,166 @@
+	<div id="Interests2">
+		
+	    	<div class="job1">
+		    	<ul class="interestsul">
+		    		<li class="improvli">
+		    			<h3 class="improv">Improv Comedy</h3>
+		    		</li>
+		    		<li class="coffeeli">
+		    			<h3 class="coffee">Good Coffee</h3>
+		    		</li>
+		    		</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+		    		<li class="wineli">
+		    			<h3 class="wine">Better Wine</h3>
+		    		</li>
+		    		<li class="surfli">
+		    			<h3 class="surf">Body Surfing</h3>
+		    		</li>
+		    	</ul>
+			    	
+			</div>
+			<div id="backtotop"><a href="#header"><p>Back to Top</p></a></div>
+		
+
+
+
+	<h1 class="hobbies">Hobbies/Interests</h1>
+
+	</div>
+</div>
+
+
+#topright {
+
+	min-height: 350px;
+	min-width: 350px;
+	background-color: black;
+}
+#topleft {
+	min-height: 350px;
+	min-width: 350px;
+	background-color: yellow;
+
+}
+#topli {
+	list-style-type: none;
+	display: inline-block;
+	min-height: 40%;
+	min-width: 45%;
+	margin: 0px;
+	padding: 0px;
+}
+#bottomleft {
+	min-height: 350px;
+	min-width: 350px;
+	background-color: red;
+}
+#bottomright {
+
+	min-height: 350px;
+	min-width: 350px;
+	background-color: green;
+}
+<ul id="topline">
+		<li id="topli">
+			<div id="topright"></div>
+		</li>
+		<li id="topli">
+			<div id="topleft"></div>
+		</li>
+	</ul>
+		<li id="topli">
+			<div id="bottomright"></div>
+		</li>
+		<li id="topli">
+			<div id="bottomleft"></div>
+		</li>
+
+
+			    <ul>
+	    	<li class="jobs">
+				<div class="job2">
+				    <h2 class="jobtext">NASA</h2> </br>
+				    <ul>
+				    	<li class="jobinfo">
+				    		<h3 id="publicist" class="jobtext">Doctor of Rocketry</h3>
+				    	</li>
+				    	<li class="jobinfo">
+				    		<h4 class="jobtext">September 2015-Present</h4>
+				    	</li>
+						<li class="jobinfo">
+				    		<h5 class="jobtext">Responsibilities</h5>
+				    			<li class="resp">Sleeping</li>
+				    			<li class="resp">Eating</li>
+				    			<li class="resp">Breathing</li>
+				    			<li class="resp">Publicizing</li>
+						</li>
+					</ul>
+				</div>
+			</li>
+	    	<li class="jobs">
+			    <div class="job1">
+				    <h2 class="jobtext">Workman Publishing</h2> </br>
+				    <ul>
+				    	<li class="jobinfo">
+				    		<h3 id="publicist" class="jobtext">Publicist</h3>
+				    	</li>
+				    	<li class="jobinfo">
+				    		<h4 class="jobtext">June 2014-September2015</h4>
+				    	</li>
+						<li class="jobinfo">
+				    		<h5 class="jobtext">Responsibilities</h5>
+				    			<li class="resp">Sleeping</li>
+				    			<li class="resp">Eating</li>
+				    			<li class="resp">Breathing</li>
+				    			<li class="resp">Publicizing</li>
+						</li>
+				</div>
+			</li>
+			<li class="jobs">
+				<div class="job3">
+				    <h2 class="jobtext">Shawmut D&C</h2> </br>
+				    <ul>
+				    	<li class="jobinfo">
+				    		<h3 id="publicist" class="jobtext">Junior Marketing Coordinator</h3>
+				    	</li>
+				    	<li class="jobinfo">
+				    		<h4 class="jobtext">September 2013-June 2014</h4>
+				    	</li>
+						<li class="jobinfo">
+				    		<h5 class="jobtext">Responsibilities</h5>
+				    			<li class="resp">Marketing</li>
+				    			<li class="resp">Coordinating</li>
+				    			<li class="resp">Editing</li>
+				    			<li class="resp">Junioring</li>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="jobs">
+				<div class="job4">
+				    <h2 class="jobtext">Union Landing Bar</h2> </br>
+				    <ul>
+				    	<li class="jobinfo">
+				    		<h3 id="publicist" class="jobtext">Barback/Bouncer</h3>
+				    	</li>
+				    	<li class="jobinfo">
+				    		<h4 class="jobtext">Summers, 2011-2013</h4>
+				    	</li>
+						<li class="jobinfo">
+				    		<h5 class="jobtext">Responsibilities</h5>
+				    			<li class="resp">Stocking Liquor</li>
+				    			<li class="resp">Cleaning Spills</li>
+				    			<li class="resp">Checking IDs</li>
+				    			<li class="resp">Monitoring Noise Levels</li>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+

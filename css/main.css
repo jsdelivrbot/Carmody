@@ -1,0 +1,379 @@
+body {
+	background-color: rgba(0,0,0,0);
+	overflow: scroll;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+.nav {
+	display: inline-block;
+	margin-right: 12%;
+	color: rgba(255,235,205,1);
+}
+
+nav {
+	margin-left: 6%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toppart {
+  background: url(..//images/sky.jpg);no-repeat center center fixed; 
+  min-height: 100%;
+  min-width: 1044px;
+  width: 110%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+
+  top: 0;
+  left: 0;
+}
+
+.header {
+	font-size: 20px;
+	min-width: 100%;
+	background-color: rgba(0,0,0,.7);
+}
+
+.topline {
+	list-style-type: none;
+	margin-left: 45px;
+}
+.contactinfo {
+	margin: 0px;
+	padding: 0px;
+	visibility: hidden;
+}
+.contactinfoul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 150px;
+}
+
+.name {
+	color: rgba(127,255,0,1);
+
+}
+
+.namelist {
+	display: inline-block;
+}
+
+#nametext {
+	margin-right: 100px;
+	padding-left: 150px;
+}
+
+.nameheading {
+	font-size: 80px;
+}
+
+.headshot {
+	height: 200px;
+	width: 150px;
+	float: right;
+	margin-top: 25px;
+	border: 1px solid gray;
+	margin-right: 150px;
+	border-radius: 15px;
+
+}
+
+.social {
+	margin-top: 90px;
+	border: 3px solid black;
+	border-radius: 15px;
+	margin-right: 200px;
+	margin-left: 25px;
+	padding: 15px;
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+	margin-left: 9%;
+
+}
+
+#instagram {
+	border-radius: 15px;
+}
+
+#work {
+	color: white;
+	background: url(..//images/work1.jpg);no-repeat center center fixed;
+	min-height: 600px;
+}
+#work2 {
+	background: rgba(0,0,0,.7);
+	min-height: 700px;
+}
+
+#publicist {
+	color: red;
+}
+
+#Bio {
+	color: white;
+	background: rgba(0,0,0,.7);
+}
+
+#Bio2 {
+	background: url(..//images/back2.jpg);
+}
+
+.experience {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 75px;
+}
+.hobbies {
+	background-color: rgba(150,150,150,.9);
+	color: maroon;
+	font-size: 75px;
+	text-align: center;
+	margin-right: 110px;
+	min-width: 100%;
+	font-family: 'Amatic SC', cursive;
+}
+
+
+.job1 {
+	margin-left: 15px;
+	padding: 0px;
+}
+
+.jobs {
+	display: inline-block;
+}
+.job1 {
+	margin-left: 150px;
+}
+.job2 {
+	margin-left: 80px;
+}
+.job3 {
+	margin-top: 50px;
+	margin-left: 80px;
+}
+.job4 {
+	margin-left: 35px;
+}
+
+
+h2.jobtext {
+	color: yellow;
+	margin-top: 0px;
+}
+h3.jobtext {
+	color: black;
+}
+.jobtext {
+	margin: 0px;
+	padding: 0px;
+}
+
+.jobinfo {
+	margin-left: 25px;
+	list-style-type: none;
+}
+
+
+
+.resp {
+	margin-left: 65px;
+}
+
+#backtotop {
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(250,250,250,.7);
+}
+.backtotop2 {
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.jobtext2 {
+	margin-top: 5px;
+}
+
+#Interests {
+	background: url(..//images/back3.jpg);
+	background-size: cover;
+}
+
+.interestsul {
+	list-style-type: none;
+}
+
+#Skills {
+	background: url(..//images/back4.jpg);
+	background-size: cover;
+}
+.skillsul {
+	list-style-type: none;
+}
+.skillsheadli {
+	text-align: center;
+	margin-top: 25px;
+	margin-right: 185px;
+}
+.skillsli {
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 400px;
+	background-color: rgba(250, 250, 250, .7);
+	border-radius: 15px;
+}
+.bands {
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	border: 2px solid white;
+}
+
+
+.bandsli{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 12%;
+	padding: 0px;
+
+}
+
+#improvhead {
+	text-align: center;
+}
+.bandsli2{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 10%;
+	padding: 0px;
+	margin-bottom: 130px;
+	margin-top: 10px;
+}
+.bandsli3{
+	list-style-type: none;
+	margin-left: 24%;
+	padding: 0px;
+}
+
+#interests2 {
+	background-color: rgba(0,0,0,.6);
+	color: white;
+}
+
+.bioback {
+	background-color: rgba(250,250,250,.7);
+}
+
+
+/* ---------------Slider --------------------*/
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+}
+
+.box {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    left: 50%;
+    top: 100px;
+    margin-left: -25%;
+}
+
+#box1 {
+    background: url(..//images/rocket.png);
+    left: -50%;
+    color: white;
+}
+#box1_2 {
+	    background-color: rgba(0,0,0,.7);
+	    height: 100%;
+	    
+}
+
+#box2 {
+    background: url(..//images/pencil.jpg);
+}
+
+#box3 {
+    background: url(..//images/beer.jpg);
+    left: 150%;
+}
+
+#box4 {
+    background-color: orange;
+    left: 150%;
+}
+
+#box5 {
+    background-color: blue;
+    left: 150%;
+}
+
+/* ----------------------Why You Need a Website Section -----------*/ 
+.personal {
+	text-align: center;
+
+}
+
+.bullets {
+	margin-left: 10%;
+}
+
+.convincing {
+	background: url(..//images/code.png);
+	color: white;
+}
+
+.readable {
+	background-color: rgba(0,0,0,.8);
+	display: none;
+}
+
+.ployers2 {
+	display: none;
+}
+.ployers3 {
+	display: none;
+}
+.ployers4 {
+	display: none;
+}
+.ployers5 {
+	display: none;
+}
+.ployers6 {
+	display: none;
+}
+
+
