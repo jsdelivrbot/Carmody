@@ -11,7 +11,7 @@ var model = {
 			head: ko.observable('')
 		},
 		{
-			title: ko.observable('Skills'),
+			title: ko.observable('Portfolio'),
 			head: ko.observable('')
 		},
 		{
@@ -56,12 +56,14 @@ var model = {
 		{
 			employer: 'Workman Publishing',
 			title: 'Publicity and Marketing Assistant',
-			skills: ['blah1', 'blah2', 'blah3']
+			skills: ['blah1', 'blah2', 'blah3'],
+			date: 'March 2014-July 2015'
 		},
 		{
 			employer: 'Shawmut Design and Construction',
 			title: 'Junior Marketing Coordinator',
-			skills: ['stuff1', 'stuff2', 'stuff3']
+			skills: ['stuff1', 'stuff2', 'stuff3'],
+			date: 'June 2013-March 2014'
 		}
 	],
 	education: [
@@ -87,7 +89,7 @@ var model = {
 	interests: [
 		{
 			name: 'Writing',
-			proof: 'Samples',
+			proof: 'Blogs',
 			blogs: [
 				{
 					title: 'Daily Dose of Stupid',
@@ -120,6 +122,51 @@ var model = {
 			proof: 'Coaching, Teaching, Performing',
 			blogs: ko.observable(false)
 		}
+	],
+	projects: [
+		{
+			title: 'Udacity Projects',
+			href: 'collapseOne',
+			clickHref: '#collapseOne',
+			examples: [
+				{
+					name: 'Neighborhood Map'
+		
+				},
+				{
+					name: 'Arcade Game Clone'
+				},
+				{
+					name: 'Online Resume'
+				}
+			]
+		},
+		{
+			title: 'Works in Progress',
+			href: 'collapseTwo',
+			clickHref: '#collapseTwo',
+			examples: [
+				{
+					name: 'Pack-A-Day'
+				},
+				{
+					name: 'Shore Fun Improv'
+				},
+				{
+					name: 'Wedding Page - BARM'
+				}
+			]
+		},
+		{
+			title: 'Published Projects',
+			href: 'collapseThree',
+			clickHref: '#collapseThree',
+			examples: [
+				{
+					name: 'Wedding Page'
+				}
+			]
+		}
 	]
 };
 
@@ -129,9 +176,16 @@ var viewModel = {
 	}
 };
 
+var toggle = {
+    blogs: function() {
+        $('.blog-div').slideToggle();
+    }
+}
+
 $(document).ready(function(){
 	$('.carousel').slick({
 		  infinite: false,
+		  dots: true,
 		  speed: 500
       }); 
 });
