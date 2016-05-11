@@ -1,51 +1,100 @@
-body {
-	background-color: rgba(0,0,0,0);
-	overflow: scroll;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-
-}
-
-.nav {
-	display: inline-block;
-	margin-right: 12%;
-	color: rgba(255,235,205,1);
-}
-
-nav {
-	margin-left: 6%;
-}
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	vertical-align: middle;
+    list-style-type: none;
 }
 
-.toppart {
-  background: url(..//images/sky.jpg);no-repeat center center fixed; 
-  min-height: 100%;
-  min-width: 1044px;
-  width: 110%;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-
-  top: 0;
-  left: 0;
+body {
+	background-color: rgba(0,0,0,0);
+	overflow: scroll;
+	margin: 0px;
 }
+h1,h2,h3,h4 {
+	margin-top: 0px;
+}
+
+.intro {
+  background: url(..//img/computer.jpg) no-repeat center center fixed; 
+  min-height: 650px;
+  min-width: 100%;
+}
+
+.shade {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.scroll {
+	width: 15%;
+	text-align: center;
+	margin: 0% 5.5% 0% 5.5%;
+}
+
+.nav {
+	display: inline-block;
+	color: rgba(255,235,205,1);
+}
+
+.name {
+	color: #a8e6cf;
+	font-size: 80px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#head-shot {
+	height: 200px;
+	width: 150px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.contact-div {
+	margin-left: 5%;
+}
+
+.contact {
+	color: #a8e6cf;
+	font-size: 20px;
+	line-height: 25px;
+	margin: auto;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.nav-img {
+	height: 100px;
+	width: 100px;
+	margin: 3%;
+}
+
 
 .header {
 	font-size: 20px;
 	min-width: 100%;
 	background-color: rgba(0,0,0,.7);
+}
+
+.light-back {
+	background-color: #15c188;
+	text-align: center;
+}
+
+.blog-img {
+	height: 75px;
+	width: 75px;
+	border-radius: 100%;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.inline-head {
+	margin-bottom: 15%;
 }
 
 .topline {
@@ -64,10 +113,7 @@ nav {
 	margin-left: 150px;
 }
 
-.name {
-	color: rgba(127,255,0,1);
 
-}
 
 .namelist {
 	display: inline-block;
@@ -78,20 +124,6 @@ nav {
 	padding-left: 150px;
 }
 
-.nameheading {
-	font-size: 80px;
-}
-
-.headshot {
-	height: 200px;
-	width: 150px;
-	float: right;
-	margin-top: 25px;
-	border: 1px solid gray;
-	margin-right: 150px;
-	border-radius: 15px;
-
-}
 
 .social {
 	margin-top: 90px;
@@ -102,22 +134,13 @@ nav {
 	padding: 15px;
 }
 
-.logo {
-	height: 100px;
-	width: 100px;
-	margin-left: 9%;
 
-}
 
 #instagram {
 	border-radius: 15px;
 }
 
-#work {
-	color: white;
-	background: url(..//images/work1.jpg);no-repeat center center fixed;
-	min-height: 600px;
-}
+
 #work2 {
 	background: rgba(0,0,0,.7);
 	min-height: 700px;
@@ -132,9 +155,7 @@ nav {
 	background: rgba(0,0,0,.7);
 }
 
-#Bio2 {
-	background: url(..//images/back2.jpg);
-}
+
 
 .experience {
 	text-align: center;
@@ -215,19 +236,7 @@ h3.jobtext {
 	margin-top: 5px;
 }
 
-#Interests {
-	background: url(..//images/back3.jpg);
-	background-size: cover;
-}
 
-.interestsul {
-	list-style-type: none;
-}
-
-#Skills {
-	background: url(..//images/back4.jpg);
-	background-size: cover;
-}
 .skillsul {
 	list-style-type: none;
 }
@@ -297,48 +306,20 @@ h3.jobtext {
     overflow: hidden;  
 }
 
-.box {
-    position: absolute;
-    width: 50%;
-    height: 300px;
-    line-height: 300px;
-    font-size: 50px;
-    text-align: center;
-    border: 2px solid black;
-    left: 50%;
-    top: 100px;
-    margin-left: -25%;
+.carousel {
+	height: 250px;
+	width: 350px;
+	font-size: 15px;
+	border: 5px solid black;
+	text-align: center;
+	margin-left: 32%;
+	background-color: #ffd7a5;
 }
 
-#box1 {
-    background: url(..//images/rocket.png);
-    left: -50%;
-    color: white;
-}
-#box1_2 {
-	    background-color: rgba(0,0,0,.7);
-	    height: 100%;
-	    
-}
 
-#box2 {
-    background: url(..//images/pencil.jpg);
-}
 
-#box3 {
-    background: url(..//images/beer.jpg);
-    left: 150%;
-}
 
-#box4 {
-    background-color: orange;
-    left: 150%;
-}
 
-#box5 {
-    background-color: blue;
-    left: 150%;
-}
 
 /* ----------------------Why You Need a Website Section -----------*/ 
 .personal {
@@ -350,10 +331,7 @@ h3.jobtext {
 	margin-left: 10%;
 }
 
-.convincing {
-	background: url(..//images/code.png);
-	color: white;
-}
+
 
 .readable {
 	background-color: rgba(0,0,0,.8);

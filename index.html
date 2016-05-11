@@ -1,427 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <title>Jack Masterson - Front End Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Jack Masterson</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="paper-dropdown-menu.html" rel="import">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" src=
-    "//normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <script src="css/js/bootstrap.min.js" type="text/javascript"></script>
-     <script src="css/js/jquery-1.11.3.js" type="text/javascript"></script>
-     <script src="js/jQuery.js"></script>
-     <script src="js/practice.js"></script>
-     <script src="js/helper.js"></script>
-     <script src="css/js/bootstrap.min.js" type="text/javascript"></script>
-     <script src="css/js/jquery-1.11.3.js" type="text/javascript"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
-
-
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
 </head>
 
 <body>
-<div class="toppart">
-	<div class="header" id="header">
-		<nav>
-				<a id="jumper" href="#work"><li class="nav">Work</li></a>
-				<a id="jumper2" href="#Bio"><li class="nav">Bio</li></a>
-				<a id="jumper3" href="#Interests"><li class="nav">Interests</li></a>
-				<a id="jumper4" href="#Skills"><li class="nav">Skills</li></a>
-				<a href="#/" onclick="toggle_visibility('contactinfo2');"><li class="nav">Contact</li></a>
-		</nav>
-	</div>
-	<div class="name">
-		<ul>
-			<li class="namelist" id="nametext">
-				<h1 class="nameheading">Jack </br> Masterson</h1>
-			</li>
-			<li class="namelist">
-				<img class="headshot" src="images/headshot.jpg">
-			</li>
-		</ul>
-		<div class="contactinfo" id="contactinfo2">
-			<ul class="contactinfoul">
-				<li>Email: jackmasterson5@gmail.com</li>
-				<li>Cell: (908)433-0178</li>
-				<li>Home: 713 Philadelphia Blvd, Sea Girt, NJ, 08750</li>
-			</ul>
-		</div>
-	</div>
-	<div class="social">
-	    <a href="https://www.facebook.com/jack.masterson.560" target="_blank">
-	        <img src="images/facebook.png" alt="Facebook" class="logo">
-	    </a>
-	    <a href="https://instagram.com/jmast35/" target="_blank">
-	        <img src="images/insta.jpg" alt="Instagram" id="instagram" class="logo">
-	    </a>
-	    <a href="https://www.linkedin.com/profile/view?id=AAIAAA5rsyoBYWMi4-K7oan54Vah2Nk7_KE6ZeE&trk=nav_responsive_tab_profile_pic" target="_blank">
-	        <img src="images/linkedin.png" alt="LinkedIn" class="logo">
-	    </a>
-	    <a href="https://www.twitter.com/" target="_blank">
-	        <img src="images/twitter.png" alt="Facebook" id="instagram" class="logo">
-	    </a>
-	</div>
-	</br>
-	</br>
-	</br>
-</div>
-<div id="work">
-	<div id="work2">
-		<h1 class="experience">Work Experience</h1>
-
-<div id="container">
-    
-    <div id="box1" class="box">
-    			<div id="box1_2">
-								<h2>NASA</h2>
-				    		<h3>Doctor of Rocketry</h3>
-				    		<h4>September 2015-Present</h4>
-				    		<h5>Responsibilities</h5>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				</div>
-    </div>
-    <div id="box2" class="box">
-    	<div id="box1_2">
-
-								<h2>Workman Publishing (click)</h2>
-				    		<h3>Publicist</h3>
-				    		<h4>December 2014- July 2015</h4>
-				    		<h5>Responsibilities</h5>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-		</div>
-
-    </div>
-    <div id="box3" class="box">
-   
-								<h2>Union Landing Restaurant</h2>
-				    		<h3>Bouncer/Barback</h3>
-				    		<h4>Summers, 2011-2014</h4>
-				    		<h5>Responsibilities</h5>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-	
-    </div>
-    <div id="box4" class="box">
-								<h2>Shawmut Design and Construction</h2>
-				    		<h3>Junior Mktg Coordinator</h3>
-				    		<h4>January 2013-December 2014</h4>
-				    		<h5>Responsibilities</h5>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-    </div>
-    <div id="box5" class="box">
-				    <h2>Sea Girt Elementary School</h2>
-				    		<h3>Custodial Professional</h3>
-				    		<h4>Summers 2011-2014</h4>
-				    		<h5>Responsibilities</h5>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-				    			<h6>Sleeping</h6>
-
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-	</br>
-</br></br>
-</br></br>
-</br></br>
-</br></br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-	<div id="backtotop">
-		<a href="#header">
-			<p>Back to Top</p>
-		</a>
-	</div>
-
-</div>
-	
-</div>
-
-<div id="Bio">
-	<div id="Bio2">
-		<h1 class="experience">Bio</h1>
-	    	<div class="job1">
-		    	<h2 class="jobtext">Fast Facts</h2> </br>
-		    	<ul>
-		    		<li class="jobinfo">
-		    			<h3 class="jobtext2">Location: Sea Girt, NJ</h3>
-		    		</li>
-			    	<li class="jobinfo">
-			    		<h4 class="jobtext2">Age: 25</h4>
-			    	</li>
-			    	<li class="jobinfo">
-			    		<h4 class="jobtext2">Education: Boston College</h4>
-			    	</li>
-			    	<li class="jobinfo">
-			    		<h5 class="jobtext2">Class of 2013</h5>
-			    	</li>
-			    	<li class="jobinfo">
-			    		<h5 class="jobtext2">Major: English</h5>
-			    	</li>
-			    	<li class="jobinfo">
-			    		<h5 class="jobtext2">Honors: cum laude</h5>
-			    	</li>
-					<li class="jobinfo">
-			    		<p class="jobtext">"I grew up and attended Sea Girt Elementary School. </br>
-					    I loved playing sports in high school,</br> 
-					    and lettered in basketball and lacrosse.</br> We won a state sectional in basketball my senior year when I was captain, and</br> ullamco laboris nisi ut aliquip ex ea commodo consequat.</br>
-					    Duis aute irure dolor in reprehenderit in voluptate velit</br> esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</br> occaecat cupidatat non proident, sunt in culpa qui officia </br>deserunt mollit anim id est laborum."</p>
-					</li>
-				</ul>
-			</div>
-			<div class="bioback" id="backtotop">
-				<a href="#header">
-					<p>Back to Top</p>
+<div class="intro">
+	<div class="shade">
+		<div class="contact-div" data-bind="foreach: model.contact">
+			<h1 class="name" data-bind="text: name"></h1>
+			<h2 class="name" data-bind="text: career"></h2>
+			<h2 class="contact" data-bind="text: location"></h2>
+			<h2 class="contact" data-bind="text: cell"></h2>
+			<h2 class="contact" data-bind="text: email"></h2>
+			<div data-bind="foreach: imgNav">
+				<a target="_blank" data-bind="attr: { href: imgHref }">
+					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
 				</a>
 			</div>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-
+		</div>
+		<div class="header" data-bind="foreach: model.sections">
+			<a href="#/" class="scroll">
+				<li class="nav" data-bind="text: title"></li>
+			</a>
+		</div>
 	</div>
 </div>
-<div id="Interests">
-	<div id="interests2">
-	<h1 class="hobbies">Hobbies/Interests</h1>
-	<ul class="interestslist">
-		<li class="bandsli" id="improv">
-				<h3 id="improvhead">Improv Comedy</h3>
-				<img class="bands" src="images/improv.jpg">
-		</li>
-		<li class="bandsli" id="coffee">
-				<h3 id="improvhead">Good Coffee</h3>
-				<img class="bands" src="images/coffee.jpg">
-		</li>
-		<li class="bandsli" id="improv">
-				<h3 id="improvhead">Better Beer</h3>
-				<img class="bands" src="images/beer.jpg">
-		</li>
-	</ul>
-			<div class="backtotop2" id="backtotop"><a href="#header"><p>Back to Top</p></a></div>
-	<ul class="interestslist2">
-		<li class="bandsli2">
-			<div id="coding">
-				<h3 id="improvhead">Computer Coding</h3>
-				<img class="bands" src="images/coding.png">
-			</div>
-		</li>
-		<li class="bandsli2">
-			<div id="dance">
-				<h3 id="improvhead">Dancing Up a Storm</h3>
-				<img class="bands" src="images/dancing.jpg">
-			</div>
-		</li>
-		<li class="bandsli2">
-			<div id="bands">
-				<h3 id="improvhead">Good Bands</h3>
-				<img class="bands" src="images/bands.jpg">
-			</div>
-		</li>
-	</ul>
 
-
+<div class="light-back">
+		<div class="carousel" data-bind="foreach: model.experience, click: workScroll.render">
+			<div class="box">
+				<h1 data-bind="text: employer"></h1>
+				<h2>Title: <span data-bind="text: title"></span></h2>
+				<h3>Skills: <span data-bind="text: skills"></span></h3>
+			</div>
+		</div>
 </div>
+<div class="light-back" data-bind="foreach: model.education">
+	<h1 data-bind="text: school"></h1>
+	<h2>Degree: <span data-bind="text: focus"></span></h2>
+	<h2>GPA/Honors: <span data-bind="text: GPA"></span>/<span data-bind="text: honors"></span></h2>
 </div>
-<div id="Skills">
-	<div id="Skills2">
-		<h1 class="experience">Skills</h1>
-	    	<div class="job1">
-		    	<ul class="skillsul">
-		    		<li class="skillsheadli">
-		    			<h3 class="skillslisthead">What I'm Awesome At</h3>
-		    		</li>
-		    		<li class="skillsli">
-		    			<p class="skillslistp">Search Engine Optimization (SEO)  Using databases like Cision, NetGalley, Muckrack, and Edelweiss  Working with WordPress, Medium, Blogspot, and Vocus  Kickball  Talking Backwards  Taking bad Photographs  Watching Movies  Remembering Lyrics</p>
-		    		</li>
-		    		
-				    </br>
-					</br>
-					</br>
-					</br>
-					</br>
-					</br>
-		    	</ul>
-			    	
-			</div>
-
-
-			<div id="backtotop"><a href="#header"><p>Back to Top</p></a></div>
-			</br>
-			</br>
-
-
+<div class="light-back" data-bind="foreach: model.interests">
+	<h1 data-bind="text: name"></h1>
+	<h2 data-bind="text: proof"></h2>
+	<div data-bind="if: blogs">
+		<ul class="inline" data-bind="foreach: blogs">
+			<li>
+				<a target="_blank" data-bind="attr: { href: href }">
+					<h2 data-bind="text: title"></h2>
+				</a>
+			</li>
+			<li><img class="blog-img" data-bind="attr: { src: src }"></li>
+			<li class="inline-head"><h3 data-bind="text: style"></h3></li>
+		</ul>
 	</div>
+
 </div>
- <script src="js/Carmody.js"></script>
-  <script type="text/javascript">
 
-$(document).ready(function () {
-	$("#jumper").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#work").offset().top},
-        'slow');
-	});
-});
-$(document).ready(function () {
-	$("#jumper2").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#Bio").offset().top},
-        'slow');
-	});
-});
-$(document).ready(function () {
-	$("#jumper3").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#Interests").offset().top},
-        'slow');
-	});
-});
-$(document).ready(function () {
-	$("#jumper4").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#Skills").offset().top},
-        'slow');
-	});
-});
-           function toggle_visibility(contactinfo2) {
-       var e = document.getElementById(contactinfo2);
-       if(e.style.visibility == 'visible')
-          e.style.visibility = 'hidden';
-       else
-          e.style.visibility = 'visible';
-};
 
-</script>
-<script>
-$('.box').click(function() {
-    $('.box').each( function() {
-        if ($(this).offset().left < 0) {
-            $(this).css("left", "150%");
-        }
-    });
-
-    $(this).animate({
-         left: '-50%'
-     }, 500);
- 
-     if ($(this).next().size() > 0) {
-         $(this).next().animate({
-             left: '50%'
-         }, 500);
-     } else {
-         $(this).prevAll().last().animate({
-             left: '50%'
-         }, 500);
-     }
-});
-</script>
-<script>
-	$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 20) {
-	    $('.readable').fadeIn();
-	  } else {
-	    $('.readable').fadeOut();
-
-	  }
-	});
-	$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 100) {
-	    $('.ployers2').fadeIn();
-	  } else {
-	    $('.ployers2').fadeOut();
-
-	  }
-	});
-	$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 150) {
-	    $('.ployers3').fadeIn();
-	  } else {
-	    $('.ployers3').fadeOut();
-
-	  }
-	});
-	$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 200) {
-	    $('.ployers4').fadeIn();
-	  } else {
-	    $('.ployers4').fadeOut();
-
-	  }
-	});
-	$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 250) {
-	    $('.ployers5').fadeIn();
-	  } else {
-	    $('.ployers5').fadeOut();
-
-	  }
-	});
-		$(document).scroll(function() {
-	  var y = $(this).scrollTop();
-	  if (y > 350) {
-	    $('.ployers6').fadeIn();
-	  } else {
-	    $('.ployers6').fadeOut();
-
-	  }
-	});
-</script>
+<script src="js/lib/knockout-3.2.0.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
 
 </body>
 </html>
