@@ -306,7 +306,11 @@ $(document).ready(function(){
 		  dots: true,
 		  speed: 500,
 
-      }); 
+      });
+
+      $('#other').click(function(){
+      	$('#interests').resize();
+      })
 });
 
 var workScroll = {
