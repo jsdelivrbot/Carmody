@@ -6,61 +6,31 @@ var model = {
 			title: ko.observable('Work Experience'),
 			head: ko.observable(''),
 			id: 'work',
-			tog: function(){
-				console.log('work');
-				$('#work-info').slideToggle();
-				$('html, body').animate({
-					scrollTop: $('#work-info').offset().top
-				}, 800);
-
-			}
+			divID: 'work-info'
 		},
 		{
 			title: ko.observable('Education'),
 			head: ko.observable(''),
 			id: 'edu',
-			tog: function() {
-				console.log('edu');
-				$('#education').slideToggle();
-				$('html, body').animate({
-					scrollTop: $('#education').offset().top
-				}, 800);
-			}
+			divID: 'education'
 		},
 		{
 			title: ko.observable('Portfolio'),
 			head: ko.observable(''),
 			id: 'port',
-			tog: function(){
-				console.log('portfolio');
-				$('#portfolio').slideToggle();
-				$('html, body').animate({
-					scrollTop: $('#portfolio').offset().top
-				}, 800);
-			}
+			divID: 'portfolio'
 		},
 		{
 			title: ko.observable('Other Interests'),
 			head: ko.observable(''),
 			id: 'other',
-			tog: function(){
-				console.log('other');
-				$('#interests').slideToggle();
-				$('html, body').animate({
-					scrollTop: $('#interests').offset().top
-				}, 800);
-			}
+			divID: 'interests'
 		},
 		{
 			title: ko.observable('Contact'),
 			head: ko.observable(''),
-			id: 'contact',
-			tog: function(){
-				$('.contact').slideDown();
-				$('html, body').animate({
-					scrollTop: $('#work-info').offset().top
-				}, 800);
-			}
+			id: 'basic-info',
+			divID: 'contact'
 		}
 	],
 	contact: [
@@ -274,9 +244,34 @@ var viewModel = {
 	}
 };
 
+var vis = {
+	init: function(){
+		var self = this;
+	//	$('.light-back').hide();
+		//$('.light-back').toggle("slow", function(){});
+		model.sections.forEach(function(section){
+			var clickedID = "#" + self.divID;
+			var hideID = document.getElementById(section.divID);
+
+
+			$(clickedID).toggle('slow', function(){});
+
+		});
+	}
+}
+
+
 var toggle = {
 
+	slideIn: function(clicked) {
+		$('.light-back').hide();
+		var clickedID = "#" + this.divID;
+		$(clickedID).toggle('slow', function(){});
+		
+		
 
+		
+	},
 
     contactInfo: function() {
     	$('#contact').click(function(){
