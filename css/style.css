@@ -57,7 +57,19 @@ h1,h2,h3,h4 {
 	background-color: rgba(0,0,0,0.7);
 	width: 100%;
 	color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
+.panel-group, .panel-heading, div.panel.panel-default,
+	.panel-group .panel+.panel {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: #15c188;
+}
+
 .contact-div {
 	margin-left: 5%;
 }
@@ -69,6 +81,7 @@ h1,h2,h3,h4 {
 	margin: auto;
 	margin-top: 0px;
 	padding: 0px;
+	display: none;
 }
 
 .nav-img {
@@ -77,9 +90,15 @@ h1,h2,h3,h4 {
 	margin: 3%;
 }
 
+.example-img {
+	height: 250px;
+	width: 350px;
+	margin: 15px;
+}
 
 .header {
-	font-size: 20px;
+	margin-top: 5%;
+	font-size: 25px;
 	min-width: 100%;
 	background-color: rgba(0,0,0,.7);
 }
@@ -87,6 +106,7 @@ h1,h2,h3,h4 {
 .light-back {
 	background-color: #15c188;
 	text-align: center;
+	display: none;
 }
 
 .blog-img {
@@ -103,6 +123,21 @@ h1,h2,h3,h4 {
 .inline-head {
 	margin-bottom: 15%;
 }
+
+.work-ul {
+	width: 45%;
+	float: right;
+	margin-right: 4%;
+	margin-top: 8%;
+	font-size: 25px;
+}
+
+.box {
+	width: 100%;
+	min-height: 300px;
+}
+
+
 
 .topline {
 	list-style-type: none;
@@ -324,9 +359,7 @@ h3.jobtext {
 
 }
 
-.blog-div {
-	display: none;
-}
+
 
 
 

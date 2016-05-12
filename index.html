@@ -5,12 +5,13 @@
     <title>Jack Masterson - Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -19,24 +20,24 @@
 		<div class="contact-div" data-bind="foreach: model.contact">
 			<h1 class="name" data-bind="text: name"></h1>
 			<h2 class="name" data-bind="text: career"></h2>
-			<h2 class="contact" data-bind="text: location"></h2>
-			<h2 class="contact" data-bind="text: cell"></h2>
-			<h2 class="contact" data-bind="text: email"></h2>
 			<div data-bind="foreach: imgNav">
 				<a target="_blank" data-bind="attr: { href: imgHref }">
 					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
 				</a>
 			</div>
+			<h2 class="contact" data-bind="text: location"></h2>
+			<h2 class="contact" data-bind="text: cell"></h2>
+			<h2 class="contact" data-bind="text: email"></h2>
 		</div>
 		<div class="header" data-bind="foreach: model.sections">
-			<a href="#/" class="scroll">
+			<a href="#/" class="scroll" data-bind="attr: { id: id }, click: tog">
 				<li class="nav" data-bind="text: title"></li>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="light-back">
-	<h1 class="top-head">Portfolio</h1>
+<div class="light-back" id="portfolio">
+	<h1 class="top-header">Portfolio</h1>
 	<div class="panel-group" id="accordion" data-bind="foreach: model.projects">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -47,23 +48,32 @@
             <div data-bind="attr: { id: href }" class="panel-collapse collapse">
             	<div class="panel-body" data-bind="foreach: examples">
             		<h1 data-bind="text: name"></h1>
+            		<h2 data-bind="text: date"></h2>
+            		<img class="example-img" data-bind="attr: { src: img }">
+            		<h3 data-bind="text: description"></h3>
             	</div>
             </div>
         </div>
     </div>
 </div>
-<div class="light-back">
+<div class="light-back" id="work-info">
 	<h1 class="top-header">Work Experience</h1>
-	<div data-bind="foreach: model.experience">
-		<div class="box">
-			<h1 data-bind="text: employer"></h1>
-			<h2>Title: <span data-bind="text: title"></span></h2>
-			<h2>Dates Worked: <span data-bind="text: date"></span></h2>
-			<h3>Skills: <span data-bind="text: skills"></span></h3>
-		</div>
+	<div class="box" data-bind="foreach: model.experience">
+		<ul class="work-ul">
+			<li class="work-li" data-bind="text: employer"></li>
+			<li class="work-li" >Title: 
+				<span data-bind="text: title"></span>
+			</li>
+			<li class="work-li" >Dates Worked: 
+				<span data-bind="text: date"></span>
+			</li>
+			<li class="work-li" >Skills: 
+				<span data-bind="text: skills"></span>
+			</li>
+		</ul>
 	</div>
 </div>
-<div class="light-back">
+<div class="light-back" id="education">
 	<h1 class="top-header">Education</h1>
 	<div data-bind="foreach: model.education">
 		<h1 data-bind="text: school"></h1>
@@ -71,28 +81,28 @@
 		<h2>GPA/Honors: <span data-bind="text: GPA"></span>/<span data-bind="text: honors"></span></h2>
 	</div>
 </div>
-<div class="light-back">
+<div class="light-back" id="interests">
 	<h1 class="top-header">Other Interests</h1>
-		<div data-bind="foreach: model.interests">
-			<h1 data-bind="text: name, click: toggle.blogs"></h1>
-			<div class="blog-div" data-bind="if: blogs">
-				<div class="carousel" data-bind="foreach: blogs">
-					<ul class="inline">
-						<li>
-							<a target="_blank" data-bind="attr: { href: href }">
-								<h2 data-bind="text: title"></h2>
-							</a>
-						</li>
-						<li>
-							<img class="blog-img" data-bind="attr: { src: src }">
-						</li>
-						<li class="inline-head">
-							<h3 data-bind="text: style"></h3>
-						</li>
-					</ul>
-				</div>
+	<div data-bind="foreach: model.interests">
+		<h1 data-bind="text: name"></h1>
+		<div class="blog-div" data-bind="if: blogs">
+			<div class="carousel" data-bind="foreach: blogs">
+				<ul class="inline">
+					<li>
+						<a target="_blank" data-bind="attr: { href: href }">
+							<h2 data-bind="text: title"></h2>
+						</a>
+					</li>
+					<li>
+						<img class="blog-img" data-bind="attr: { src: src }">
+					</li>
+					<li class="inline-head">
+						<h3 data-bind="text: style"></h3>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</div>
 </div>
 
 
