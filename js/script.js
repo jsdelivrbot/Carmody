@@ -266,6 +266,8 @@ var model = {
 var viewModel = {
 	init: function(){
 
+		toggle.fadeScroll();
+
 	}
 };
 
@@ -297,13 +299,8 @@ var toggle = {
 	showCar: function(clicked) {
 		console.log(clicked);
 		var clickedID="#" + clicked.id;
-		
+
 		$(clickedID).slideToggle();
-		      
-
-
-
-
 	},
 
     contactInfo: function() {
@@ -312,26 +309,24 @@ var toggle = {
    		});
     },
 
-    allDiv: function() {
-    	$(document).ready(function () {
-		    $('.click').click(function (e) {
-		        e.stopPropagation();
-		        var target = $(this).parent().find('.showup');
-		        $('.showup').not(target).slideUp("fast");
-		        target.slideToggle("fast");
-		    });
-		    $(".showup").on("click", function (e) {
-		        e.stopPropagation();
-		    });
-		});
+    showSearch: function() {
+    	$('#search-div').fadeIn();
+    },
 
-		$(document).on("click", function () {
-		    $(".showup").slideUp("fast");
-		});
+    fadeScroll: function() {
+    	$(window).scroll(function() {
+
+		    if ($(this).scrollTop()>0)
+		     {
+		        $('#search-div').fadeOut();
+		     }
+		    else
+		     {
+		      $('#search-div').fadeIn();
+		     }
+		 });
     }
-}
-
-toggle.allDiv();
+};
 
 $(document).ready(function(){
 	$('.carousel').slick({
@@ -356,6 +351,7 @@ var workScroll = {
 
 	}
 };
+
 
 ko.applyBindings(viewModel.init());
 var cont = document.getElementById('contact');

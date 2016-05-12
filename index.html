@@ -15,6 +15,18 @@
 </head>
 
 <body>
+<div class="search" id="search-icon">
+	<img class="search-img" src="img/search.png" data-bind="click: toggle.showSearch">
+</div>
+<div class="search" id="search-div">
+	<div class="nav-head">
+		<div class="header" data-bind="foreach: model.sections">
+			<a href="#/" class="scroll" data-bind="attr: { id: id }, click: toggle.slideIn">
+				<li class="nav" data-bind="text: title"></li>
+			</a>
+		</div>
+	</div>
+</div>
 <div class="intro">
 	<div class="shade">
 		<div class="basic-info" data-bind="foreach: model.contact">
@@ -33,13 +45,7 @@
 		</div>
 	</div>
 </div>
-<div class="nav-head">
-	<div class="header" data-bind="foreach: model.sections">
-		<a href="#/" class="scroll" data-bind="attr: { id: id }, click: toggle.slideIn">
-			<li class="nav" data-bind="text: title"></li>
-		</a>
-	</div>
-</div>
+
 <div class="light-back" id="portfolio">
 	<h1 class="top-header">Portfolio</h1>
 	<div class="panel-group" id="accordion" data-bind="foreach: model.projects">
