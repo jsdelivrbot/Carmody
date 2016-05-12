@@ -108,7 +108,6 @@ h1,h2,h3,h4 {
 
 
 .header {
-	
 	font-size: 25px;
 	min-width: 100%;
 	background-color: rgba(0,0,0,.7);
@@ -126,6 +125,10 @@ h1,h2,h3,h4 {
 	width: 75px;
 	border-radius: 100%;
 	margin-left: 30%;
+}
+
+#interests {
+	min-height: 800px;
 }
 
 .inline {
@@ -149,8 +152,9 @@ h1,h2,h3,h4 {
 	margin-top: 9%;
 }
 
-
-
+.int-head {
+	margin-top: 5%;
+}
 
 
 /* ---------------Slider --------------------*/
@@ -171,8 +175,9 @@ h1,h2,h3,h4 {
 	text-align: center;
 	margin-left: 32%;
 	background-color: #ffd7a5;
-
 }
+
+
 
 
 

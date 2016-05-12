@@ -100,6 +100,7 @@ var model = {
 		{
 			name: 'Writing',
 			proof: 'Blogs',
+			id: 'blog-ID',
 			blogs: [
 				{
 					title: 'Daily Dose of Stupid',
@@ -130,7 +131,31 @@ var model = {
 		{
 			name: 'Improv Comedy',
 			proof: 'Coaching, Teaching, Performing',
-			blogs: ko.observable(false)
+			id: 'improv-ID',
+			blogs: [
+				{
+					title: 'Coaching',
+					style: 'I have coached improv at Boston College,' +
+						' to middle-and-high schoolers.',
+					src: 'img/coaching.jpg',
+					href: ko.observable(false)
+				},
+				{
+					title: 'Performing',
+					style: 'Check us out this summer at the Manasquan' + 
+					' Community Center for a lot of laughs!',
+					src: 'img/performing.jpg',
+					href: ko.observable(false)
+				},
+				{
+					title: 'Goofing Off',
+					style: 'I also like to make a fool of myself whenever' +
+						' I can.',
+					src: 'img/garbage.jpg',
+					href: ko.observable(false)
+				}
+
+			]
 		}
 	],
 	projects: [
@@ -266,11 +291,19 @@ var toggle = {
 	slideIn: function(clicked) {
 		$('.light-back').hide();
 		var clickedID = "#" + this.divID;
-		$(clickedID).toggle('slow', function(){});
-		
-		
+		$(clickedID).toggle('slow', function(){});	
+	},
 
+	showCar: function(clicked) {
+		console.log(clicked);
+		var clickedID="#" + clicked.id;
 		
+		$(clickedID).slideToggle();
+		      
+
+
+
+
 	},
 
     contactInfo: function() {
@@ -305,12 +338,16 @@ $(document).ready(function(){
 		  infinite: false,
 		  dots: true,
 		  speed: 500,
+		  arrows: true
 
       });
 
       $('#other').click(function(){
       	$('#interests').resize();
-      })
+      });
+
+
+
 });
 
 var workScroll = {

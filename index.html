@@ -89,10 +89,12 @@
 </div>
 <div class="light-back" id="interests">
 	<h1 class="top-header">Other Interests</h1>
-	<div class="box" data-bind="foreach: model.interests">
-		<h1 data-bind="text: name"></h1>
-		<div class="blog-div" data-bind="if: blogs">
-			<div class="carousel" data-bind="foreach: blogs">
+	<div class="box" id="int-box" data-bind="foreach: model.interests">
+		<a href="#/">
+			<h1 class="int-head" data-bind="text: name, click: toggle.showCar"></h1>
+		</a>
+		<div class="blog-div" id="blog-ID" data-bind="if: blogs">
+			<div class="carousel" data-bind="foreach: blogs, attr: { id: id }, ">
 				<ul class="inline">
 					<li>
 						<a target="_blank" data-bind="attr: { href: href }">
