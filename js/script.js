@@ -167,6 +167,7 @@ var model = {
 				{
 					name: 'Neighborhood Map',
 					date: 'March 3 - May 10, 2016',
+					skills: ['Knockout/MVVM', ' 3rd-Party APIs'],
 					description: "This project utilizes Knockout's" +
 						" MVVM approach to organizing code and I learned all" +
 						" about data-binding." +
@@ -180,12 +181,13 @@ var model = {
 						" and additional APIs that list upcoming" +
 						" concerts in the area, surfing conditions, and" +
 						" census information.",
-					img: 'img/map.jpg'
+					img: 'img/map.jpg',
 		
 				},
 				{
 					name: 'Arcade Game Clone',
 					date: 'January 8, 2015 - February 7, 2016',
+					skills: ['HTML Canvas', ' Separation of Concerns'],
 					description: 'According to the Udacity instructor who' +
 					' reviewed it, "excellently implemented game...I am really' +
 					' impressed by your work." This was a fun one. It took' +
@@ -204,6 +206,7 @@ var model = {
 				{
 					name: 'Online Resume',
 					date: 'November 30, 2014 - Jan 3, 2015',
+					skills: ['OOJS', ' Bootstrap',' Google Maps'],
 					description: 'I took some time off' +
 						' in between Project 1 and 2, and boy was that' +
 						' a misTAKE. Diving back in' +
@@ -226,18 +229,21 @@ var model = {
 					name: 'Pack-A-Day',
 					date: 'Started April 30, 2016',
 					description: 'Filler text',
+					skills: ko.observable(''),
 					img: ''
 				},
 				{
 					name: 'Shore Fun Improv',
 					date: 'Started May 2, 2016',
 					description: 'It sure is fun!',
+					skills: ko.observable(''),
 					img: 'img/shoreFun.png'
 				},
 				{
 					name: 'Wedding Page - BARM',
 					date: 'Started February 12, 2016',
 					description: 'Beth is getting married!',
+					skills: ko.observable(''),
 					img: ''
 				}
 			]
@@ -256,6 +262,7 @@ var model = {
 						' and any and all information' +
 						' someone could want when attending a wedding' +
 						' in the area.',
+					skills: ko.observable(''),
 					img: 'img/grub.png'
 				}
 			]

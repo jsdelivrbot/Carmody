@@ -105,6 +105,9 @@ h1,h2,h3,h4 {
 	margin: 15px;
 }
 
+.description {
+	margin: auto 5% 5% 5%;
+}
 
 .header {
 	font-size: 25px;
