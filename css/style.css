@@ -69,13 +69,6 @@ h1,h2,h3,h4 {
 	padding-bottom: 20px;
 }
 
-.panel-group, .panel-heading, div.panel.panel-default,
-	.panel-group .panel+.panel {
-	margin-bottom: 0px;
-	margin-top: 0px;
-	background-color: #15c188;
-}
-
 .basic-info {
 	margin-left: 5%;
 }
@@ -246,6 +239,29 @@ h1,h2,h3,h4 {
 
 .slick-dotted.slick-slider {
 	margin-bottom: 0px;
+}
+
+/* ------------- Bootstrap ------------*/
+
+#accordion {
+	margin: 20% 15% auto 15%;
+}
+
+#ud-head {
+	text-align: left;
+	margin-left: 2%;
+}
+
+#pub-head {
+	text-align: right;
+	margin-right: 2%;
+}
+
+.panel-group, .panel-heading, div.panel.panel-default,
+	.panel-group .panel+.panel {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: #15c188;
 }
 
 

@@ -172,6 +172,7 @@ var model = {
 			title: 'Udacity Projects',
 			href: 'collapseOne',
 			clickHref: '#collapseOne',
+			id: 'ud-head',
 			examples: [
 				{
 					name: 'Neighborhood Map',
@@ -236,6 +237,7 @@ var model = {
 			title: 'Works in Progress',
 			href: 'collapseTwo',
 			clickHref: '#collapseTwo',
+			id: 'prog-head',
 			examples: [
 				{
 					name: 'Pack-A-Day',
@@ -267,6 +269,7 @@ var model = {
 			title: 'Published Projects',
 			href: 'collapseThree',
 			clickHref: '#collapseThree',
+			id: 'pub-head',
 			examples: [
 				{
 					name: 'Wedding Page',
