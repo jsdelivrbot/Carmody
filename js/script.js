@@ -166,6 +166,7 @@ var model = {
 			examples: [
 				{
 					name: 'Neighborhood Map',
+					url: 'https://cdn.rawgit.com/jackmasterson/NMap/master/index.html',
 					date: 'March 3 - May 10, 2016',
 					skills: ['Knockout/MVVM', ' 3rd-Party APIs'],
 					description: "This project utilizes Knockout's" +
@@ -186,6 +187,7 @@ var model = {
 				},
 				{
 					name: 'Arcade Game Clone',
+					url: 'https://rawgit.com/jackmasterson/Arcade-Game/master/Arcade Game/index.html',
 					date: 'January 8, 2015 - February 7, 2016',
 					skills: ['HTML Canvas', ' Separation of Concerns'],
 					description: 'According to the Udacity instructor who' +
@@ -205,6 +207,7 @@ var model = {
 				},
 				{
 					name: 'Online Resume',
+					url: 'https://cdn.rawgit.com/jackmasterson/ResumeBuilder/master/src/index.html',
 					date: 'November 30, 2014 - Jan 3, 2015',
 					skills: ['OOJS', ' Bootstrap',' Google Maps'],
 					description: 'I took some time off' +
@@ -227,6 +230,7 @@ var model = {
 			examples: [
 				{
 					name: 'Pack-A-Day',
+					url: '#/',
 					date: 'Started April 30, 2016',
 					description: 'Filler text',
 					skills: ko.observable(''),
@@ -234,6 +238,7 @@ var model = {
 				},
 				{
 					name: 'Shore Fun Improv',
+					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
 					date: 'Started May 2, 2016',
 					description: 'It sure is fun!',
 					skills: ko.observable(''),
@@ -241,6 +246,7 @@ var model = {
 				},
 				{
 					name: 'Wedding Page - BARM',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
 					date: 'Started February 12, 2016',
 					description: 'Beth is getting married!',
 					skills: ko.observable(''),
@@ -255,6 +261,7 @@ var model = {
 			examples: [
 				{
 					name: 'Wedding Page',
+					url: 'http://www.sarahandryantietheknot.com',
 					date: 'November 15 - Dec 19, 2015',
 					description: 'Created a landing page for a wedding' +
 						' for a client that happens to be my sister. ' +
