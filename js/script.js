@@ -349,10 +349,12 @@ var toggle = {
 		    if ($(this).scrollTop()>0)
 		     {
 		        $('#search-div').fadeOut();
+		        $('.search-img').fadeOut();
 		     }
 		    else
 		     {
 		      $('#search-div').fadeIn();
+		      $('.search-img').fadeIn();
 		     }
 		 });
     }

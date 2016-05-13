@@ -20,14 +20,14 @@ h1,h2,h3,h4 {
 
 .intro {
   background: url(..//img/computer.jpg) no-repeat center center fixed; 
-  min-height: 650px;
+  min-height: 100vh;
   min-width: 100%;
   z-index: 5;
 }
 
 .shade {
 	background-color: rgba(0,0,0,0.6);
-	min-height: 650px;
+	min-height: 100vh;
 }
 
 .scroll {
@@ -170,6 +170,7 @@ h1,h2,h3,h4 {
 
 #workman {
 	height: 50px;
+	width: 175px;
 }
 
 #gpa {
@@ -202,7 +203,12 @@ h1,h2,h3,h4 {
 }
 
 #search-icon {
-	margin: 47% auto auto 1%;
+	margin: 47% auto auto 85%;
+}
+
+.search-class {
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: center;
 }
 
 #search-div {
