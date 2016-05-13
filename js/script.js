@@ -66,23 +66,30 @@ var model = {
 		{
 			employer: 'Workman Publishing',
 			title: 'Publicity and Marketing Assistant',
-			skills: ['blah1', 'blah2', 'blah3'],
-			date: 'March 2014-July 2015'
+			skills: ['Press Releases', ' Event Coordinating', ' Creating Media Lists'],
+			date: 'March 2014-July 2015',
+			description: 'At Workman, I...',
+			img: 'img/workman-logo.jpg',
+			id: 'workman'
 		},
 		{
 			employer: 'Shawmut Design and Construction',
 			title: 'Junior Marketing Coordinator',
-			skills: ['stuff1', 'stuff2', 'stuff3'],
-			date: 'June 2013-March 2014'
+			skills: ['Copywriting/Editing', ' Internal Interviews', ' Writing BD Templates'],
+			date: 'June 2013-March 2014',
+			description: 'Shawmut taught me...',
+			img: 'img/shawmut-logo.jpg',
+			id: 'shawmut'
 		}
 	],
 	education: [
 		{
-			school: 'Boston College',
+			school: 'Boston College, cum laude',
 			focus: 'B.A., English',
-			skills: 'Communication, Analysis, Blah',
-			honors: 'cum laude',
-			GPA: '3.646'
+			skills: 'Effective Communication, In-Depth Analysis, Presentation Skills',
+			GPA: 'GPA: 3.646',
+			img: 'img/bc.jpg',
+			id: 'bc'
 		},
 		{
 			school: 'Udacity',
@@ -92,8 +99,10 @@ var model = {
 				frameworks: 'jQuery, Bootstrap',
 				other: 'GitHubKnockout, gulp, ngrok'
 			},
-			honors: '',
-			GPA: ''
+			GPA: 'Skills: HTML5, CSS3, JavaScript, jQuery, Bootstrap' +
+				'ngrok, gulp, Slick, Knockout, MVVM practices',
+			img: 'img/udacity.png',
+			id: 'udacity'
 		}
 	],
 	interests: [

@@ -56,15 +56,17 @@
             	</h2>
             </div>
             <div data-bind="attr: { id: href }" class="panel-collapse collapse">
+            	<h4 class="raw-head">Note: Links through RawGit move a little slow sometimes</h4>
             	<div class="panel-body" data-bind="foreach: examples">
             		<a target="_blank" data-bind="attr: { href: url }">
             			<h1 data-bind="text: name"></h1>
             		</a>
-            		<h4>Note: Links through RawGit move a little slow</h4>
             		<h2 data-bind="text: date"></h2>
-            		<h3 data-bind="text: skills"></h3>
+            		<h3>Quick Skills: 
+            			<span data-bind="text: skills"></span>
+            		</h3>
             		<img class="example-img" data-bind="attr: { src: img }">
-            		<h5 class="description" data-bind="text: description"></h5>
+            		<h4 class="description" data-bind="text: description"></h4>
             	</div>
             </div>
         </div>
@@ -74,27 +76,37 @@
 	<h1 class="top-header">Work Experience</h1>
 	<div class="box" data-bind="foreach: model.experience">
 		<ul class="work-ul">
-			<strong>
-				<li class="work-li" data-bind="text: employer"></li>
-			</strong>
+			<img class="work-img" data-bind="attr: { src: img, id: id }">
+			<li class="work-li">
+				<span class="employer" data-bind="text: employer">:</span> <span class="date" data-bind="text: date"></span>
+			</li>
 			<li class="work-li" >Title: 
 				<span data-bind="text: title"></span>
-			</li>
-			<li class="work-li" >Dates Worked: 
-				<span data-bind="text: date"></span>
+
 			</li>
 			<li class="work-li" >Skills: 
 				<span data-bind="text: skills"></span>
 			</li>
+			<li class="work-li" >Job Description: 
+				<span data-bind="text: description"></span>
+			</li>
+			
 		</ul>
 	</div>
 </div>
 <div class="light-back" id="education">
 	<h1 class="top-header">Education</h1>
 	<div class="box" data-bind="foreach: model.education">
-		<h1 data-bind="text: school"></h1>
-		<h2>Degree: <span data-bind="text: focus"></span></h2>
-		<h2>GPA/Honors: <span data-bind="text: GPA"></span>/<span data-bind="text: honors"></span></h2>
+		<ul class="edu-ul">
+			<img class="work-img" data-bind="attr: { src: img, id: id }">
+			<li class="work-li" data-bind="text: school"></li>
+			<li class="work-li">Degree: 
+				<span data-bind="text: focus"></span>
+			</li>
+			<li class="work-li" id="gpa"> 
+				<span data-bind="text: GPA"></span>
+			</li>
+		</ul>
 	</div>
 </div>
 <div class="light-back" id="interests">

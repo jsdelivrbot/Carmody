@@ -80,6 +80,11 @@ h1,h2,h3,h4 {
 	margin-left: 5%;
 }
 
+.raw-head {
+	border: none;
+	margin: 15px;
+}
+
 .contact {
 	color: #a8e6cf;
 	font-size: 20px;
@@ -142,10 +147,43 @@ h1,h2,h3,h4 {
 }
 
 .work-ul {
-	width: 45%;
-	float: right;
-	margin-right: 4%;
 	font-size: 25px;
+	margin-bottom: 4%;
+}
+
+.work-li {
+	text-align: left;
+}
+
+.work-img {
+	float: right;
+	height: 120px;
+	width: 120px;
+	margin-right: 3%;
+}
+
+.edu-ul {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 6%;
+}
+
+#workman {
+	height: 50px;
+}
+
+#gpa {
+	width: 45%;
+}
+
+.date {
+	font-style: italic;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.employer {
+	font-size: 30px;
 }
 
 .box {
