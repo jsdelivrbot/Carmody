@@ -300,14 +300,14 @@ var toggle = {
 	slideIn: function(clicked) {
 		$('.light-back').hide();
 		var clickedID = "#" + this.divID;
-		$(clickedID).toggle('slow', function(){});	
+		$(clickedID).fadeToggle('slow', function(){});	
 	},
 
 	showCar: function(clicked) {
 		console.log(clicked);
 		var clickedID="#" + clicked.id;
 
-		$(clickedID).slideToggle();
+		$(clickedID).fadeToggle();
 	},
 
     contactInfo: function() {
