@@ -191,7 +191,7 @@ var model = {
 						" and additional APIs that list upcoming" +
 						" concerts in the area, surfing conditions, and" +
 						" census information.",
-					img: 'img/map.jpg',
+					img: 'img/map.jpg'
 		
 				},
 				{
@@ -228,8 +228,8 @@ var model = {
 						' there is no more rewarding' +
 						' feeling than figuring out some code that has been' +
 						' eluding you for hours/months.',
-					img: 'img/ss7.png',
-				}
+					img: 'img/ss7.png'
+				},
 			]
 		},
 		{
@@ -316,7 +316,14 @@ var toggle = {
 	slideIn: function(clicked) {
 		$('.light-back').hide();
 		var clickedID = "#" + this.divID;
-		$(clickedID).fadeToggle('slow', function(){});	
+		$(clickedID).fadeToggle('slow', function(){});
+		
+		
+			$('html, body').animate({
+		        scrollTop: $(clickedID).offset().top
+		    }, 800);
+	
+
 	},
 
 	showCar: function(clicked) {
