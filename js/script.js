@@ -2,12 +2,12 @@
 
 var model = {
 	sections: [
-		{
+		/*{
 			title: ko.observable('Work Experience'),
 			head: ko.observable(''),
 			id: 'work',
 			divID: 'work-info'
-		},
+		},*/
 		{
 			title: ko.observable('Education'),
 			head: ko.observable(''),
@@ -25,13 +25,13 @@ var model = {
 			head: ko.observable(''),
 			id: 'other',
 			divID: 'interests'
-		},
+		}/*,
 		{
 			title: ko.observable('Contact'),
 			head: ko.observable(''),
 			id: 'basic-info',
 			divID: 'contact'
-		}
+		}*/
 	],
 	contact: [
 		{
@@ -46,12 +46,6 @@ var model = {
 					imgHref: 'https://linkedin.com/in/mastersonjack',
 					imgSrc: 'img/linkedIn.png',
 					id: 'linked'
-				},
-				{
-					title: 'headshot',
-					imgHref: '#/',
-					imgSrc: 'img/headshot.jpg',
-					id: 'head-shot'
 				},
 				{
 					title: 'gitHub',
@@ -88,7 +82,7 @@ var model = {
 			focus: 'B.A., English',
 			skills: 'Effective Communication, In-Depth Analysis, Presentation Skills',
 			GPA: 'GPA: 3.646',
-			img: 'img/bc.jpg',
+			img: 'img/bc.png',
 			id: 'bc'
 		},
 		{
@@ -114,9 +108,7 @@ var model = {
 				{
 					title: 'Daily Dose of Stupid',
 					medium: 'Medium',
-					style: 'This serves as an outlet for all the sarcasm' +
-						' I keep pent up all day. Just kidding, I never keep it' +
-						' pent up.',
+					style: 'My outlet for pent-up sarcasm.',
 					src: 'img/ddos.jpg',
 					href: 'https://medium.com/me/stories/public'
 				},
@@ -130,8 +122,7 @@ var model = {
 				{
 					title: 'Abroad in Moswetuset',
 					medium: 'Blogspot',
-					style: 'This is an example of a kid tired of abroad blogs.' +
-						' So I do here what I do best: I make fun of it.',
+					style: 'Abroad blogs exist to be made fun of.',
 					src: 'img/abroad.png',
 					href: 'http://jackisabroad.blogspot.com/'
 				},
@@ -292,7 +283,7 @@ var model = {
 var viewModel = {
 	init: function(){
 
-		toggle.fadeScroll();
+	//	toggle.fadeScroll();
 
 	}
 };
@@ -317,15 +308,18 @@ var vis = {
 var toggle = {
 
 	slideIn: function(clicked) {
+		
 		$('.light-back').hide();
 		var clickedID = "#" + this.divID;
 		$(clickedID).fadeToggle('slow', function(){});
-		
-		
-			$('html, body').animate({
-		        scrollTop: $(clickedID).offset().top
-		    }, 800);
-	
+
+	},
+
+	moreInfo: function(clicked) {
+
+		$('html, body').animate({
+	        scrollTop: $('.search').offset().top
+	    }, 800);
 
 	},
 

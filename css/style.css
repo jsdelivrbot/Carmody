@@ -3,31 +3,31 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-	font-family: 'Indie Flower', cursive;
+	font-family: Open Sans;
 	text-align: center;
 	vertical-align: middle;
     list-style-type: none;
 }
 
 body {
-	background-color: #15c188;
 	overflow: scroll;
 	margin: 0px;
 }
+
 h1,h2,h3,h4 {
 	margin-top: 0px;
 }
 
 .intro {
   background: url(..//img/computer.jpg) no-repeat center center fixed; 
-  min-height: 100vh;
-  min-width: 100%;
+  min-height: 80vh;
+  min-width: 100vw;
   z-index: 5;
 }
 
 .shade {
-	background-color: rgba(0,0,0,0.6);
-	min-height: 100vh;
+	background-color: rgba(21, 193, 136, 0.4);
+	min-height: 80vh;
 }
 
 .scroll {
@@ -45,13 +45,13 @@ h1,h2,h3,h4 {
 	color: rgba(255,235,205,1);
 }
 
-.name {
-	color: #a8e6cf;
-	font-size: 80px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+
+.basic-info {
+	color: white;
 }
-#head-shot {
+
+
+.head-shot {
 	height: 200px;
 	width: 150px;
 	border: 1px solid gray;
@@ -69,17 +69,13 @@ h1,h2,h3,h4 {
 	padding-bottom: 20px;
 }
 
-.basic-info {
-	margin-left: 5%;
-}
-
 .raw-head {
 	border: none;
 	margin: 15px;
 }
 
 .contact {
-	color: #a8e6cf;
+	color: #7e7e7e;
 	font-size: 20px;
 	line-height: 25px;
 	margin: auto;
@@ -87,14 +83,20 @@ h1,h2,h3,h4 {
 	padding: 0px;
 }
 
-#contact {
-	display: none;
-}
-
 .nav-img {
 	height: 100px;
 	width: 100px;
 	margin: 3%;
+	display: inline-block;
+}
+
+.nav-title {
+	display: inline-block;
+}
+
+.more-info {
+	margin-top: 2%;
+	margin-bottom: 5%;
 }
 
 .example-img {
@@ -114,10 +116,14 @@ h1,h2,h3,h4 {
 }
 
 .light-back {
-	background-color: #15c188;
+	background-color: #ccc;
 	text-align: center;
 	min-height: 650px;
 	display: none;
+}
+
+#portfolio {
+	display: block;
 }
 
 .blog-img {
@@ -190,24 +196,19 @@ h1,h2,h3,h4 {
 	margin-top: 5%;
 }
 
-.search {
-	position: fixed;
-	z-index: 6;
+
+.slick-list {
+	margin-top: 7%;
 }
 
-#search-icon {
-	margin: 47% auto auto 85%;
+.search {
+	display: inline;
+	width: 100vw;
 }
 
 .search-class {
 	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
-}
-
-#search-div {
-	margin: 55% auto 5% auto;
-	display: none;
-	width: 100%;
 }
 
 .search-img {
@@ -238,7 +239,7 @@ h1,h2,h3,h4 {
 	border: 5px solid black;
 	text-align: center;
 	margin-left: 32%;
-	background-color: #ffd7a5;
+	background-color: white;
 }
 
 .slick-dotted.slick-slider {
@@ -269,7 +270,7 @@ h1,h2,h3,h4 {
 	.panel-group .panel+.panel {
 	margin-bottom: 0px;
 	margin-top: 0px;
-	background-color: #15c188;
+	background-color: #ccc;
 }
 
 

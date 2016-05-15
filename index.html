@@ -5,19 +5,37 @@
     <title>Jack Masterson - Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
-<div class="search" id="search-icon" data-bind="click: toggle.showSearch">
-	<h3 class="search-class">Search</h3>
-	<img class="search-img" src="img/search.png">
+<div class="intro">
+	<div class="shade">
+		<div class="basic-info" data-bind="foreach: model.contact">
+			<h1 class="name" data-bind="text: name"></h1>
+			<h3 data-bind="text: career"></h3>
+			<img class="head-shot" src="img/headshot.jpg">
+		</div>
+		<div data-bind="foreach: model.contact">
+			<div data-bind="foreach: imgNav">
+				<a target="_blank" data-bind="attr: { href: imgHref }">
+					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div data-bind="foreach: model.contact">
+	<h2 class="contact" data-bind="text: location"></h2>
+	<h2 class="contact" data-bind="text: cell"></h2>
+	<h2 class="contact" data-bind="text: email"></h2>
+</div>
+<div class="more-info">
+	<a data-bind="attr: { href: '#/' }, click: toggle.moreInfo">More Info</a>
 </div>
 <div class="search" id="search-div">
 	<div class="nav-head">
@@ -25,24 +43,6 @@
 			<a href="#/" class="scroll" data-bind="attr: { id: id }, click: toggle.slideIn">
 				<li class="nav" data-bind="text: title"></li>
 			</a>
-		</div>
-	</div>
-</div>
-<div class="intro">
-	<div class="shade">
-		<div class="basic-info" data-bind="foreach: model.contact">
-			<h1 class="name" data-bind="text: name"></h1>
-			<h2 class="name" data-bind="text: career"></h2>
-			<div data-bind="foreach: imgNav">
-				<a target="_blank" data-bind="attr: { href: imgHref }">
-					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
-				</a>
-			</div>
-			<div id="contact">
-				<h2 class="contact" data-bind="text: location"></h2>
-				<h2 class="contact" data-bind="text: cell"></h2>
-				<h2 class="contact" data-bind="text: email"></h2>
-			</div>
 		</div>
 	</div>
 </div>
@@ -113,9 +113,7 @@
 <div class="light-back" id="interests">
 	<h1 class="top-header">Other Interests</h1>
 	<div class="box" id="int-box" data-bind="foreach: model.interests">
-		<a href="#/">
-			<h1 class="int-head" data-bind="text: name, click: toggle.showCar"></h1>
-		</a>
+		<h1 class="int-head" data-bind="text: name"></h1>
 		<div class="blog-div" id="blog-ID" data-bind="if: blogs">
 			<div class="carousel" data-bind="foreach: blogs, attr: { id: id }, ">
 				<ul class="inline">
