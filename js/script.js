@@ -169,7 +169,7 @@ var model = {
 					name: 'Neighborhood Map',
 					url: 'https://cdn.rawgit.com/jackmasterson/NMap/master/index.html',
 					date: 'March 3 - May 10, 2016',
-					skills: ['Knockout/MVVM', ' 3rd-Party APIs'],
+					skills: ['Knockout/MVVM', ' 3rd-Party APIs', ' Autofill'],
 					description: "This project utilizes Knockout's" +
 						" MVVM approach to organizing code and I learned all" +
 						" about data-binding." +
@@ -183,14 +183,18 @@ var model = {
 						" and additional APIs that list upcoming" +
 						" concerts in the area, surfing conditions, and" +
 						" census information.",
-					img: 'img/map.jpg'
-		
+					img: [
+						{
+							first: 'img/map.jpg',
+							second: 'img/nmap2.jpg'
+						}
+					]
 				},
 				{
 					name: 'Arcade Game Clone',
 					url: 'https://rawgit.com/jackmasterson/Arcade-Game/master/Arcade Game/index.html',
 					date: 'January 8, 2015 - February 7, 2016',
-					skills: ['HTML Canvas', ' Separation of Concerns'],
+					skills: ['HTML5 Canvas', ' Separation of Concerns'],
 					description: 'According to the Udacity instructor who' +
 					' reviewed it, "excellently implemented game...I am really' +
 					' impressed by your work." This was a fun one. It took' +
@@ -203,7 +207,12 @@ var model = {
 					' levels down the road, a way to get an extra life, and a way' +
 					' to pick your character (my favorite is Iron Man). Give' +
 					' it a try and let me know what you think!',
-					img: 'img/project3.png',
+					img: [
+						{
+							first: 'img/arcade.png',
+							second: 'img/iron-arcade.png'
+						}
+					],
 					link: 'https://github.com/jackmasterson/Arcade-Game.git'
 				},
 				{
@@ -220,7 +229,12 @@ var model = {
 						' there is no more rewarding' +
 						' feeling than figuring out some code that has been' +
 						' eluding you for hours/months.',
-					img: 'img/ss7.png'
+					img: [
+						{
+							first: 'img/resume.png',
+							second: 'img/resume-work.png'
+						}
+					]
 				},
 			]
 		},
@@ -232,11 +246,16 @@ var model = {
 			examples: [
 				{
 					name: 'Pack-A-Day',
-					url: '#/',
+					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
 					date: 'Started April 30, 2016',
 					description: 'Filler text',
 					skills: ko.observable(''),
-					img: ''
+					img: [
+						{
+							first: 'img/packaday.png',
+							second: 'img/pack-school.png'
+						}
+					]
 				},
 				{
 					name: 'Shore Fun Improv',
@@ -244,7 +263,12 @@ var model = {
 					date: 'Started May 2, 2016',
 					description: 'It sure is fun!',
 					skills: ko.observable(''),
-					img: 'img/shoreFun.png'
+					img: [
+						{
+							first: 'img/improv-head.png',
+							second: 'img/improv.png'
+						}
+					]
 				},
 				{
 					name: 'Wedding Page - BARM',
@@ -252,7 +276,12 @@ var model = {
 					date: 'Started February 12, 2016',
 					description: 'Beth is getting married!',
 					skills: ko.observable(''),
-					img: ''
+					img: [
+						{
+							first: 'img/map.jpg',
+							second: 'img/nmap2.jpg'
+						}
+					]
 				}
 			]
 		},
@@ -273,12 +302,19 @@ var model = {
 						' someone could want when attending a wedding' +
 						' in the area.',
 					skills: ko.observable(''),
-					img: 'img/grub.png'
+					img: [
+						{
+							first: 'img/map.jpg',
+							second: 'img/nmap2.jpg'
+						}
+					]
 				}
 			]
 		}
 	]
 };
+
+
 
 var viewModel = {
 	init: function(){
