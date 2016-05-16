@@ -5,11 +5,22 @@
     <title>Jack Masterson - Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="css/style.css">
+    <script>
+    //includes the two other CSS files at the bottom of the page while still keeping them in the <head>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
 </head>
 <body>
 <div class="intro">
@@ -104,11 +115,11 @@
 		<ul class="edu-ul">
 			<img class="work-img" data-bind="attr: { src: img, id: id }">
 			<li class="work-li" data-bind="text: school"></li>
-			<li class="work-li">Degree: 
+			<li class="work-li" id="degree"> 
 				<span data-bind="text: focus"></span>
 			</li>
 			<li class="work-li" id="gpa"> 
-				<span data-bind="text: GPA"></span>
+				<span data-bind="text: heading"></span><span data-bind="text: GPA"></span>
 			</li>
 		</ul>
 	</div>
@@ -135,6 +146,17 @@
 			</div>
 		</div>
 	</div>
+	<h1 class="int-head">Improv Comedy</h1>
+	<ul class="improv-ul">
+		<li class="improv">Coaching,</li>
+		<li class="improv">Performing,</li>
+		<li class="improv">Goofing Off,</li>
+	</ul>
+	<ul class="improv-ul">
+		<img class="improv-img" src="img/coaching.jpg">
+		<img class="improv-img" src="img/performing.jpg">
+		<img class="improv-img" src="img/garbage.jpg">
+	</ul>
 </div>
 
 
@@ -143,7 +165,7 @@
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" async></script>
 
 </body>
 </html>

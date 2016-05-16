@@ -30,6 +30,26 @@ h1,h2,h3,h4 {
 	min-height: 80vh;
 }
 
+.basic-info {
+	color: white;
+}
+
+.head-shot {
+	height: 200px;
+	width: 150px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.more-info {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+
+
+
+
 .scroll {
 	width: 15%;
 	text-align: center;
@@ -45,18 +65,24 @@ h1,h2,h3,h4 {
 	color: rgba(255,235,205,1);
 }
 
+.nav-img {
+	height: 100px;
+	width: 100px;
+	margin: 3%;
+	display: inline-block;
+}
 
-.basic-info {
-	color: white;
+.contact {
+	color: #7e7e7e;
+	font-size: 20px;
+	line-height: 25px;
+	margin: auto;
+	margin-top: 0px;
+	padding: 0px;
 }
 
 
-.head-shot {
-	height: 200px;
-	width: 150px;
-	border: 1px solid gray;
-	border-radius: 15px;
-}
+
 
 .top-header {
 	font-size: 40px;
@@ -74,34 +100,19 @@ h1,h2,h3,h4 {
 	margin: 15px;
 }
 
-.contact {
-	color: #7e7e7e;
-	font-size: 20px;
-	line-height: 25px;
-	margin: auto;
-	margin-top: 0px;
-	padding: 0px;
-}
 
-.nav-img {
-	height: 100px;
-	width: 100px;
-	margin: 3%;
-	display: inline-block;
-}
+
+
 
 .nav-title {
 	display: inline-block;
 }
 
-.more-info {
-	margin-top: 2%;
-	margin-bottom: 5%;
-}
+
 
 .example-img {
 	height: 350px;
-	width: 450px;
+	width: 500px;
 	margin: 15px;
 }
 
@@ -158,6 +169,10 @@ h1,h2,h3,h4 {
 	text-align: left;
 }
 
+#degree {
+	font-size: 20px;
+}
+
 .work-img {
 	float: right;
 	height: 120px;
@@ -178,6 +193,7 @@ h1,h2,h3,h4 {
 
 #gpa {
 	width: 45%;
+	font-size: 20px;
 }
 
 .date {
@@ -273,7 +289,7 @@ h1,h2,h3,h4 {
 /* ------------- Bootstrap ------------*/
 
 #accordion {
-	margin: 20% 15% auto 15%;
+	margin: 12%;
 }
 
 #ud-head {
@@ -291,6 +307,20 @@ h1,h2,h3,h4 {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	background-color: #ccc;
+}
+
+.improv-ul {
+	padding-left: 0px;
+}
+
+.improv {
+	display: inline;
+	font-size: 20px;
+}
+
+.improv-img {
+	height: 150px;
+	width: 200px;
 }
 
 

@@ -33,6 +33,7 @@ var model = {
 			divID: 'contact'
 		}*/
 	],
+	background: ko.observable('img/computer.jpg'),
 	contact: [
 		{
 			name: 'Jack Masterson',
@@ -44,7 +45,7 @@ var model = {
 				{
 					title: 'linkedIn',
 					imgHref: 'https://linkedin.com/in/mastersonjack',
-					imgSrc: 'img/linkedIn.png',
+					imgSrc: 'img/linkedin.png',
 					id: 'linked'
 				},
 				{
@@ -80,20 +81,22 @@ var model = {
 		{
 			school: 'Boston College, cum laude',
 			focus: 'B.A., English',
-			skills: 'Effective Communication, In-Depth Analysis, Presentation Skills',
-			GPA: 'GPA: 3.646',
+			heading: 'GPA: ',
+			GPA: '3.646',
 			img: 'img/bc.png',
+			skills: 'Effective Communication, In-Depth Analysis, Presentation Skills',
 			id: 'bc'
 		},
 		{
 			school: 'Udacity',
 			focus: 'Nanodegree, Front End Web Development',
+			heading: 'Skills: ',
 			skills: {
 				languages: 'javascript, HTML5, CSS3',
-				frameworks: 'jQuery, Bootstrap',
-				other: 'GitHubKnockout, gulp, ngrok'
+				frameworks: 'jQuery, Bootstrap, ',
+				other: 'GitHub, Knockout, gulp, ngrok'
 			},
-			GPA: 'Skills: HTML5, CSS3, JavaScript, jQuery, Bootstrap' +
+			GPA: 'HTML5, CSS3, JavaScript, jQuery, Bootstrap, ' +
 				'ngrok, gulp, Slick, Knockout, MVVM practices',
 			img: 'img/udacity.png',
 			id: 'udacity'
@@ -127,7 +130,7 @@ var model = {
 					href: 'http://jackisabroad.blogspot.com/'
 				},
 			]
-		},
+		}/*,
 		{
 			name: 'Improv Comedy',
 			proof: 'Coaching, Teaching, Performing',
@@ -156,7 +159,7 @@ var model = {
 				}
 
 			]
-		}
+		}*/
 	],
 	projects: [
 		{
@@ -278,8 +281,8 @@ var model = {
 					skills: ko.observable(''),
 					img: [
 						{
-							first: 'img/map.jpg',
-							second: 'img/nmap2.jpg'
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
 						}
 					]
 				}
@@ -304,8 +307,8 @@ var model = {
 					skills: ko.observable(''),
 					img: [
 						{
-							first: 'img/map.jpg',
-							second: 'img/nmap2.jpg'
+							first: 'img/grub.png',
+							second: 'img/sass-beer.png'
 						}
 					]
 				}
@@ -419,5 +422,3 @@ var workScroll = {
 
 
 ko.applyBindings(viewModel.init());
-var cont = document.getElementById('contact');
-console.log(cont);
