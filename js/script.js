@@ -340,7 +340,7 @@ var model = {
 			examples: [
 				{
 					name: 'Wedding Page',
-					url: 'http://www.sarahandryantietheknot.com',
+					url: '#/',
 					date: 'November 15 - Dec 19, 2015',
 					description: 'Created a landing page for a wedding' +
 						' for a client that happens to be my sister. ' +
