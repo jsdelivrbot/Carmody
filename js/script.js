@@ -248,6 +248,19 @@ var model = {
 			id: 'prog-head',
 			examples: [
 				{
+					name: 'The Coffee Place',
+					url: 'https://rawgit.com/jackmasterson/bagels/master/index.html',
+					date: 'Started May 25, 2016',
+					description: 'Filler text',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/coffee-one.png',
+							second: 'img/coffee-two.png'
+						}
+					]
+				},
+				{
 					name: 'Pack-A-Day',
 					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
 					date: 'Started April 30, 2016',
@@ -272,7 +285,7 @@ var model = {
 							second: 'img/improv.png'
 						}
 					]
-				},
+				}/*,
 				{
 					name: 'Wedding Page - BARM',
 					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
@@ -285,7 +298,7 @@ var model = {
 							second: 'img/no-photos.png'
 						}
 					]
-				}
+				}*/
 			]
 		},
 		{
@@ -362,9 +375,17 @@ var toggle = {
 
 	},
 
+	scrollUp: function(clicked){
+		$('html, body').animate({
+			scrollTop: $('.scroll').offset().top
+		}, 800);
+	},
+
 	portTog: function(clicked){
 		console.log(clicked);
 		$('.port-sect').hide();
+		$('.explain').hide();
+		$('.scroll').show();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 
