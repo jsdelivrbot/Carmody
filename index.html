@@ -97,7 +97,9 @@
 	<div class="box" data-bind="foreach: model.education">
 		<ul class="edu-ul">
 			<img class="work-img" data-bind="attr: { src: img, id: id }">
-			<li class="work-li" data-bind="text: school"></li>
+			<li class="work-li">
+				<a target="_blank" data-bind="attr: { href: url }, text: school"></a>
+			</li>
 			<li class="work-li" id="degree"> 
 				<span data-bind="text: focus"></span>
 			</li>

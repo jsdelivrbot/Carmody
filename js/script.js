@@ -79,16 +79,18 @@ var model = {
 	],
 	education: [
 		{
-			school: 'Boston College, cum laude',
+			school: 'Boston College',
+			url: 'http://www.bc.edu/',
 			focus: 'B.A., English',
 			heading: 'GPA: ',
-			GPA: '3.646',
+			GPA: '3.646, cum laude',
 			img: 'img/bc.png',
 			skills: 'Effective Communication, In-Depth Analysis, Presentation Skills',
 			id: 'bc'
 		},
 		{
 			school: 'Udacity',
+			url: 'https://www.udacity.com',
 			focus: 'Nanodegree, Front End Web Development',
 			heading: 'Skills: ',
 			skills: {
