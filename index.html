@@ -60,52 +60,11 @@
 
 <div class="light-back" id="portfolio">
 	<h1 class="top-header">Portfolio</h1>
-	<h4 class="raw-head">Note: Links through RawGit move a little slow sometimes</h4>
-	<div class="panel-group" id="accordion" data-bind="foreach: model.projects">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-            	<h2 data-bind="attr: { id: id }">
-            		<a data-toggle="collapse" data-parent="#accordion" data-bind="attr: { href: clickHref }, text: title"></a>
-            	</h2>
-            </div>
-            <div data-bind="attr: { id: href }" class="panel-collapse collapse">
-            	<div class="panel-body" data-bind="foreach: examples">
-            		<a target="_blank" data-bind="attr: { href: url }">
-            			<br>
-            			<span class="port-name" data-bind="text: name"></span>
-            		</a>
-            		<span class="port-date" data-bind="text: date"></span>
-            		<h3 class="port-skills" data-bind="if: skills">Quick Skills: 
-            			<h4 data-bind="text: skills"></h4>
-            		</h3>
-            		<span data-bind="foreach: img">
-	            		<img class="example-img" data-bind="attr: { src: first }">
-	            		<img class="example-img" id="ex-img-last" data-bind="attr: { src: second }">
-            		</span>
-            	</div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="light-back" id="work-info">
-	<h1 class="top-header">Work Experience</h1>
-	<div class="box" data-bind="foreach: model.experience">
-		<ul class="work-ul">
-			<img class="work-img" data-bind="attr: { src: img, id: id }">
-			<li class="work-li">
-				<span class="employer" data-bind="text: employer">:</span> <span class="date" data-bind="text: date"></span>
+	<div class="top-header sub">
+		<ul data-bind="foreach: model.projects">
+			<li data-bind="attr: { id: id }" class="port nav">
+				<a data-bind="attr: { href: clickHref }, text: title"></a>
 			</li>
-			<li class="work-li" >Title: 
-				<span data-bind="text: title"></span>
-
-			</li>
-			<li class="work-li" >Skills: 
-				<span data-bind="text: skills"></span>
-			</li>
-			<li class="work-li" >Job Description: 
-				<span data-bind="text: description"></span>
-			</li>
-			
 		</ul>
 	</div>
 </div>
