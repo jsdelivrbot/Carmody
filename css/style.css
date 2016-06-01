@@ -18,6 +18,11 @@ h1,h2,h3,h4 {
 	margin-top: 0px;
 }
 
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
 .intro {
   background: url(..//img/computer.jpg) no-repeat center center fixed; 
   min-height: 80vh;
@@ -70,6 +75,12 @@ h1,h2,h3,h4 {
 	width: 100px;
 	margin: 3%;
 	display: inline-block;
+}
+
+.port {
+	font-size: 20px;
+	margin: 2% 5% 2% 5%;
+	color: black;
 }
 
 .contact {
