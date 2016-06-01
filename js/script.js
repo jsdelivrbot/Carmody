@@ -362,8 +362,12 @@ var toggle = {
 
 	},
 
-	showCar: function(clicked) {
+	portTog: function(clicked){
 		console.log(clicked);
+	},
+
+	showCar: function(clicked) {
+	//	console.log(clicked);
 		var clickedID="#" + clicked.id;
 
 		$(clickedID).fadeToggle();
