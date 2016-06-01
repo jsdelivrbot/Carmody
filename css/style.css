@@ -83,6 +83,18 @@ ul {
 	color: black;
 }
 
+#collapseThree {
+	display: none;
+}
+
+#collapseTwo {
+	display: none;
+}
+
+#collapseOne {
+	display: none;
+}
+
 .contact {
 	color: #7e7e7e;
 	font-size: 20px;

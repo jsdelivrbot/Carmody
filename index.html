@@ -68,19 +68,21 @@
 		</ul>
 	</div>
 	<div data-bind="foreach: model.projects">
-		<div data-bind="foreach: examples">
-			<a target="_blank" data-bind="attr: { href: url }">
-				<br>
-				<span class="port-name" data-bind="text: name"></span>
-			</a>
-			<span class="port-date" data-bind="text: date"></span>
-			<h3 class="port-skills" data-bind="if: skills">Quick Skills:
-				<h4 data-bind="text: skills"></h4>
-			</h3>
- 			<span data-bind="foreach: img">
-        		<img class="example-img" data-bind="attr: { src: first }">
-        		<img class="example-img" id="ex-img-last" data-bind="attr: { src: second }">
-    		</span>
+		<div data-bind="attr: { id: href }" class="port-sect">
+			<div data-bind="foreach: examples">	
+				<a target="_blank" data-bind="attr: { href: url }">
+					<br>
+					<span class="port-name" data-bind="text: name"></span>
+				</a>
+				<span class="port-date" data-bind="text: date"></span>
+				<h3 class="port-skills" data-bind="if: skills">Quick Skills:
+					<h4 data-bind="text: skills"></h4>
+				</h3>
+	 			<span data-bind="foreach: img">
+	        		<img class="example-img" data-bind="attr: { src: first }">
+	        		<img class="example-img" id="ex-img-last" data-bind="attr: { src: second }">
+	    		</span>
+    		</div>
     	</div>
 	</div>
 </div>
