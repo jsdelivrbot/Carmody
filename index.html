@@ -114,40 +114,7 @@
 		</ul>
 	</div>
 </div>
-<div class="light-back" id="interests">
-	<h1 class="top-header">Other Interests</h1>
-	<div class="box" id="int-box" data-bind="foreach: model.interests">
-		<h1 class="int-head" data-bind="text: name"></h1>
-		<div class="blog-div" id="blog-ID" data-bind="if: blogs">
-			<div class="carousel" data-bind="foreach: blogs, attr: { id: id }, ">
-				<ul class="inline">
-					<li>
-						<a target="_blank" data-bind="attr: { href: href }">
-							<h2 data-bind="text: title"></h2>
-						</a>
-					</li>
-					<li>
-						<img class="blog-img" data-bind="attr: { src: src }">
-					</li>
-					<li class="inline-head">
-						<h3 data-bind="text: style"></h3>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<h1 class="int-head">Improv Comedy</h1>
-	<ul class="improv-ul">
-		<li class="improv">Coaching,</li>
-		<li class="improv">Performing,</li>
-		<li class="improv">Goofing Off,</li>
-	</ul>
-	<ul class="improv-ul">
-		<img class="improv-img" src="img/coaching.jpg">
-		<img class="improv-img" src="img/performing.jpg">
-		<img class="improv-img" src="img/garbage.jpg">
-	</ul>
-</div>
+
 
 
 <script src="js/lib/knockout-3.2.0.js"></script>
