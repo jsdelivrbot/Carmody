@@ -155,6 +155,11 @@ ul {
 	margin-bottom: 10vh;
 }
 
+.port-img {
+	height: 150px;
+	width: 150px;
+}
+
 .description {
 	margin: auto 5% 5% 5%;
 }

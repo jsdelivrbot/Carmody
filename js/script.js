@@ -169,6 +169,7 @@ var model = {
 			href: 'collapseOne',
 			clickHref: '#collapseOne',
 			id: 'ud-head',
+			src: 'img/udacity.png',
 			examples: [
 				{
 					name: 'Calorie Tracker Health App',
@@ -274,6 +275,7 @@ var model = {
 			href: 'collapseTwo',
 			clickHref: '#collapseTwo',
 			id: 'prog-head',
+			src: 'img/hammer.png',
 			examples: [
 				{
 					name: 'The Coffee Place',
@@ -334,6 +336,7 @@ var model = {
 			href: 'collapseThree',
 			clickHref: '#collapseThree',
 			id: 'pub-head',
+			src: 'img/book.png',
 			examples: [
 				{
 					name: 'Wedding Page',
@@ -414,6 +417,7 @@ var toggle = {
 		$('.port-sect').hide();
 		$('.explain').hide();
 		$('.scroll-up').show();
+		$('.port-nav-img-div').hide();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 

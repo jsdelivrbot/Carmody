@@ -66,6 +66,11 @@
 				<a data-bind="click: toggle.portTog, text: title"></a>
 			</li>
 		</ul>
+		<ul class="port-nav-img-div" data-bind="foreach: model.projects">
+			<li class="port nav">
+				<img class="port-img" data-bind="attr: { src: src }">
+			</li>
+		</ul>
 	</div>
 	<div data-bind="foreach: model.projects">
 		<div data-bind="attr: { id: href }" class="port-sect">
