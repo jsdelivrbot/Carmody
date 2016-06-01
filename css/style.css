@@ -118,6 +118,18 @@ ul {
 	padding-bottom: 20px;
 }
 
+.explain {
+	margin-top: 10vh;
+	font-size: 20px;
+	padding: 15vw;
+	padding-top: 0;
+}
+
+.scroll {
+	display: none;
+	padding-bottom: 15px;
+}
+
 .raw-head {
 	border: none;
 	margin: 15px;
@@ -134,13 +146,13 @@ ul {
 
 
 .example-img {
-	height: 350px;
-	width: 500px;
+	height: 40vh;
+	width: 40vw;
 	margin: 15px;
 }
 
-#ex-img-last {
-	margin-bottom: 15%;
+.port-img-div {
+	margin-bottom: 10vh;
 }
 
 .description {
@@ -207,6 +219,7 @@ ul {
 	text-align: center;
 	font-size: 25px;
 	margin-bottom: 6%;
+	padding-left: 3%;
 }
 
 #workman {
