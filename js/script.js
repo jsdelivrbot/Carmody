@@ -169,6 +169,32 @@ var model = {
 			id: 'ud-head',
 			examples: [
 				{
+					name: 'Calorie Tracker Health App',
+					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
+					date: 'May 20 - May 30, 2016',
+					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/calorie-two.png',
+							second: 'img/calorie-one.png'
+						}
+					]
+				},
+				{
+					name: 'Writing Tests',
+					url: 'https://rawgit.com/jackmasterson/jasmine/master/index.html',
+					date: 'May 18 - May 28, 2016',
+					skills: ['Jasmine', ' Test-Driven Development'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/jasmine-one.png',
+							second: 'img/jasmine-two.png'
+						}
+					]
+				},
+				{
 					name: 'Neighborhood Map',
 					url: 'https://cdn.rawgit.com/jackmasterson/NMap/master/index.html',
 					date: 'March 3 - May 10, 2016',
