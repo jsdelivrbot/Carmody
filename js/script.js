@@ -364,6 +364,13 @@ var toggle = {
 
 	portTog: function(clicked){
 		console.log(clicked);
+		$('.port-sect').hide();
+		//$('#collapseThree').fadeIn();
+		var clickedID = "#" + clicked.href;
+
+	//	console.log(this);
+		//console.log(this);
+		$(clickedID).fadeIn('slow', function(){});
 	},
 
 	showCar: function(clicked) {
