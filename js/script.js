@@ -19,13 +19,13 @@ var model = {
 			head: ko.observable(''),
 			id: 'port',
 			divID: 'portfolio'
-		},
+		}/*,
 		{
 			title: ko.observable('Other Interests'),
 			head: ko.observable(''),
 			id: 'other',
 			divID: 'interests'
-		}/*,
+		},
 		{
 			title: ko.observable('Contact'),
 			head: ko.observable(''),
@@ -385,7 +385,7 @@ var toggle = {
 		console.log(clicked);
 		$('.port-sect').hide();
 		$('.explain').hide();
-		$('.scroll').show();
+		$('.scroll-up').show();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 
