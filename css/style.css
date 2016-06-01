@@ -86,9 +86,9 @@ h1,h2,h3,h4 {
 
 .top-header {
 	font-size: 40px;
-	background-color: rgba(0,0,0,0.7);
+	background-color: #ccc;
 	width: 100%;
-	color: white;
+	color: black;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 20px;
@@ -262,6 +262,7 @@ h1,h2,h3,h4 {
     width: 100%;
     height: 100%;
     overflow: hidden;  
+
 }
 
 #blog-ID {
@@ -290,6 +291,7 @@ h1,h2,h3,h4 {
 
 #accordion {
 	margin: 12%;
+	background-color: #ccc;
 }
 
 #ud-head {
