@@ -71,19 +71,25 @@
 		<div data-bind="attr: { id: href }" class="port-sect">
 			<div data-bind="foreach: examples">	
 				<a target="_blank" data-bind="attr: { href: url }">
-					<br>
 					<span class="port-name" data-bind="text: name"></span>
 				</a>
 				<span class="port-date" data-bind="text: date"></span>
 				<h3 class="port-skills" data-bind="if: skills">Quick Skills:
 					<h4 data-bind="text: skills"></h4>
 				</h3>
-	 			<span data-bind="foreach: img">
+	 			<div data-bind="foreach: img" class="port-img-div">
 	        		<img class="example-img" data-bind="attr: { src: first }">
-	        		<img class="example-img" id="ex-img-last" data-bind="attr: { src: second }">
-	    		</span>
+	        		<img class="example-img" data-bind="attr: { src: second }">
+	    		</div>
+	    		<br>
     		</div>
     	</div>
+	</div>
+	<div class="explain">
+		<p>Click on any of the blue links to see what I've done, either for class, for clients, or for practice.</p>
+	</div>
+	<div class="scroll" data-bind="click: toggle.scrollUp">
+		<h4>Back to the Top</h4>
 	</div>
 </div>
 <div class="light-back" id="education">
