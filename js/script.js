@@ -271,7 +271,7 @@ var model = {
 			]
 		},
 		{
-			title: 'Works in Progress',
+			title: 'Templates',
 			href: 'collapseTwo',
 			clickHref: '#collapseTwo',
 			id: 'prog-head',
@@ -305,6 +305,80 @@ var model = {
 				},
 				{
 					name: 'Shore Fun Improv',
+					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
+					date: 'Started May 2, 2016',
+					description: 'It sure is fun!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/improv-head.png',
+							second: 'img/improv.png'
+						}
+					]
+				},
+				{
+					name: 'Cooking Template',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
+					date: 'Started February 12, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
+						}
+					]
+				},
+				{
+					name: 'Bar Template',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
+					date: 'Started February 12, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
+						}
+					]
+				}
+			]
+		},
+		{
+			title: 'APIs',
+			href: 'collapseFour',
+			clickHref: '#collapseFour',
+			id: 'prog-head',
+			src: 'img/hammer.png',
+			examples: [
+				{
+					name: 'Health App',
+					url: 'https://rawgit.com/jackmasterson/bagels/master/index.html',
+					date: 'Started May 25, 2016',
+					description: 'Filler text',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/coffee-one.png',
+							second: 'img/coffee-two.png'
+						}
+					]
+				},
+				{
+					name: 'Music App',
+					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
+					date: 'Started April 30, 2016',
+					description: 'Filler text',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/packaday.png',
+							second: 'img/pack-school.png'
+						}
+					]
+				},
+				{
+					name: 'Cause of Death App',
 					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
 					date: 'Started May 2, 2016',
 					description: 'It sure is fun!',
