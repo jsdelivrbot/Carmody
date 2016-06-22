@@ -23,6 +23,10 @@ ul {
 	padding-left: 0;
 }
 
+a {
+ 	cursor: pointer;
+}
+
 .intro {
   background: url(..//img/computer.jpg) no-repeat center center fixed; 
   min-height: 80vh;
@@ -68,6 +72,7 @@ ul {
 .nav {
 	display: inline-block;
 	color: rgba(255,235,205,1);
+	margin-left: 0;
 }
 
 .nav-img {
@@ -92,6 +97,10 @@ ul {
 }
 
 #collapseOne {
+	display: none;
+}
+
+#collapseFour {
 	display: none;
 }
 
@@ -128,6 +137,7 @@ ul {
 .scroll-up {
 	display: none;
 	padding-bottom: 15px;
+	cursor: pointer;
 }
 
 .raw-head {
@@ -156,8 +166,8 @@ ul {
 }
 
 .port-img {
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 }
 
 .description {
@@ -260,6 +270,11 @@ ul {
 .port-name {
 	font-size: 25px;
 	margin-right: 20%;
+}
+
+.port-nav-img-div {
+	margin-left: 0;
+	padding-left: 0;
 }
 
 .port-skills {

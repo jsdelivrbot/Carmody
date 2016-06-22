@@ -172,19 +172,6 @@ var model = {
 			src: 'img/udacity.png',
 			examples: [
 				{
-					name: 'Calorie Tracker Health App',
-					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
-					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
-					description: "Filler Text",
-					img: [
-						{
-							first: 'img/calorie-two.png',
-							second: 'img/calorie-one.png'
-						}
-					]
-				},
-				{
 					name: 'Writing Tests',
 					url: 'https://rawgit.com/jackmasterson/jasmine/master/index.html',
 					date: 'May 18 - May 28, 2016',
@@ -274,13 +261,13 @@ var model = {
 			title: 'Templates',
 			href: 'collapseTwo',
 			clickHref: '#collapseTwo',
-			id: 'prog-head',
+			id: 'temp-head',
 			src: 'img/hammer.png',
 			examples: [
 				{
 					name: 'The Coffee Place',
 					url: 'https://rawgit.com/jackmasterson/bagels/master/index.html',
-					date: 'Started May 25, 2016',
+					date: 'May 22 - May 31, 2016',
 					description: 'Filler text',
 					skills: ko.observable(''),
 					img: [
@@ -306,7 +293,7 @@ var model = {
 				{
 					name: 'Shore Fun Improv',
 					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
-					date: 'Started May 2, 2016',
+					date: 'Mar 4 - May 6, 2016',
 					description: 'It sure is fun!',
 					skills: ko.observable(''),
 					img: [
@@ -318,26 +305,26 @@ var model = {
 				},
 				{
 					name: 'Cooking Template',
-					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
-					date: 'Started February 12, 2016',
+					url: 'https://rawgit.com/jackmasterson/cooking/noNav/index.html',
+					date: 'June 6 - June 7, 2016',
 					description: 'Beth is getting married!',
 					skills: ko.observable(''),
 					img: [
 						{
-							first: 'img/no-photos.png',
-							second: 'img/no-photos.png'
+							first: 'img/cookingOne.png',
+							second: 'img/cookingTwo.png'
 						}
 					]
 				},
 				{
 					name: 'Bar Template',
-					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
-					date: 'Started February 12, 2016',
+					url: 'https://rawgit.com/jackmasterson/bars/master/index.html',
+					date: 'June 7, 2016',
 					description: 'Beth is getting married!',
 					skills: ko.observable(''),
 					img: [
 						{
-							first: 'img/no-photos.png',
+							first: 'img/barOne.png',
 							second: 'img/no-photos.png'
 						}
 					]
@@ -348,45 +335,45 @@ var model = {
 			title: 'APIs',
 			href: 'collapseFour',
 			clickHref: '#collapseFour',
-			id: 'prog-head',
-			src: 'img/hammer.png',
+			id: 'api-head',
+			src: 'img/globe.png',
 			examples: [
 				{
-					name: 'Health App',
-					url: 'https://rawgit.com/jackmasterson/bagels/master/index.html',
-					date: 'Started May 25, 2016',
-					description: 'Filler text',
-					skills: ko.observable(''),
+					name: 'Calorie Tracker Health App',
+					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
+					date: 'May 20 - May 30, 2016',
+					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
+					description: "Filler Text",
 					img: [
 						{
-							first: 'img/coffee-one.png',
-							second: 'img/coffee-two.png'
+							first: 'img/calorie-two.png',
+							second: 'img/calorie-one.png'
 						}
 					]
 				},
 				{
 					name: 'Music App',
-					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
-					date: 'Started April 30, 2016',
+					url: '#/',
+					date: 'Started June 10, 2016',
 					description: 'Filler text',
-					skills: ko.observable(''),
+					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
 					img: [
 						{
-							first: 'img/packaday.png',
-							second: 'img/pack-school.png'
+							first: 'img/musicTwo.png',
+							second: 'img/musicOne.png'
 						}
 					]
 				},
 				{
 					name: 'Cause of Death App',
-					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
-					date: 'Started May 2, 2016',
+					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
+					date: 'Started June 17, 2016',
 					description: 'It sure is fun!',
-					skills: ko.observable(''),
+					skills: ['Google Charts API', ' Socrata ODN API'],
 					img: [
 						{
-							first: 'img/improv-head.png',
-							second: 'img/improv.png'
+							first: 'img/deathOne.png',
+							second: 'img/no-photos.png'
 						}
 					]
 				}/*,
@@ -413,7 +400,7 @@ var model = {
 			src: 'img/book.png',
 			examples: [
 				{
-					name: 'Wedding Page',
+					name: 'Wedding Page One',
 					url: '#/',
 					date: 'November 15 - Dec 19, 2015',
 					description: 'Created a landing page for a wedding' +
@@ -422,11 +409,24 @@ var model = {
 						' and any and all information' +
 						' someone could want when attending a wedding' +
 						' in the area.',
-					skills: ko.observable(''),
+					skills: 'For privacy, I have not included a link to this page.',
 					img: [
 						{
 							first: 'img/grub.png',
 							second: 'img/sass-beer.png'
+						}
+					]
+				},
+				{
+					name: 'Wedding Page Two',
+					url: '#/',
+					date: 'Started May 31, 2016',
+					description: 'Filler Text',
+					skills: 'For privacy, I have not included a link to this page.',
+					img: [
+						{
+							first: 'img/weddingOne.png',
+							second: 'img/weddingTwo.png'
 						}
 					]
 				}
