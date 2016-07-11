@@ -39,7 +39,7 @@ var model = {
 			name: 'Jack Masterson',
 			career: 'Front End Web Developer',
 			location: 'Greater New York City Area',
-			cell: '908-433-0178',
+			cell: '',
 			email: 'jackmasterson5@gmail.com',
 			imgNav: [
 				{
@@ -278,6 +278,32 @@ var model = {
 					]
 				},
 				{
+					name: 'Bar Template',
+					url: 'https://rawgit.com/jackmasterson/bars/master/index.html',
+					date: 'June 7, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/barOne.png',
+							second: 'img/barTwo.png'
+						}
+					]
+				},
+				{
+					name: 'Cooking Template',
+					url: 'https://rawgit.com/jackmasterson/cooking/noNav/index.html',
+					date: 'June 6 - June 7, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/cookingOne.png',
+							second: 'img/cookingTwo.png'
+						}
+					]
+				},
+				{
 					name: 'Pack-A-Day',
 					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
 					date: 'Started April 30, 2016',
@@ -300,32 +326,6 @@ var model = {
 						{
 							first: 'img/improv-head.png',
 							second: 'img/improv.png'
-						}
-					]
-				},
-				{
-					name: 'Cooking Template',
-					url: 'https://rawgit.com/jackmasterson/cooking/noNav/index.html',
-					date: 'June 6 - June 7, 2016',
-					description: 'Beth is getting married!',
-					skills: ko.observable(''),
-					img: [
-						{
-							first: 'img/cookingOne.png',
-							second: 'img/cookingTwo.png'
-						}
-					]
-				},
-				{
-					name: 'Bar Template',
-					url: 'https://rawgit.com/jackmasterson/bars/master/index.html',
-					date: 'June 7, 2016',
-					description: 'Beth is getting married!',
-					skills: ko.observable(''),
-					img: [
-						{
-							first: 'img/barOne.png',
-							second: 'img/no-photos.png'
 						}
 					]
 				}
@@ -373,7 +373,20 @@ var model = {
 					img: [
 						{
 							first: 'img/deathOne.png',
-							second: 'img/no-photos.png'
+							second: 'img/deathTwo.png'
+						}
+					]
+				},
+				{
+					name: 'Sports Draft App',
+					url: '#/',
+					date: 'Started June 25, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Geolocation', ' Fantasy Football API'],
+					img: [
+						{
+							first: 'img/sportsOne.png',
+							second: 'img/sportsTwo.png'
 						}
 					]
 				}/*,
@@ -534,22 +547,6 @@ var toggle = {
     }
 };
 
-$(document).ready(function(){
-	$('.carousel').slick({
-		  infinite: false,
-		  dots: true,
-		  speed: 500,
-		  arrows: true
-
-      });
-
-      $('#other').click(function(){
-      	$('#interests').resize();
-      });
-
-
-
-});
 
 var workScroll = {
 
