@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
-
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
     //includes the two other CSS files at the bottom of the page while still keeping them in the <head>
       var cb = function() {
@@ -36,12 +35,10 @@
 				</a>
 			</div>
 		</div>
-
 	</div>
 </div>
 <div data-bind="foreach: model.contact">
 	<h2 class="contact" data-bind="text: location"></h2>
-	<h2 class="contact" data-bind="text: cell"></h2>
 	<h2 class="contact" data-bind="text: email"></h2>
 </div>
 <div class="more-info">
