@@ -39,7 +39,7 @@ var model = {
 			name: 'Jack Masterson',
 			career: 'Front End Web Developer',
 			location: 'Greater New York City Area',
-			cell: '',
+			cell: '(908)433-0178',
 			email: 'jackmasterson5@gmail.com',
 			imgNav: [
 				{
