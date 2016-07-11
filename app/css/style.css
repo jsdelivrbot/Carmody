@@ -1,2 +1,381 @@
-.testing {
-  width: 71.42857%; }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: Open Sans;
+	text-align: center;
+	vertical-align: middle;
+    list-style-type: none;
+}
+
+body {
+	overflow: scroll;
+	margin: 0px;
+}
+
+h1,h2,h3,h4 {
+	margin-top: 0px;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+a {
+ 	cursor: pointer;
+}
+
+.intro {
+  background: url(..//img/computer.jpg) no-repeat center center fixed; 
+  min-height: 80vh;
+  min-width: 100vw;
+  z-index: 5;
+}
+
+.shade {
+	background-color: rgba(21, 193, 136, 0.4);
+	min-height: 80vh;
+}
+
+.basic-info {
+	color: white;
+}
+
+.head-shot {
+	height: 200px;
+	width: 150px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.more-info {
+	margin-bottom: 5%;
+}
+
+
+
+
+
+.scroll {
+	width: 15%;
+	text-align: center;
+	margin: 0% 5.5% 0% 5.5%;
+}
+
+.nav-head {
+	background-color: #15c188;
+}
+
+.nav {
+	display: inline-block;
+	color: rgba(255,235,205,1);
+	margin-left: 0;
+}
+
+.nav-img {
+	height: 100px;
+	width: 100px;
+	margin: 3%;
+	display: inline-block;
+}
+
+.port {
+	font-size: 20px;
+	margin: 2% 5% 2% 5%;
+	color: black;
+}
+
+#collapseThree {
+	display: none;
+}
+
+#collapseTwo {
+	display: none;
+}
+
+#collapseOne {
+	display: none;
+}
+
+#collapseFour {
+	display: none;
+}
+
+.contact {
+	color: #7e7e7e;
+	font-size: 20px;
+	line-height: 25px;
+	margin: auto;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+
+
+
+.top-header {
+	font-size: 40px;
+	background-color: #ccc;
+	width: 100%;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.explain {
+	margin-top: 10vh;
+	font-size: 20px;
+	padding: 15vw;
+	padding-top: 0;
+}
+
+.scroll-up {
+	display: none;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+
+.raw-head {
+	border: none;
+	margin: 15px;
+}
+
+
+
+
+
+.nav-title {
+	display: inline-block;
+}
+
+
+
+.example-img {
+	height: 40vh;
+	width: 40vw;
+	margin: 15px;
+}
+
+.port-img-div {
+	margin-bottom: 10vh;
+}
+
+.port-img {
+	height: 100px;
+	width: 100px;
+}
+
+.description {
+	margin: auto 5% 5% 5%;
+}
+
+.header {
+	font-size: 25px;
+	min-width: 100%;
+	background-color: rgba(0,0,0,.7);
+}
+
+.light-back {
+	background-color: #ccc;
+	text-align: center;
+	min-height: 650px;
+	display: none;
+}
+
+#portfolio {
+	display: block;
+}
+
+.blog-img {
+	height: 75px;
+	width: 75px;
+	border-radius: 100%;
+	margin-left: 35%;
+}
+
+#interests {
+	height: 1000px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.inline-head {
+	margin-bottom: 15%;
+}
+
+.work-ul {
+	font-size: 25px;
+	margin-bottom: 4%;
+}
+
+.work-li {
+	text-align: left;
+}
+
+#degree {
+	font-size: 20px;
+}
+
+.work-img {
+	float: right;
+	height: 120px;
+	width: 120px;
+	margin-right: 3%;
+}
+
+.edu-ul {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 6%;
+	padding-left: 3%;
+}
+
+#workman {
+	height: 50px;
+	width: 175px;
+}
+
+#gpa {
+	width: 45%;
+	font-size: 20px;
+}
+
+.date {
+	font-style: italic;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.employer {
+	font-size: 30px;
+}
+
+.box {
+	width: 100%;
+	min-height: 300px;
+	margin-top: 9%;
+}
+
+.int-head {
+	margin-top: 5%;
+}
+
+.port-name {
+	font-size: 25px;
+	margin-right: 20%;
+}
+
+.port-nav-img-div {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.port-skills {
+	font-size: 20px;
+	margin-top: 5%;
+}
+
+.port-date {
+	font-size: 15px;
+	text-align: right;
+	font-style: italic;
+	margin-left: 13%;
+}
+
+.slick-list {
+	margin-top: 7%;
+}
+
+.search {
+	display: inline;
+	width: 100vw;
+}
+
+.search-class {
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+.search-img {
+	height: 75px;
+	width: 75px;
+}
+
+
+
+/* ---------------Slider --------------------*/
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+
+}
+
+#blog-ID {
+	padding: 0px;
+}
+
+.carousel {
+	height: 250px;
+	width: 350px;
+	font-size: 15px;
+	border: 5px solid black;
+	text-align: center;
+	margin-left: 33vw;
+	background-color: white;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0px;
+}
+
+.inline, .slick-slide {
+	padding-left: 10px;
+}
+
+/* ------------- Bootstrap ------------*/
+
+#accordion {
+	margin: 12%;
+	background-color: #ccc;
+}
+
+#ud-head {
+	text-align: left;
+	margin-left: 2%;
+}
+
+#pub-head {
+	text-align: right;
+	margin-right: 2%;
+}
+
+.panel-group, .panel-heading, div.panel.panel-default,
+	.panel-group .panel+.panel {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: #ccc;
+}
+
+.improv-ul {
+	padding-left: 0px;
+}
+
+.improv {
+	display: inline;
+	font-size: 20px;
+}
+
+.improv-img {
+	height: 150px;
+	width: 200px;
+}
