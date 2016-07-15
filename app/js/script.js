@@ -514,6 +514,7 @@ var toggle = {
 		$('.search').show();
 		$('.scroll').show();
 		$('.intro').hide();
+		$('#port').css('color', 'gray');
 		/*function(){
 			$('.search').show('fast')
 			$('html, body').animate({
