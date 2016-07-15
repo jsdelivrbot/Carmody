@@ -563,7 +563,11 @@ var toggle = {
 		$('.search').show();
 		$('.scroll').show();
 		$('.intro').hide();
+		$('.nav').css('color', 'black');
 		$('#port').css('color', 'gray');
+		$('.examples').hide();
+		$('.divide-hide').show();
+		$('.scroll-up').hide();
 
 		/*function(){
 			$('.search').show('fast')
