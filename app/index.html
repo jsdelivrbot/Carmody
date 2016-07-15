@@ -36,21 +36,6 @@
 		</div>
 	</div>
 </div>
-<div class="intro-sub" data-bind="foreach: model.contact">
-	<div data-bind="foreach: imgNav">
-		<ul class="imgNav-div">
-			<li>
-				<a target="_blank" data-bind="attr: { href: imgHref }">
-					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
-				</a>
-			</li>
-			<li>
-				<h3 class="img-header" data-bind="text: title"></h3>
-			</li>
-		</ul>
-	</div>
-</div>
-
 <div class="search" id="search-div">
 	<div class="nav-head">
 		<div class="header" data-bind="foreach: model.sections">
@@ -60,7 +45,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="light-back" id="portfolio">
 	<div class="top-header sub">
 		<ul data-bind="foreach: model.projects">
@@ -92,9 +76,6 @@
     		</div>
     	</div>
 	</div>
-	<div class="explain">
-		<p>Click on any of the blue links to see what I've done, either for class, for clients, or for practice.</p>
-	</div>
 	<div class="scroll-up" data-bind="click: toggle.scrollUp">
 		<h4>Back to the Top</h4>
 	</div>
@@ -115,6 +96,23 @@
 		</ul>
 	</div>
 </div>
+<div class="intro-sub" data-bind="foreach: model.contact">
+	<div data-bind="foreach: imgNav">
+		<ul class="imgNav-div">
+			<li>
+				<a target="_blank" data-bind="attr: { href: imgHref }">
+					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
+				</a>
+			</li>
+			<li>
+				<h3 class="img-header" data-bind="text: title"></h3>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
 
 
 <!--build:js js/script.min.js -->

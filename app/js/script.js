@@ -501,7 +501,7 @@ var toggle = {
 		$(clickedHeadID).css('color', 'gray');
 		if(this.divID === 'intro'){
 			$('.scroll').hide();
-			document.location.href="/"
+			document.location.href="#/"
 		}
 		
 

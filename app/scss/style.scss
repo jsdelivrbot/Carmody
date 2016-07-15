@@ -39,9 +39,9 @@ a {
 	height: 73vh;
 }
 
+
 .intro-sub {
 	height: 28vh;
-	padding-top: 3vh;
 }
 
 .basic-info {
@@ -76,8 +76,6 @@ a {
 }
 
 .nav-head {
-	border-top: 1px solid rgba(0,0,0,0.5);
-	border-bottom: 1px solid rgba(0,0,0,0.5);
 	background-color: white;
 
 }
@@ -139,7 +137,7 @@ a {
 	background-color: #ccc;
 	width: 100%;
 	color: black;
-	margin-top: 0px;
+	margin-top: 15vh;
 	margin-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -206,7 +204,7 @@ a {
 
 .light-back {
 	text-align: center;
-	min-height: 650px;
+	height: 52vh;
 	display: none;
 }
 
@@ -256,6 +254,11 @@ a {
 	padding-left: 3%;
 }
 
+#education {
+	margin-bottom: 10vh;
+	margin-top: 5vh;
+}
+
 #workman {
 	height: 50px;
 	width: 175px;
@@ -277,17 +280,13 @@ a {
 }
 
 .box {
-	width: 100%;
-	min-height: 300px;
-	padding-top: 15vh;
+	width: 100vw;
+	height: 68vh;
+	padding-top: 5vh;
 }
 
 .int-head {
 	margin-top: 5%;
-}
-
-#portfolio {
-	padding-top: 15vh;
 }
 
 .port-name {
