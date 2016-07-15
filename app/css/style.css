@@ -99,9 +99,6 @@ a {
   margin-top: 0px;
   padding: 0px; }
 
-#portfolio {
-  height: 50vh; }
-
 .top-header {
   font-size: 40px;
   background-color: #ccc;
@@ -135,6 +132,9 @@ a {
   margin: 0;
   width: 30vw;
   display: inline-block; }
+
+.examples {
+  padding-top: 15vh; }
 
 .example-img {
   height: 40vh;
@@ -203,7 +203,7 @@ a {
   padding-left: 3%; }
 
 #education {
-  margin-bottom: 12vh;
+  margin-bottom: 14vh;
   margin-top: 5vh; }
 
 #workman {

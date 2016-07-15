@@ -499,10 +499,14 @@ var toggle = {
 		$(clickedID).fadeToggle('slow');
 		$('.nav').css('color', 'black');
 		$(clickedHeadID).css('color', 'gray');
+		$('.intro-sub').show();
 		if(this.divID === 'intro'){
 			$('.scroll').hide();
 			$('.intro').show();
 			document.location.href="#/"
+		}
+		if(this.divID === 'portfolio'){
+			$('.examples').hide()
 		}
 		
 
@@ -515,6 +519,7 @@ var toggle = {
 		$('.scroll').show();
 		$('.intro').hide();
 		$('#port').css('color', 'gray');
+
 		/*function(){
 			$('.search').show('fast')
 			$('html, body').animate({
@@ -532,10 +537,12 @@ var toggle = {
 
 	portTog: function(clicked){
 		console.log(clicked);
+		$('.examples').show();
 		$('.port-sect').hide();
 		$('.explain').hide();
 		$('.scroll-up').show();
 		$('.port-nav-img-div').hide();
+		$('.intro-sub').hide();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 

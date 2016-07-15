@@ -60,7 +60,7 @@
 	</div>
 	<div data-bind="foreach: model.projects">
 		<div data-bind="attr: { id: href }" class="port-sect">
-			<div data-bind="foreach: examples">	
+			<div class="examples" data-bind="foreach: examples">	
 				<a target="_blank" data-bind="attr: { href: url }">
 					<span class="port-name" data-bind="text: name"></span>
 				</a>
