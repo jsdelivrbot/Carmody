@@ -19,6 +19,12 @@ var model = {
 			head: ko.observable(''),
 			id: 'port',
 			divID: 'portfolio'
+		},
+		{
+			title: ko.observable('Home'),
+			head: ko.observable(''),
+			id: 'introduction',
+			divID: 'intro'
 		}/*,
 		{
 			title: ko.observable('Other Interests'),
@@ -493,18 +499,26 @@ var toggle = {
 		$(clickedID).fadeToggle('slow');
 		$('.nav').css('color', 'black');
 		$(clickedHeadID).css('color', 'gray');
+		if(this.divID === 'intro'){
+			$('.scroll').hide();
+			document.location.href="/"
+		}
 		
 
 
 	},
 
 	moreInfo: function(clicked) {
-		$('#portfolio').show(function(){
+		$('#portfolio').show();
+		$('.search').show();
+		$('.scroll').show();
+		/*function(){
 			$('.search').show('fast')
 			$('html, body').animate({
 		        scrollTop: $('.search').offset().top
 		    }, 800);
-		})
+		})*/
+		document.location.href = "#search-div"
 	},
 
 	scrollUp: function(clicked){

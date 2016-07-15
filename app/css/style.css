@@ -78,6 +78,9 @@ a {
   font-size: 20px;
   margin: 2% 5% 2% 5%; }
 
+#port {
+  color: gray; }
+
 #collapseThree {
   display: none; }
 
@@ -157,7 +160,6 @@ a {
   margin: 0 0 5px 0; }
 
 .light-back {
-  background-color: #ccc;
   text-align: center;
   min-height: 650px;
   display: none; }
@@ -218,10 +220,13 @@ a {
 .box {
   width: 100%;
   min-height: 300px;
-  margin-top: 9%; }
+  padding-top: 15vh; }
 
 .int-head {
   margin-top: 5%; }
+
+#portfolio {
+  padding-top: 15vh; }
 
 .port-name {
   font-size: 25px;
