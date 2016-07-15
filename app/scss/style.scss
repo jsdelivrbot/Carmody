@@ -29,18 +29,24 @@ a {
 
 .intro {
   background: url(..//img/computer.jpg) no-repeat center center fixed; 
-  min-height: 80vh;
-  min-width: 100vw;
+  height: 73vh;
+  width: 100vw;
   z-index: 5;
 }
 
 .shade {
 	background-color: rgba(21, 193, 136, 0.4);
-	min-height: 80vh;
+	height: 73vh;
+}
+
+.intro-sub {
+	height: 28vh;
+	padding-top: 3vh;
 }
 
 .basic-info {
 	color: white;
+	padding-top: 5vh
 }
 
 .head-shot {
@@ -50,8 +56,13 @@ a {
 	border-radius: 15px;
 }
 
+.more-info-div {
+	padding-top: 5vh;
+}
+
 .more-info {
-	margin-bottom: 5%;
+	color: white;
+	font-size: 25px;
 }
 
 
@@ -65,26 +76,31 @@ a {
 }
 
 .nav-head {
-	background-color: #15c188;
+	border-top: 1px solid rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	background-color: white;
+
 }
 
 .nav {
 	display: inline-block;
-	color: rgba(255,235,205,1);
+	color: black;
 	margin-left: 0;
+
+	
 }
 
 .nav-img {
-	height: 100px;
-	width: 100px;
-	margin: 3%;
+	height: 90px;
+	width: 90px;
+	margin: 2%;
 	display: inline-block;
 }
 
 .port {
 	font-size: 20px;
 	margin: 2% 5% 2% 5%;
-	color: black;
+	
 }
 
 #collapseThree {
@@ -144,15 +160,16 @@ a {
 	margin: 15px;
 }
 
-
-
-
-
 .nav-title {
 	display: inline-block;
 }
 
-
+.imgNav-div {
+	font-size: 15px;
+	margin: 0;
+	width: 30vw;
+	display: inline-block;
+}
 
 .example-img {
 	height: 40vh;
@@ -169,6 +186,10 @@ a {
 	width: 100px;
 }
 
+.img-header {
+	width: 30vw;
+}
+
 .description {
 	margin: auto 5% 5% 5%;
 }
@@ -176,7 +197,8 @@ a {
 .header {
 	font-size: 25px;
 	min-width: 100%;
-	background-color: rgba(0,0,0,.7);
+	text-align: right;
+	margin: 0 0 5px 0;
 }
 
 .light-back {
@@ -184,10 +206,6 @@ a {
 	text-align: center;
 	min-height: 650px;
 	display: none;
-}
-
-#portfolio {
-	display: block;
 }
 
 .blog-img {
@@ -294,6 +312,7 @@ a {
 
 .search {
 	display: inline;
+	display: none;
 	width: 100vw;
 }
 

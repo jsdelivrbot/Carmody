@@ -53,6 +53,13 @@ var model = {
 					imgHref: 'https://github.com/jackmasterson',
 					imgSrc: 'img/gitHub.png',
 					id: 'git'
+				},
+				{
+					title: 'resume',
+					imgHref: 'https://www.dropbox.com/'+
+						's/e3054m04729rmdp/Jack%20Masterson_Resume.docx?dl=0',
+					imgSrc: 'img/dropRes.png',
+					id: 'dropRes'
 				}
 			]
 		}
@@ -478,19 +485,26 @@ var vis = {
 var toggle = {
 
 	slideIn: function(clicked) {
+		var clickedID = "#" + this.divID;
+		var clickedHeadID = "#" + this.id;
 		
 		$('.light-back').hide();
-		var clickedID = "#" + this.divID;
-		$(clickedID).fadeToggle('slow', function(){});
+
+		$(clickedID).fadeToggle('slow');
+		$('.nav').css('color', 'black');
+		$(clickedHeadID).css('color', 'gray');
+		
+
 
 	},
 
 	moreInfo: function(clicked) {
-
-		$('html, body').animate({
-	        scrollTop: $('.search').offset().top
-	    }, 800);
-
+		$('#portfolio').show(function(){
+			$('.search').show('fast')
+			$('html, body').animate({
+		        scrollTop: $('.search').offset().top
+		    }, 800);
+		})
 	},
 
 	scrollUp: function(clicked){
