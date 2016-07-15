@@ -46,13 +46,11 @@
 	</div>
 </div>
 <div class="light-back" id="portfolio">
-	<div class="top-header sub">
-		<ul data-bind="foreach: model.projects">
+	<div class="top-header sub" data-bind="foreach: model.projects">
+		<ul class="proj-head-ul">
 			<li data-bind="attr: { id: id }" class="port nav">
 				<a data-bind="click: toggle.portTog, text: title"></a>
 			</li>
-		</ul>
-		<ul class="port-nav-img-div" data-bind="foreach: model.projects">
 			<li class="port nav">
 				<img class="port-img" data-bind="attr: { src: src }">
 			</li>

@@ -506,7 +506,8 @@ var toggle = {
 			document.location.href="#/"
 		}
 		if(this.divID === 'portfolio'){
-			$('.examples').hide()
+			$('.examples').hide();
+			$('.scroll-up').hide();
 		}
 		
 

@@ -74,7 +74,8 @@ a {
 
 .port {
   font-size: 20px;
-  margin: 2% 5% 2% 5%; }
+  margin: 2% 5% 2% 5%;
+  display: block; }
 
 #port {
   color: gray; }
@@ -291,18 +292,14 @@ a {
 .inline, .slick-slide {
   padding-left: 10px; }
 
+.proj-head-ul {
+  display: inline-block;
+  width: 20vw; }
+
 /* ------------- Bootstrap ------------*/
 #accordion {
   margin: 12%;
   background-color: #ccc; }
-
-#ud-head {
-  text-align: left;
-  margin-left: 2%; }
-
-#pub-head {
-  text-align: right;
-  margin-right: 2%; }
 
 .panel-group, .panel-heading, div.panel.panel-default,
 .panel-group .panel + .panel {
