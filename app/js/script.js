@@ -179,6 +179,8 @@ var model = {
 	projects: [
 		{
 			title: 'Udacity Projects',
+			divider: ['|'],
+			text: 'Everything I completed in Udacity\'s Nanodegree program.',
 			href: 'collapseOne',
 			clickHref: '#collapseOne',
 			id: 'ud-head',
@@ -272,6 +274,9 @@ var model = {
 		},
 		{
 			title: 'Templates',
+			divider: ['|', '|'],
+			text: 'Design templates I\'ve been working on '+
+				'for practice.',
 			href: 'collapseTwo',
 			clickHref: '#collapseTwo',
 			id: 'temp-head',
@@ -346,6 +351,9 @@ var model = {
 		},
 		{
 			title: 'APIs',
+			divider: ['|', '|', '|'],
+			text: 'APIs I have experience with '+
+				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
 			href: 'collapseFour',
 			clickHref: '#collapseFour',
 			id: 'api-head',
@@ -420,6 +428,9 @@ var model = {
 		},
 		{
 			title: 'Published Projects',
+			divider: ['|', '|', '|', '|'],
+			text: 'Projects that are live, including two very different wedding landing '+
+				'pages.',
 			href: 'collapseThree',
 			clickHref: '#collapseThree',
 			id: 'pub-head',
@@ -465,9 +476,34 @@ var model = {
 
 var viewModel = {
 	init: function(){
-
+		divider.init();
 	//	toggle.fadeScroll();
 
+	}
+};
+
+var divider = {
+	init: function() {
+		console.log(model.projects);
+		model.projects.forEach(function(obj){
+		//	console.log(obj.divider());
+
+		})
+	/*	function pushed(num){
+			var div = '|';
+			console.log(num, div);
+			model.projects[num].divider.push(div);
+		}
+
+		for(var i=0; i<model.projects.length; i++){
+		//	console.log(i);
+		//	console.log(model.projects[i]);
+			
+			//model.projects[i].divider.push(div);
+		//	console.log(model.projects[i].divider());
+			pushed(i);
+
+		}*/
 	}
 };
 
@@ -508,6 +544,12 @@ var toggle = {
 		if(this.divID === 'portfolio'){
 			$('.examples').hide();
 			$('.scroll-up').hide();
+			$('.port-nav').show();
+			$('.divide-hide').show();
+		}
+		else {
+			$('.port-nav').hide();
+			$('.divide-hide').hide();
 		}
 		
 
@@ -516,6 +558,8 @@ var toggle = {
 
 	moreInfo: function(clicked) {
 		$('#portfolio').show();
+		$('.top-header').show();
+		$('.port-nav').show();
 		$('.search').show();
 		$('.scroll').show();
 		$('.intro').hide();
@@ -544,6 +588,7 @@ var toggle = {
 		$('.scroll-up').show();
 		$('.port-nav-img-div').hide();
 		$('.intro-sub').hide();
+		$('.divide-hide').hide();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 

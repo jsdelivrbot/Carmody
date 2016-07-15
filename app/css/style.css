@@ -108,7 +108,8 @@ a {
   margin-top: 15vh;
   margin-bottom: 0px;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  display: none; }
 
 .explain {
   margin-top: 10vh;
@@ -140,7 +141,8 @@ a {
 .example-img {
   height: 40vh;
   width: 40vw;
-  margin: 15px; }
+  margin: 15px;
+  border: 1px solid black; }
 
 .port-img-div {
   margin-bottom: 10vh; }
@@ -231,6 +233,10 @@ a {
 .int-head {
   margin-top: 5%; }
 
+.port-nav {
+  margin-top: 3vh;
+  display: inline-block; }
+
 .port-name {
   font-size: 25px;
   margin-right: 20%; }
@@ -294,7 +300,15 @@ a {
 
 .proj-head-ul {
   display: inline-block;
-  width: 20vw; }
+  width: 20vw;
+  height: 10vh; }
+
+.proj-nav-li {
+  display: block; }
+
+.divider {
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
 
 /* ------------- Bootstrap ------------*/
 #accordion {

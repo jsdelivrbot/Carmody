@@ -143,6 +143,7 @@ a {
 	margin-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	display: none;
 }
 
 .explain {
@@ -182,6 +183,7 @@ a {
 	height: 40vh;
 	width: 40vw;
 	margin: 15px;
+	border: 1px solid black;
 }
 
 .port-img-div {
@@ -295,6 +297,11 @@ a {
 	margin-top: 5%;
 }
 
+.port-nav {
+	margin-top: 3vh;
+	display: inline-block;
+}
+
 .port-name {
 	font-size: 25px;
 	margin-right: 20%;
@@ -375,6 +382,16 @@ a {
 .proj-head-ul {
 	display: inline-block;
 	width: 20vw;
+	height: 10vh;
+}
+
+.proj-nav-li {
+	display: block;
+}
+
+.divider {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 /* ------------- Bootstrap ------------*/
