@@ -501,6 +501,7 @@ var toggle = {
 		$(clickedHeadID).css('color', 'gray');
 		if(this.divID === 'intro'){
 			$('.scroll').hide();
+			$('.intro').show();
 			document.location.href="#/"
 		}
 		
@@ -512,6 +513,7 @@ var toggle = {
 		$('#portfolio').show();
 		$('.search').show();
 		$('.scroll').show();
+		$('.intro').hide();
 		/*function(){
 			$('.search').show('fast')
 			$('html, body').animate({
