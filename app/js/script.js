@@ -19,6 +19,12 @@ var model = {
 			head: ko.observable(''),
 			id: 'port',
 			divID: 'portfolio'
+		},
+		{
+			title: ko.observable('Home'),
+			head: ko.observable(''),
+			id: 'introduction',
+			divID: 'intro'
 		}/*,
 		{
 			title: ko.observable('Other Interests'),
@@ -53,6 +59,13 @@ var model = {
 					imgHref: 'https://github.com/jackmasterson',
 					imgSrc: 'img/gitHub.png',
 					id: 'git'
+				},
+				{
+					title: 'resume',
+					imgHref: 'https://www.dropbox.com/'+
+						's/e3054m04729rmdp/Jack%20Masterson_Resume.docx?dl=0',
+					imgSrc: 'img/dropRes.png',
+					id: 'dropRes'
 				}
 			]
 		}
@@ -478,19 +491,42 @@ var vis = {
 var toggle = {
 
 	slideIn: function(clicked) {
+		var clickedID = "#" + this.divID;
+		var clickedHeadID = "#" + this.id;
 		
 		$('.light-back').hide();
-		var clickedID = "#" + this.divID;
-		$(clickedID).fadeToggle('slow', function(){});
+
+		$(clickedID).fadeToggle('slow');
+		$('.nav').css('color', 'black');
+		$(clickedHeadID).css('color', 'gray');
+		$('.intro-sub').show();
+		if(this.divID === 'intro'){
+			$('.scroll').hide();
+			$('.intro').show();
+			document.location.href="#/"
+		}
+		if(this.divID === 'portfolio'){
+			$('.examples').hide()
+		}
+		
+
 
 	},
 
 	moreInfo: function(clicked) {
+		$('#portfolio').show();
+		$('.search').show();
+		$('.scroll').show();
+		$('.intro').hide();
+		$('#port').css('color', 'gray');
 
-		$('html, body').animate({
-	        scrollTop: $('.search').offset().top
-	    }, 800);
-
+		/*function(){
+			$('.search').show('fast')
+			$('html, body').animate({
+		        scrollTop: $('.search').offset().top
+		    }, 800);
+		})*/
+		document.location.href = "#search-div"
 	},
 
 	scrollUp: function(clicked){
@@ -501,10 +537,12 @@ var toggle = {
 
 	portTog: function(clicked){
 		console.log(clicked);
+		$('.examples').show();
 		$('.port-sect').hide();
 		$('.explain').hide();
 		$('.scroll-up').show();
 		$('.port-nav-img-div').hide();
+		$('.intro-sub').hide();
 		//$('#collapseThree').fadeIn();
 		var clickedID = "#" + clicked.href;
 

@@ -5,11 +5,12 @@
     <title>Jack Masterson - Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-
+	<link rel="stylesheet" href="css/style.min.css">
     <!--build:css css/style.min.css-->
 	<link rel="stylesheet" href="css/style.css">
 	<!--endbuild-->
     <script>
+
     //includes the two other CSS files at the bottom of the page while still keeping them in the <head>
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
@@ -30,36 +31,21 @@
 			<h3 data-bind="text: career"></h3>
 			<img class="head-shot" src="img/headshot.jpg">
 		</div>
-		<div data-bind="foreach: model.contact">
-			<div data-bind="foreach: imgNav">
-				<a target="_blank" data-bind="attr: { href: imgHref }">
-					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
-				</a>
-			</div>
+		<div class="more-info-div">
+			<a class="more-info" data-bind="click: toggle.moreInfo">Portfolio</a>
 		</div>
 	</div>
-</div>
-<div data-bind="foreach: model.contact">
-	<h2 class="contact" data-bind="text: location"></h2>
-	<h2 class="contact" data-bind="text: email"></h2>
-</div>
-<div class="more-info">
-	<a target="_blank" href="https://www.dropbox.com/s/e3054m04729rmdp/Jack%20Masterson_Resume.docx?dl=0">Resume</a>
-	<br>
-	<a data-bind="attr: { href: '#/' }, click: toggle.moreInfo">More Info</a>
 </div>
 <div class="search" id="search-div">
 	<div class="nav-head">
 		<div class="header" data-bind="foreach: model.sections">
-			<a href="#/" class="scroll" data-bind="attr: { id: id }, click: toggle.slideIn">
-				<li class="nav" data-bind="text: title"></li>
+			<a href="#/" class="scroll" data-bind="click: toggle.slideIn">
+				<li class="nav" data-bind="attr: { id: id }, text: title"></li>
 			</a>
 		</div>
 	</div>
 </div>
-
 <div class="light-back" id="portfolio">
-	<h1 class="top-header">Portfolio</h1>
 	<div class="top-header sub">
 		<ul data-bind="foreach: model.projects">
 			<li data-bind="attr: { id: id }" class="port nav">
@@ -74,7 +60,7 @@
 	</div>
 	<div data-bind="foreach: model.projects">
 		<div data-bind="attr: { id: href }" class="port-sect">
-			<div data-bind="foreach: examples">	
+			<div class="examples" data-bind="foreach: examples">	
 				<a target="_blank" data-bind="attr: { href: url }">
 					<span class="port-name" data-bind="text: name"></span>
 				</a>
@@ -90,15 +76,11 @@
     		</div>
     	</div>
 	</div>
-	<div class="explain">
-		<p>Click on any of the blue links to see what I've done, either for class, for clients, or for practice.</p>
-	</div>
 	<div class="scroll-up" data-bind="click: toggle.scrollUp">
 		<h4>Back to the Top</h4>
 	</div>
 </div>
 <div class="light-back" id="education">
-	<h1 class="top-header">Education</h1>
 	<div class="box" data-bind="foreach: model.education">
 		<ul class="edu-ul">
 			<img class="work-img" data-bind="attr: { src: img, id: id }">
@@ -114,6 +96,23 @@
 		</ul>
 	</div>
 </div>
+<div class="intro-sub" data-bind="foreach: model.contact">
+	<div data-bind="foreach: imgNav">
+		<ul class="imgNav-div">
+			<li>
+				<a target="_blank" data-bind="attr: { href: imgHref }">
+					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
+				</a>
+			</li>
+			<li>
+				<h3 class="img-header" data-bind="text: title"></h3>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
 
 
 <!--build:js js/script.min.js -->
