@@ -62,8 +62,7 @@ var model = {
 				},
 				{
 					title: 'resume',
-					imgHref: 'https://www.dropbox.com/'+
-						's/e3054m04729rmdp/Jack%20Masterson_Resume.docx?dl=0',
+					imgHref: 'https://www.dropbox.com/s/cyry9l9hposiv4p/Jack%20Masterson_Resume.docx?dl=0',
 					imgSrc: 'img/dropRes.png',
 					id: 'dropRes'
 				}
@@ -476,36 +475,12 @@ var model = {
 
 var viewModel = {
 	init: function(){
-		divider.init();
+	//	divider.init();
 	//	toggle.fadeScroll();
 
 	}
 };
 
-var divider = {
-	init: function() {
-		console.log(model.projects);
-		model.projects.forEach(function(obj){
-		//	console.log(obj.divider());
-
-		})
-	/*	function pushed(num){
-			var div = '|';
-			console.log(num, div);
-			model.projects[num].divider.push(div);
-		}
-
-		for(var i=0; i<model.projects.length; i++){
-		//	console.log(i);
-		//	console.log(model.projects[i]);
-			
-			//model.projects[i].divider.push(div);
-		//	console.log(model.projects[i].divider());
-			pushed(i);
-
-		}*/
-	}
-};
 
 var vis = {
 	init: function(){
