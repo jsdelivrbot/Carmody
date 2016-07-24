@@ -28,14 +28,14 @@ a {
 }
 
 .intro {
-  background: url(..//img/boat.jpg) no-repeat center center fixed; 
-  height: 73vh;
+  background: url(..//img/boat-sun.jpg) no-repeat fixed;
+  background-size: 100vw 73vh;  height: 73vh;
   width: 100vw;
   z-index: 5;
 }
 
 .shade {
-	background-color: rgba(21, 193, 136, 0.4);
+	background-color: rgba(0,0,0, 0.4);
 	height: 73vh;
 }
 
