@@ -186,23 +186,10 @@ var model = {
 			src: 'img/udacity.png',
 			examples: [
 				{
-					name: 'Writing Tests',
-					url: 'https://rawgit.com/jackmasterson/jasmine/master/index.html',
-					date: 'May 18 - May 28, 2016',
-					skills: ['Jasmine', ' Test-Driven Development'],
-					description: "Filler Text",
-					img: [
-						{
-							first: 'img/jasmine-one.png',
-							second: 'img/jasmine-two.png'
-						}
-					]
-				},
-				{
 					name: 'Neighborhood Map',
-					url: 'https://cdn.rawgit.com/jackmasterson/NMap/master/index.html',
+					url: 'https://cdn.rawgit.com/jackmasterson/mapped/master/app/index.html',
 					date: 'March 3 - May 10, 2016',
-					skills: ['Knockout/MVVM', ' 3rd-Party APIs', ' Autofill'],
+					skills: ['Knockout/MVVM', ' Google Maps API', ' Magic Seaweed API ', ' Search Bar on Type'],
 					description: "This project utilizes Knockout's" +
 						" MVVM approach to organizing code and I learned all" +
 						" about data-binding." +
@@ -218,16 +205,16 @@ var model = {
 						" census information.",
 					img: [
 						{
-							first: 'img/map.jpg',
-							second: 'img/nmap2.jpg'
+							first: 'img/map.png',
+							second: 'img/map2.png'
 						}
 					]
 				},
 				{
-					name: 'Arcade Game Clone',
-					url: 'https://rawgit.com/jackmasterson/Arcade-Game/master/Arcade Game/index.html',
+					name: 'Froggerish',
+					url: 'https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html',
 					date: 'January 8, 2015 - February 7, 2016',
-					skills: ['HTML5 Canvas', ' Separation of Concerns'],
+					skills: ['HTML5 Canvas', ' Separation of Concerns', 'Object Prototypes ', 'Code Simplification '],
 					description: 'According to the Udacity instructor who' +
 					' reviewed it, "excellently implemented game...I am really' +
 					' impressed by your work." This was a fun one. It took' +
@@ -246,7 +233,20 @@ var model = {
 							second: 'img/iron-arcade.png'
 						}
 					],
-					link: 'https://github.com/jackmasterson/Arcade-Game.git'
+					link: 'https://github.com/jackmasterson/canvasArcade/tree/master/app'
+				},				
+				{
+					name: 'Writing Tests',
+					url: 'https://rawgit.com/jackmasterson/jasmine/master/index.html',
+					date: 'May 18 - May 28, 2016',
+					skills: ['Jasmine', ' Test-Driven Development'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/jasmine-one.png',
+							second: 'img/jasmine-two.png'
+						}
+					]
 				},
 				{
 					name: 'Online Resume',
