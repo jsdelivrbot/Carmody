@@ -532,24 +532,14 @@ var toggle = {
 	},
 
 	moreInfo: function(clicked) {
-		$('#portfolio').show();
-		$('.top-header').show();
-		$('.port-nav').show();
-		$('.search').show();
-		$('.scroll').show();
-		$('.intro').hide();
+		$('.show').show();
+		
 		$('.nav').css('color', 'black');
 		$('#port').css('color', 'gray');
-		$('.examples').hide();
-		$('.divide-hide').show();
-		$('.scroll-up').hide();
 
-		/*function(){
-			$('.search').show('fast')
-			$('html, body').animate({
-		        scrollTop: $('.search').offset().top
-		    }, 800);
-		})*/
+		$('.hide').hide();
+
+		$('.hide').hide();
 		document.location.href = "#search-div"
 	},
 
@@ -611,12 +601,4 @@ var toggle = {
 };
 
 
-var workScroll = {
-
-	render: function() {
-
-	}
-};
-
-
-ko.applyBindings(viewModel.init());
+ko.applyBindings();
