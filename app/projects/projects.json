@@ -4,27 +4,47 @@
         "head": "ko.observable('')",
         "id": "edu",
         "divID": "education",
-        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"],
+        "tech": {
+                "languages": ["javascript", "HTML5", "CSS3"],
+                "frameworks": ["jQuery", "Bootstrap"],
+                "other": ["GitHub", "Knockout", "gulp", "ngrok"]
+        }
     },
     {
         "title": "Work Experience",
         "head": "ko.observable('')",
         "id": "work",
         "divID": "work-info",
-        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"],
+        "tech": {
+                "languages": ["javascript", "HTML5", "CSS3"],
+                "frameworks": ["jQuery", "Bootstrap"],
+                "other": ["GitHub", "Knockout", "gulp", "ngrok"]
+        }
     },
         {
         "title": "Other Interests",
         "head": "ko.observable('')",
         "id": "other",
         "divID": "other-info",
-        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"],
+        "tech": {
+                "languages": ["javascript", "HTML5", "CSS3"],
+                "frameworks": ["jQuery", "Bootstrap"],
+                "other": ["GitHub", "Knockout", "gulp", "ngrok"]
+        }
     },
     {
         "title": "Contact",
         "head": "ko.observable('')",
         "id": "contact",
         "divID": "contact-info",
-        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"],
+        "tech": {
+                "languages": ["javascript", "HTML5", "CSS3"],
+                "frameworks": ["jQuery", "Bootstrap"],
+                "other": ["GitHub", "Knockout", "gulp", "ngrok"]
+        }
     }
 ]

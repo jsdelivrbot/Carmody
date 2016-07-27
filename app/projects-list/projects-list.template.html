@@ -2,5 +2,10 @@
 	<li ng-repeat="project in $ctrl.projects">
 		<h2>Header: {{project.title}}</h2>
 		<h3>Skills: <span ng-repeat="skill in project.skills">{{skill}}, </span></h3>
+		<div>Tech Skills: 
+			<h3>Languages:<span ng-repeat="techs in project.tech.languages"> {{techs}}, </span></h3>
+
+			<h3>Frameworks:<span ng-repeat="techs in project.tech.frameworks"> {{techs}}, </span></h3>
+		</div>
 	</li>
 </ul>
