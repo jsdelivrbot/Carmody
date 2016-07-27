@@ -3,12 +3,12 @@
 
 <head>
     <title>Jack Masterson - Front End Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="intro">
+<div class="intro hide">
 	<div class="shade">
 		<div class="basic-info" data-bind="foreach: model.contact">
 			<h1 class="name" data-bind="text: name"></h1>
@@ -20,19 +20,19 @@
 		</div>
 	</div>
 </div>
-<div class="search" id="search-div">
+<div class="search show" id="search-div">
 	<div class="nav-head">
 		<div class="header" data-bind="foreach: model.sections">
-			<a href="#/" class="scroll" data-bind="click: toggle.slideIn">
+			<a href="#/" class="scroll show" data-bind="click: toggle.slideIn">
 				<li class="nav" data-bind="attr: { id: id }, text: title"></li>
 			</a>
 		</div>
-		<div class="port-nav" data-bind="foreach: model.projects">
+		<div class="port-nav show" data-bind="foreach: model.projects">
 			<ul class="proj-head-ul">
 				<li class="proj-nav-li" data-bind="attr: { id: id }">
 					<a data-bind="click: toggle.portTog, text: title"></a>
 				</li>
-				<li class="divide-hide" data-bind="foreach: divider">
+				<li class="divide-hide show" data-bind="foreach: divider">
 					<h2 class="divider">|</h2>
 				</li>				
 				<li class="divide-hide">
@@ -42,10 +42,10 @@
 		</div>
 	</div>
 </div>
-<div class="light-back" id="portfolio">
+<div class="light-back show" id="portfolio">
 	<div data-bind="foreach: model.projects">
 		<div data-bind="attr: { id: href }" class="port-sect">
-			<div class="examples" data-bind="foreach: examples">	
+			<div class="examples hide" data-bind="foreach: examples">	
 				<a target="_blank" data-bind="attr: { href: url }">
 					<span class="port-name" data-bind="text: name"></span>
 				</a>
@@ -61,7 +61,7 @@
     		</div>
     	</div>
 	</div>
-	<div class="scroll-up" data-bind="click: toggle.scrollUp">
+	<div class="scroll-up hide" data-bind="click: toggle.scrollUp">
 		<h4>Back to the Top</h4>
 	</div>
 </div>
@@ -100,7 +100,12 @@
 
 
 
-<script src="js/script.min.js"></script>
+<!--build:js js/script.min.js -->
+<script src="js/lib/knockout-3.2.0.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

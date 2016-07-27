@@ -1,28 +1,26 @@
 [
-		{
-			"name": "Calorie Tracker Health App",
-			"url": "http://rawgit.com/jackmasterson/HealthApp/master/index.html",
-			"date": "May 20 - May 30, 2016",
-			"skills": ["BackboneJS", "Underscore", "Self-taught through documentation"],
-			"description": "Filler Text",
-			"img": [
-				{
-					"first": "img/calorie-two.png",
-					"second": "img/calorie-one.png"
-				}
-			]
-		},
-		{
-			"name": "Music App",
-			"url": "#/",
-			"date": "Started June 10, 2016",
-			"description": "Filler text",
-			"skills": ["Spotify API", "oAuth", "Autofill", "Up-voting"],
-			"img": [
-				{
-					"first": "img/musicTwo.png",
-					"secon": "img/musicOne.png:
-				}
-			]
-		}
-	]
+    {
+        "title": "Education",
+        "head": "ko.observable('')",
+        "id": "edu",
+        "divID": "education"
+    },
+    {
+        "title": "Work Experience",
+        "head": "ko.observable('')",
+        "id": "work",
+        "divID": "work-info"
+    },
+        {
+        "title": "Other Interests",
+        "head": "ko.observable('')",
+        "id": "other",
+        "divID": "other-info"
+    },
+    {
+        "title": "Contact",
+        "head": "ko.observable('')",
+        "id": "contact",
+        "divID": "contact-info"
+    }
+]
