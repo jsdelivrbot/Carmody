@@ -3,24 +3,28 @@
         "title": "Education",
         "head": "ko.observable('')",
         "id": "edu",
-        "divID": "education"
+        "divID": "education",
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
     },
     {
         "title": "Work Experience",
         "head": "ko.observable('')",
         "id": "work",
-        "divID": "work-info"
+        "divID": "work-info",
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
     },
         {
         "title": "Other Interests",
         "head": "ko.observable('')",
         "id": "other",
-        "divID": "other-info"
+        "divID": "other-info",
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
     },
     {
         "title": "Contact",
         "head": "ko.observable('')",
         "id": "contact",
-        "divID": "contact-info"
+        "divID": "contact-info",
+        "skills": ["Press Releases", "Event Coordinating", "Creating Media Lists"]
     }
 ]

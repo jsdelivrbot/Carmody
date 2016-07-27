@@ -1,5 +1,6 @@
 <ul>
 	<li ng-repeat="project in $ctrl.projects">
 		<h2>Header: {{project.title}}</h2>
+		<h3>Skills: <span ng-repeat="skill in project.skills">{{skill}}, </span></h3>
 	</li>
 </ul>
