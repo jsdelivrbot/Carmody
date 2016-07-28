@@ -10,411 +10,57 @@
 }
 
 body {
-	overflow: scroll;
-	margin: 0px;
-}
-
-h1,h2,h3,h4 {
-	margin-top: 0px;
-}
-
-ul {
-	margin-left: 0;
-	padding-left: 0;
-}
-
-a {
- 	cursor: pointer;
-}
-
-.intro {
-  background: url(..//img/stand.jpg) no-repeat fixed;
-  background-size: 100vw 73vh;  
-  height: 73vh;
-  width: 100vw;
-  z-index: 5;
-}
-
-.shade {
-	background-color: rgba(0,0,0, 0.4);
-	height: 73vh;
-}
-
-
-.intro-sub {
-	height: 24vh;
-	margin-top: 4vh;
-}
-
-.basic-info {
-	color: white;
-	padding-top: 5vh
-}
-
-.head-shot {
-	height: 200px;
-	width: 150px;
-	border: 1px solid gray;
-	border-radius: 15px;
-}
-
-.more-info-div {
-	padding-top: 5vh;
-}
-
-.more-info {
-	color: white;
-	font-size: 25px;
-}
-
-
-
-
-
-.scroll {
-	width: 15%;
-	text-align: center;
-	margin: 0% 5.5% 0% 5.5%;
-}
-
-.nav-head {
-	background-color: white;
-
-}
-
-.nav {
-	display: inline-block;
-	color: black;
-	margin-left: 0;
-
-	
-}
-
-.nav-img {
-	height: 90px;
-	width: 90px;
-	margin: 2%;
-	display: inline-block;
-}
-
-.port {
-	font-size: 20px;
-	margin: 2% 5% 2% 5%;
-	display: block;
-}
-
-#port {
-	color: gray;
-}
-
-#collapseThree {
-	display: none;
-}
-
-#collapseTwo {
-	display: none;
-}
-
-#collapseOne {
-	display: none;
-}
-
-#collapseFour {
-	display: none;
-}
-
-.contact {
-	color: #7e7e7e;
-	font-size: 20px;
-	line-height: 25px;
-	margin: auto;
-	margin-top: 0px;
-	padding: 0px;
-}
-
-
-
-
-.top-header {
-	font-size: 40px;
-	background-color: #ccc;
-	width: 100%;
-	color: black;
-	margin-top: 15vh;
-	margin-bottom: 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: none;
-}
-
-.explain {
-	margin-top: 10vh;
-	font-size: 20px;
-	padding: 15vw;
-	padding-top: 0;
-}
-
-.scroll-up {
-	display: none;
-	padding-bottom: 15px;
-	cursor: pointer;
-}
-
-.raw-head {
-	border: none;
-	margin: 15px;
-}
-
-.nav-title {
-	display: inline-block;
-}
-
-.imgNav-div {
-	font-size: 15px;
 	margin: 0;
-	width: 30vw;
-	display: inline-block;
 }
 
-.example-img {
-	height: 40vh;
-	width: 40vw;
-	margin: 15px;
-	border: 1px solid black;
-}
-
-.port-img-div {
-	margin-bottom: 10vh;
-}
-
-.port-img {
-	height: 100px;
-	width: 100px;
-}
-
-.img-header {
-	width: 30vw;
-}
-
-.description {
-	margin: auto 5% 5% 5%;
+.splash {
+	background: url(..//img/brick.jpg);
+	height: 100vh;
 }
 
 .header {
-	font-size: 25px;
-	min-width: 100%;
-	text-align: right;
-	margin: 0 0 5px 0;
+	margin:0;
 }
 
-.light-back {
-	text-align: center;
-	height: 52vh;
-	display: none;
-}
-
-.blog-img {
-	height: 75px;
-	width: 75px;
-	border-radius: 100%;
-	margin-left: 35%;
-}
-
-#interests {
-	height: 1000px;
-}
-
-.inline {
-	display: inline-block;
-}
-
-.inline-head {
-	margin-bottom: 15%;
-}
-
-.work-ul {
-	font-size: 25px;
-	margin-bottom: 4%;
-}
-
-.work-li {
-	text-align: left;
-}
-
-#degree {
-	font-size: 20px;
-}
-
-.work-img {
-	float: right;
-	height: 120px;
-	width: 120px;
-	margin-right: 3%;
-}
-
-.edu-ul {
-	text-align: center;
-	font-size: 25px;
-	margin-bottom: 6%;
-	padding-left: 3%;
-}
-
-#education {
-	margin-bottom: 14vh;
-	margin-top: 5vh;
-}
-
-#workman {
-	height: 50px;
-	width: 175px;
-}
-
-#gpa {
-	width: 45%;
-	font-size: 20px;
-}
-
-.date {
-	font-style: italic;
-	font-size: 20px;
-	margin-left: 20px;
-}
-
-.employer {
-	font-size: 30px;
-}
-
-.box {
-	width: 100vw;
-	height: 68vh;
-	padding-top: 5vh;
-}
-
-.int-head {
-	margin-top: 5%;
-}
-
-.port-nav {
-	margin-top: 3vh;
-	display: inline-block;
-}
-
-.port-name {
-	font-size: 25px;
-	margin-right: 20%;
-}
-
-.port-nav-img-div {
-	margin-left: 0;
-	padding-left: 0;
-}
-
-.port-skills {
-	font-size: 20px;
-	margin-top: 5%;
-}
-
-.port-date {
-	font-size: 15px;
-	text-align: right;
-	font-style: italic;
-	margin-left: 13%;
-}
-
-.slick-list {
-	margin-top: 7%;
-}
-
-.search {
-	display: inline;
-	display: none;
-	width: 100vw;
-}
-
-.search-class {
-	background-color: rgba(255, 255, 255, 0.7);
-	text-align: center;
-}
-
-.search-img {
-	height: 75px;
-	width: 75px;
-}
-
-
-
-/* ---------------Slider --------------------*/
-#container {
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;  
-
-}
-
-#blog-ID {
-	padding: 0px;
-}
-
-.carousel {
-	height: 250px;
-	width: 350px;
-	font-size: 15px;
-	border: 5px solid black;
-	text-align: center;
-	margin-left: 33vw;
-	background-color: white;
-}
-
-.slick-dotted.slick-slider {
-	margin-bottom: 0px;
-}
-
-.inline, .slick-slide {
-	padding-left: 10px;
-}
-
-.proj-head-ul {
-	display: inline-block;
+.canvas {
+	height: 75vh;
 	width: 20vw;
+	background-color: gray;
+	border: 1px solid black;
+	float: left;
+	margin-top: 19vh;
+}
+
+.right {
+	margin-left: 29vw;
+}	
+
+
+.floor-div {
+	height: 12vh;
+	width: 5vw;
+	position: absolute;
+	left: 20vw;
+	top: 45vh;
+	padding-top: 20px;
+}
+
+.floor-num {
 	height: 10vh;
+	background-color: black;
+	color: red;
+	padding-top: 20px;
 }
 
-.proj-nav-li {
-	display: block;
+.button-div {
+	position: absolute;
+	right: 20vw;
+	top: 60vh;
+}
+.button {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
 }
 
-.divider {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-}
 
-/* ------------- Bootstrap ------------*/
-
-#accordion {
-	margin: 12%;
-	background-color: #ccc;
-}
-
-.panel-group, .panel-heading, div.panel.panel-default,
-	.panel-group .panel+.panel {
-	margin-bottom: 0px;
-	margin-top: 0px;
-	background-color: #ccc;
-}
-
-.improv-ul {
-	padding-left: 0px;
-}
-
-.improv {
-	display: inline;
-	font-size: 20px;
-}
-
-.improv-img {
-	height: 150px;
-	width: 200px;
-}
