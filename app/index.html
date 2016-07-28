@@ -15,16 +15,28 @@
 		<div class="elevator">
 			<div class="floor-div">	
 				<h2>Floor:</h2>
-				<h3 class="floor-num">0</h3>
+				<h3 class="floor-num">Lobby</h3>
 			</div>
 			<div class="button-div">
 				<img src="img/button-up.png" class="button" data-bind="click: going.up">
 				<img src="img/button-down.png" class="button" data-bind="click: going.down">
 			</div>
-				<div class="elevator-background"></div>
+				<div class="elevator-background">
+					<h1 class="welcome">Welcome</h1>
+				</div>
 				<div class="canvas right"></div>
 				<div class="canvas left"></div>
 		</div>
+	</div>
+	<div class="black">
+		<h1 class="inside-header">To Which Floor May I Direct You?</h1>
+		<ul class="grid-ul" data-bind="foreach: model.floorName">
+			<li class="inside-header inline">
+				<h3>Floor <span data-bind="text: $index"></span></h3>
+				<span data-bind="text: name"></span>
+			</li>
+
+		</ul>
 	</div>
 
 
