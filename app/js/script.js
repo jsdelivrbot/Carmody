@@ -1,5 +1,50 @@
 canvas = document.createElement('canvas');
 
+var model = {
+	eachWind: ko.observableArray()
+};
+
+var Window = function(y) {
+
+	this.sprite = 'img/window.png';
+	this.x = 100;
+	this.y = y
+};
+
+Window.prototype.update = function() {
+
+
+};
+
+Window.prototype.render = function() {
+	ctx.drawImage(Resources.get(this.sprite), 
+    	this.x, this.y);
+};
+
+var createWindows = {
+
+	init: function() {
+
+		var yArray = [150, 80, 120];
+		yArray.forEach(function(each){
+			model.eachWind.push(each);
+					model.eachWind().forEach(function(all){
+			console.log(all);
+			wind = new Window(all);
+			console.log(wind);
+			wind.render();
+		});
+
+		});
+
+
+
+	}
+};
+
+
+
+//var winds = new Window();
 
 
 var Player = function() {
@@ -11,9 +56,7 @@ var Player = function() {
 
 Player.prototype.update = function() {
 
-    if(player.y > 330 || player.y <330 ){
-    	player.y = 330;
-    }
+
     if(player.x <0){
     	player.x = 0;
     }
@@ -30,21 +73,25 @@ Player.prototype.render = function() {
 };
 
 Player.prototype.handleInput = function() {
+	var time = new Date().getTime() * (0.0002);
+	var speed = (Math.tan(time) * 600 + 100);
+	var that = this;
 
     if (event.keyCode == 37) {
-        this.x -= 100;
+       this.x += 100; 
     }
     if (event.keyCode == 39) {
         this.x += 100;
     }
-    if (event.keyCode == 38) {
-        this.y -= 90;
-    }
-    if (event.keyCode == 40) {
-        this.y += 90;
-    }
 
- 
+    if (event.keyCode == 74){
+    	this.y += -90; 	
+    	
+    	function down(){
+    		that.y += 90;
+    	};
+    	setTimeout(down, 200);
+    }
 };
 
 document.addEventListener('keyup', function(e) {
@@ -63,3 +110,6 @@ document.addEventListener('keyup', function(e) {
 var player = new Player();
 
 startMeUp();
+createWindows.init();
+
+ko.applyBindings();

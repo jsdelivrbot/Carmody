@@ -105,6 +105,7 @@ function startMeUp(){
                 enemy.update(dt);
             });*/
             player.update();
+            wind.update();
 
 /*
             model.allMowers().forEach(function(mow){
@@ -177,6 +178,7 @@ function startMeUp(){
             });
 */
             player.render();
+            wind.render()
            /* model.allObstacles().forEach(function(obs){
                  obs.render();
              });
@@ -222,7 +224,8 @@ function startMeUp(){
         Resources.load([
             'img/brick.jpg',
             'img/blue.png',
-            'img/robot.png'
+            'img/robot.png',
+            'img/window.png'
         ]);
         Resources.onReady(init);
 
