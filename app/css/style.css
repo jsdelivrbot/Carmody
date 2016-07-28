@@ -60,21 +60,26 @@ h4 {
   height: 15vh;
   width: 8vw;
   position: absolute;
-  left: 20vw;
-  top: 53vh; }
+  left: 19vw;
+  top: 58vh; }
 
 .floor-num {
   background-color: black;
   color: red;
   height: 10vh;
-  padding-top: 15px; }
+  padding-top: 20px;
+  border-radius: 15px; }
 
 .floor-grid {
   background-color: white; }
 
+.robot {
+  height: 30vh;
+  width: 15vw; }
+
 .button-div {
   position: absolute;
-  right: 25vw;
+  right: 27vw;
   top: 60vh; }
 
 .button {
