@@ -85,8 +85,6 @@ var going = {
 var hover = {
 
 	over: function() {
-		console.log('hover over!');
-		console.log(this.picId);
 		var clickId = "."+this.picId;
 		$(clickId).css('opacity', '1');
 
@@ -95,6 +93,16 @@ var hover = {
 	out: function() {
 		var clickId = "."+this.picId;
 		$(clickId).css('opacity', '0.7');
+	}
+};
+
+var back = {
+
+	init: function() {
+		$('.sections').fadeOut(function() {
+			$('.black').fadeIn();
+		});
+		
 	}
 }
 

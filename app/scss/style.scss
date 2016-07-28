@@ -90,8 +90,8 @@ h4 {
 }
 
 .button {
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 	cursor: pointer;
 }
 
@@ -146,7 +146,7 @@ h4 {
 
 .sub-img-span {
 	position: fixed;
-	top: 15vh;
+	top: 10vh;
 	height: 82vh;
 	width: 100vw;
 	background: url(..//img/desk.png) no-repeat center center;
@@ -164,6 +164,14 @@ h4 {
 	padding: 0;
 	margin-top: 10vh;
 	padding: 1vw;
+}
+
+.go-back {
+	position: absolute;
+	color: white;
+	bottom: 3vh;
+	left: 2vw;
+	cursor: pointer;
 }
 
 
