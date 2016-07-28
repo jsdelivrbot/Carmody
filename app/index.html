@@ -46,13 +46,15 @@
 		<div class="all-sections" data-bind="attr: {id: navId}">
 			<h1 data-bind="text: name"></h1>
 			<div class="sub-img-div" data-bind="if: project">
-				<div class="sub-img-span" data-bind="foreach: project">
-					<ul class="inline projects-ul">
-						<li>
-							<img class="sub-img" data-bind="attr: {src: src, 'class': picId}, event: {mouseover: hover.over, mouseout: hover.out}, css: {subImg: picId}">
-							<h3 data-bind="text: name"></h3>
-						</li>
-					</ul>
+				<div class="sub-sub" data-bind="style: { backgroundImage: 'url(..//' + src() + ')' }"">
+					<div class="sub-img-span" data-bind="foreach: project">
+						<ul class="inline projects-ul">
+							<li>
+								<img class="sub-img" data-bind="attr: {src: src, 'class': picId}, event: {mouseover: hover.over, mouseout: hover.out}, css: {subImg: picId}">
+								<h3 data-bind="text: name"></h3>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

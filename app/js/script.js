@@ -6,7 +6,7 @@ var model = {
 		{
 			name: 'Projects',
 			navId: 'projects',
-			src: 'img/desk.png',
+			src: ko.observable('img/desk.png'),
 			project: [{
 				src: 'img/udacity.png',
 				name: 'Udacity Projects',
@@ -27,27 +27,31 @@ var model = {
 		}, {
 			name: 'Education',
 			navId: 'education',
-			src: 'img/desk.png',
-			project: ko.observable(false)
+			src: ko.observable('img/notebook.png'),
+			project: [{
+				src: 'img/stuf.png',
+				name: 'Stuff',
+				picId: 'stuff'
+			}]
 		}, {
 			name: 'Extras',
 			navId: 'extras',
-			src: 'img/desk.png',
+			src: ko.observable('img/notebook.png'),
 			project: ko.observable(false)
 		}, {
 			name: 'Resume',
 			navId: 'resume',
-			src: 'img/desk.png',
+			src: ko.observable('img/notebook.png'),
 			project: ko.observable(false)
 		}, {
 			name: 'GitHub',
 			navId: 'github',
-			src: 'img/desk.png',
+			src: ko.observable('img/notebook.png'),
 			project: ko.observable(false)
 		}, {
 			name: 'LinkedIn',
 			navId: 'linkedin',
-			src: 'img/desk.png',
+			src: ko.observable('img/notebook.png'),
 			project: ko.observable(false)
 		}
 	]
