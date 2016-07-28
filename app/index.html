@@ -24,19 +24,39 @@
 				<div class="elevator-background">
 					<h1 class="welcome">Welcome</h1>
 				</div>
-				<div class="canvas right"></div>
-				<div class="canvas left"></div>
+				<div class="canvas"></div>
 		</div>
 	</div>
 	<div class="black">
 		<h1 class="inside-header">To Which Floor May I Direct You?</h1>
 		<ul class="grid-ul" data-bind="foreach: model.floorName">
-			<li class="inside-header inline">
-				<h3>Floor <span data-bind="text: $index"></span></h3>
-				<span data-bind="text: name"></span>
+			<li class="inside-header inline floor-choice" data-bind="click: going.floorChoice">
+				<h3>Floor 
+					<span data-bind="text: $index"></span>
+				</h3>
+				<span class="floor-name" data-bind="text: name"></span>
 			</li>
-
 		</ul>
+		<div class="current-floor">
+			<h3>Current Floor: 
+				<span class="floor-name" data-bind="text: model.floorName[0].name"></span>
+			</h3>
+		</div>
+	</div>
+	<div class="sections" data-bind="foreach: model.floorName">
+		<div class="all-sections" data-bind="attr: {id: navId}">
+			<h1 data-bind="text: name"></h1>
+			<div class="sub-img-div" data-bind="if: project">
+				<div class="sub-img-span" data-bind="foreach: project">
+					<ul class="inline projects-ul">
+						<li>
+							<img class="sub-img" data-bind="attr: {src: src, 'class': picId}, event: {mouseover: hover.over, mouseout: hover.out}, css: {subImg: picId}">
+							<h3 data-bind="text: name"></h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 

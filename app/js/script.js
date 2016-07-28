@@ -4,11 +4,51 @@ var model = {
 	floorNum: ko.observable(),
 	floorName: [
 		{
-			name: 'Projects'
+			name: 'Projects',
+			navId: 'projects',
+			src: 'img/desk.png',
+			project: [{
+				src: 'img/udacity.png',
+				name: 'Udacity Projects',
+				picId: 'udacity'
+			}, {
+				src: 'img/book.png',
+				name: 'Templates',
+				picId: 'template'
+			}, {
+				src: 'img/globe.png',
+				name: 'APIs',
+				picId: 'api'
+			}, {
+				src: 'img/weddingOne.png',
+				name: 'Published Projects',
+				picId: 'published'
+			}]
 		}, {
-			name: 'Education'
+			name: 'Education',
+			navId: 'education',
+			src: 'img/desk.png',
+			project: ko.observable(false)
 		}, {
-			name: 'Extras'
+			name: 'Extras',
+			navId: 'extras',
+			src: 'img/desk.png',
+			project: ko.observable(false)
+		}, {
+			name: 'Resume',
+			navId: 'resume',
+			src: 'img/desk.png',
+			project: ko.observable(false)
+		}, {
+			name: 'GitHub',
+			navId: 'github',
+			src: 'img/desk.png',
+			project: ko.observable(false)
+		}, {
+			name: 'LinkedIn',
+			navId: 'linkedin',
+			src: 'img/desk.png',
+			project: ko.observable(false)
 		}
 	]
 };
@@ -17,18 +57,13 @@ var going = {
 
 	up: function(){
 		console.log('going up!');
-		$('.right').animate({
+		$('.canvas').animate({
 			width: 0.25
-		});
-		$('.left').animate({
-			left: "763px",
-			width: 0
-		}, function(){
+		}, 'slow', function(){
 			$('.welcome').fadeIn();
 			$('.splash').fadeOut(function() {
-				$('.black').fadeIn();
+				$('.black').fadeIn('slow');
 			});
-			
 		});
 	},
 
@@ -36,8 +71,30 @@ var going = {
 		console.log('going down!');
 	},
 
-	projects: function() {
-		console.log('projects');
+	floorChoice: function() {
+
+		var clickId = '#'+this.navId;
+		$('.black').fadeOut(function(){
+			$('.sections').show();
+			$('.all-sections').hide();
+			$(clickId).show();
+		});
+	}
+};
+
+var hover = {
+
+	over: function() {
+		console.log('hover over!');
+		console.log(this.picId);
+		var clickId = "."+this.picId;
+		$(clickId).css('opacity', '1');
+
+	},
+
+	out: function() {
+		var clickId = "."+this.picId;
+		$(clickId).css('opacity', '0.7');
 	}
 }
 
