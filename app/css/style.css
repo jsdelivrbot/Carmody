@@ -145,7 +145,6 @@ h4 {
   width: 10vw; }
 
 .projectsUl {
-  width: 35vw;
   padding: 0;
   margin-top: 10vh;
   padding: 1vw;
@@ -162,3 +161,8 @@ h4 {
 .school {
   margin-top: 45vh;
   width: 18vw; }
+
+.projects-sub {
+  width: 25vw;
+  margin-left: 5vw;
+  margin-right: 5vw; }

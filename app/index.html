@@ -50,7 +50,7 @@
 		<div class="all-sections" data-bind="attr: {id: navId}">
 			<h1 data-bind="text: name"></h1>
 			<div class="img-div" data-bind="if: project">
-				<div class="sub-img-div" data-bind="style: { backgroundImage: 'url(..//' + src() + ')' }">
+				<div class="sub-img-div" data-bind="style: { backgroundImage: 'url(..//' + src() + ')', backgroundRepeat: 'no-repeat', backgroundSize: '90vw 80vh'}">
 					<div class="sub-img-span" data-bind="foreach: project">
 						<ul class="inline projects-ul" data-bind="attr: {'class': allId}, css: {inline: picId, projectsUl: picId}">
 							<li data-bind="event: {mouseover: hover.over, mouseout: hover.out}, attr: {'class': picId}">
