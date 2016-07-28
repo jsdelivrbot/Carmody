@@ -247,7 +247,7 @@ var model = {
 							second: 'img/jasmine-two.png'
 						}
 					]
-				},
+				}/*,
 				{
 					name: 'Online Resume',
 					url: 'https://cdn.rawgit.com/jackmasterson/ResumeBuilder/master/src/index.html',
@@ -268,7 +268,7 @@ var model = {
 							second: 'img/resume-work.png'
 						}
 					]
-				},
+				},*/
 			]
 		},
 		{

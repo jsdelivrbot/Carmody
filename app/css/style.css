@@ -24,7 +24,7 @@ a {
 
 .intro {
   background: url(..//img/stand.jpg) no-repeat fixed;
-  background-size: cover;
+  background-size: 100vw 73vh;
   height: 73vh;
   width: 100vw;
   z-index: 5; }
