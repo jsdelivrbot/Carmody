@@ -12,7 +12,7 @@ var model = {
 				name: 'Udacity Projects',
 				picId: 'udacity'
 			}, {
-				src: 'img/book.png',
+				src: 'img/template.png',
 				name: 'Templates',
 				picId: 'template'
 			}, {
@@ -20,7 +20,7 @@ var model = {
 				name: 'APIs',
 				picId: 'api'
 			}, {
-				src: 'img/weddingOne.png',
+				src: 'img/book.png',
 				name: 'Published Projects',
 				picId: 'published'
 			}]
