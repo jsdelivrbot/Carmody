@@ -20,10 +20,14 @@
 			<div class="button-div">
 				<img src="img/button-up.png" class="button" data-bind="click: going.up">
 			</div>
-				<div class="elevator-background">
-					<h1 class="welcome">Welcome</h1>
-				</div>
-				<div class="canvas"></div>
+			<div class="elevator-background">
+				<h1 class="welcome">Welcome</h1>
+			</div>
+			<div class="canvas">
+				<p class="canvas-header">
+					Click the Going Up Button to Begin
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="black">
@@ -45,12 +49,12 @@
 	<div class="sections" data-bind="foreach: model.floorName">
 		<div class="all-sections" data-bind="attr: {id: navId}">
 			<h1 data-bind="text: name"></h1>
-			<div class="sub-img-div" data-bind="if: project">
-				<div class="sub-sub" data-bind="style: { backgroundImage: 'url(..//' + src() + ')' }"">
+			<div class="img-div" data-bind="if: project">
+				<div class="sub-img-div" data-bind="style: { backgroundImage: 'url(..//' + src() + ')' }">
 					<div class="sub-img-span" data-bind="foreach: project">
-						<ul class="inline projects-ul">
-							<li>
-								<img class="sub-img" data-bind="attr: {src: src, 'class': picId}, event: {mouseover: hover.over, mouseout: hover.out}, css: {subImg: picId}">
+						<ul class="inline projects-ul" data-bind="attr: {'class': allId}, css: {inline: picId, projectsUl: picId}">
+							<li data-bind="event: {mouseover: hover.over, mouseout: hover.out}, attr: {'class': picId}">
+								<img class="sub-img" data-bind="attr: {src: src}, css: {subImg: picId}">
 								<h3 data-bind="text: name"></h3>
 							</li>
 						</ul>

@@ -33,7 +33,9 @@ h4 {
   margin-top: 9vh;
   position: absolute;
   z-index: 5;
-  left: 29vw; }
+  left: 29vw;
+  padding-top: 20vh;
+  font-size: 20; }
 
 .elevator-background {
   background-color: black;
@@ -72,7 +74,7 @@ h4 {
 
 .button-div {
   position: absolute;
-  right: 20vw;
+  right: 25vw;
   top: 60vh; }
 
 .button {
@@ -112,7 +114,7 @@ h4 {
 .sections {
   height: 100vh;
   width: 100vw;
-  background-color: blue;
+  background-color: gray;
   display: none; }
 
 .section-img {
@@ -120,30 +122,30 @@ h4 {
   margin-top: 5vh;
   width: auto; }
 
-.sub-img-span {
+.subImgSpan {
   position: fixed;
   top: 10vh;
   height: 82vh;
   width: 100vw; }
 
-.sub-sub {
+.sub-img-div {
   position: fixed;
-  top: 9vh;
-  height: 82vh;
-  width: 91vw;
+  top: 8vh;
+  height: 82.5vh;
+  width: 90.7vw;
   left: 5vw; }
 
 .subImg {
   height: 15vh;
-  width: 10vw;
-  opacity: 0.7;
-  cursor: pointer; }
+  width: 10vw; }
 
-.projects-ul {
+.projectsUl {
   width: 35vw;
   padding: 0;
   margin-top: 10vh;
-  padding: 1vw; }
+  padding: 1vw;
+  cursor: pointer;
+  opacity: 0.7; }
 
 .go-back {
   position: absolute;
@@ -151,3 +153,7 @@ h4 {
   bottom: 3vh;
   left: 2vw;
   cursor: pointer; }
+
+.school {
+  margin-top: 45vh;
+  width: 18vw; }

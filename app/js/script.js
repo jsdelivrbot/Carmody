@@ -10,28 +10,38 @@ var model = {
 			project: [{
 				src: 'img/udacity.png',
 				name: 'Udacity Projects',
-				picId: 'udacity'
+				picId: 'udacity',
+				allId: 'projects-sub'
 			}, {
 				src: 'img/template.png',
 				name: 'Templates',
-				picId: 'template'
+				picId: 'template',
+				allId: 'projects-sub'
 			}, {
 				src: 'img/globe.png',
 				name: 'APIs',
-				picId: 'api'
+				picId: 'api',
+				allId: 'projects-sub'
 			}, {
 				src: 'img/book.png',
 				name: 'Published Projects',
-				picId: 'published'
+				picId: 'published',
+				allId: 'projects-sub'
 			}]
 		}, {
 			name: 'Education',
 			navId: 'education',
 			src: ko.observable('img/notebook.png'),
 			project: [{
-				src: 'img/stuf.png',
-				name: 'Stuff',
-				picId: 'stuff'
+				src: 'img/bc.png',
+				name: 'Boston College',
+				allId: 'school',
+				picId: 'boston-college'
+			}, {
+				src: 'img/udacity.png',
+				name: 'Udacity',
+				allId: 'school',
+				picId: 'udacity-college'
 			}]
 		}, {
 			name: 'Extras',
@@ -61,6 +71,7 @@ var going = {
 
 	up: function(){
 		console.log('going up!');
+		$('.canvas-header').hide();
 		$('.canvas').animate({
 			width: 0.25
 		}, 'slow', function(){
@@ -90,6 +101,7 @@ var hover = {
 
 	over: function() {
 		var clickId = "."+this.picId;
+		console.log(clickId);
 		$(clickId).css('opacity', '1');
 
 	},
