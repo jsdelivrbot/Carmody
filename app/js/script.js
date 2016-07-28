@@ -1,125 +1,65 @@
-'use strict';
+canvas = document.createElement('canvas');
 
-var model = {
-	floorNum: ko.observable(),
-	floorName: [
-		{
-			name: 'Projects',
-			navId: 'projects',
-			src: ko.observable('img/desk.png'),
-			project: [{
-				src: 'img/udacity.png',
-				name: 'Udacity Projects',
-				picId: 'udacity',
-				allId: 'projects-sub'
-			}, {
-				src: 'img/template.png',
-				name: 'Templates',
-				picId: 'template',
-				allId: 'projects-sub'
-			}, {
-				src: 'img/globe.png',
-				name: 'APIs',
-				picId: 'api',
-				allId: 'projects-sub'
-			}, {
-				src: 'img/book.png',
-				name: 'Published Projects',
-				picId: 'published',
-				allId: 'projects-sub'
-			}]
-		}, {
-			name: 'Education',
-			navId: 'education',
-			src: ko.observable('img/notebook.png'),
-			project: [{
-				src: 'img/bc.png',
-				name: 'Boston College',
-				allId: 'school',
-				picId: 'boston-college'
-			}, {
-				src: 'img/udacity.png',
-				name: 'Udacity',
-				allId: 'school',
-				picId: 'udacity-college'
-			}]
-		}, {
-			name: 'Extras',
-			navId: 'extras',
-			src: ko.observable('img/notebook.png'),
-			project: ko.observable(false)
-		}, {
-			name: 'Resume',
-			navId: 'resume',
-			src: ko.observable('img/notebook.png'),
-			project: ko.observable(false)
-		}, {
-			name: 'GitHub',
-			navId: 'github',
-			src: ko.observable('img/notebook.png'),
-			project: ko.observable(false)
-		}, {
-			name: 'LinkedIn',
-			navId: 'linkedin',
-			src: ko.observable('img/notebook.png'),
-			project: ko.observable(false)
-		}
-	]
+
+
+var Player = function() {
+
+	this.sprite = 'img/robot.png';
+	this.x = 0;
+	this.y = 330;
 };
 
-var going = {
+Player.prototype.update = function() {
 
-	up: function(){
-		console.log('going up!');
-		$('.canvas-header').hide();
-		$('.canvas').animate({
-			width: 0.25
-		}, 'slow', function(){
-			$('.welcome').fadeIn();
-			$('.splash').fadeOut(function() {
-				$('.black').fadeIn('slow');
-			});
-		});
-	},
+    if(player.y > 330 || player.y <330 ){
+    	player.y = 330;
+    }
+    if(player.x <0){
+    	player.x = 0;
+    }
+    if(player.x >800){
+    	player.x = 800;
+    }
 
-	down: function() {
-		console.log('going down!');
-	},
-
-	floorChoice: function() {
-
-		var clickId = '#'+this.navId;
-		$('.black').fadeOut(function(){
-			$('.sections').show();
-			$('.all-sections').hide();
-			$(clickId).show();
-		});
-	}
 };
 
-var hover = {
+Player.prototype.render = function() {
 
-	over: function() {
-		var clickId = "."+this.picId;
-		console.log(clickId);
-		$(clickId).css('opacity', '1');
-
-	},
-
-	out: function() {
-		var clickId = "."+this.picId;
-		$(clickId).css('opacity', '0.7');
-	}
+	ctx.drawImage(Resources.get(this.sprite), 
+    	this.x, this.y);
 };
 
-var back = {
+Player.prototype.handleInput = function() {
 
-	init: function() {
-		$('.sections').fadeOut(function() {
-			$('.black').fadeIn();
-		});
-		
-	}
-}
+    if (event.keyCode == 37) {
+        this.x -= 100;
+    }
+    if (event.keyCode == 39) {
+        this.x += 100;
+    }
+    if (event.keyCode == 38) {
+        this.y -= 90;
+    }
+    if (event.keyCode == 40) {
+        this.y += 90;
+    }
 
-ko.applyBindings();
+ 
+};
+
+document.addEventListener('keyup', function(e) {
+    
+    var allowedKeys = {
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down'
+    };
+
+    player.handleInput(allowedKeys[e.keyCode]);
+
+});
+
+var player = new Player();
+
+startMeUp();
