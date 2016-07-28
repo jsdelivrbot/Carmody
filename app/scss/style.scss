@@ -20,6 +20,7 @@ body {
 
 .header {
 	margin:0;
+	padding-top: 10vh;
 }
 
 .canvas {
@@ -27,13 +28,29 @@ body {
 	width: 20vw;
 	background-color: gray;
 	border: 1px solid black;
-	float: left;
-	margin-top: 19vh;
+	margin-top: 9vh;
+	position: absolute;
+	z-index: 5;
 }
 
 .right {
-	margin-left: 29vw;
-}	
+	left: 29vw;
+}
+
+.left {
+	left: 49vw;
+}
+
+.elevator-background {
+	background-color: black;
+	height: 74vh;
+	width: 40vw;
+	z-index: 5;
+	position: absolute;
+	top: 26vh;
+	left: 29vw;
+}
+
 
 
 .floor-div {
