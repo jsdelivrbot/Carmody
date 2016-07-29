@@ -113,11 +113,18 @@ var viewModel = {
         if(player.x == 500){
             
             viewModel.selectProjects();
+            viewModel.fade();
         }
         if(player.x == 700){
             viewModel.selectEdu();
+            viewModel.fade();
         }
-        viewModel.fade();
+
+        if(player.x == 300){
+            viewModel.selectResume();
+            player.x = 0;
+        }
+        
     },
 
     fade: function() {
@@ -140,6 +147,11 @@ var viewModel = {
         $('.all-sections').hide();
         $('#education').show();
 
+    },
+
+    selectResume: function() {
+
+        window.open("https://www.dropbox.com/s/mz6405mwjwymdjf/Jack%20Masterson_Resume.docx?dl=0");
     }
 };
 
