@@ -97,10 +97,10 @@ var viewModel = {
     createHeaders: function() {
 
         var y = 210;
-        var xArray = [300, 500, 700];
+        var xArray = [400, 600];
 
-        var head = new Header(300, 'portfolio-header.png');
-        var head2 = new Header(500, 'school-header.png');
+        var head = new Header(400, 'portfolio-header.png');
+        var head2 = new Header(600, 'school-header.png');
       //  var head3 = new Header(700, 'resume-header.png');
 
         model.eachHeader.push(head, head2);
@@ -111,8 +111,8 @@ var viewModel = {
         
         var yArray = [300, 370, 423];
         yArray.forEach(function(each){
-            var door = new Door(300, each);
-            var door2 = new Door(500, each);
+            var door = new Door(400, each);
+            var door2 = new Door(600, each);
         //    var door3 = new Door(700, each);
             model.eachDoor.push(door);
             model.eachDoor.push(door2);
@@ -144,8 +144,8 @@ var viewModel = {
         var bird, bird2;
         var spriteArray = ['bird-git.png', 'bird-linked.png'];
         spriteArray.forEach(function(sprite){
-            bird = new Bird(400, 10);
-            bird2 = new Bird(100, 120);     
+            bird = new Bird(400, 10, 'bird-git.png');
+            bird2 = new Bird(100, 120, 'bird-linked.png');     
         });
         model.eachBird.push(bird, bird2);
 
@@ -194,7 +194,7 @@ var viewModel = {
     },
 
     openGitHub: function() {
-        window.open("http://jack-masterson.com");
+        window.open("https://github.com/jackmasterson");
     }
 };
 
@@ -231,8 +231,8 @@ Ladder.prototype.update = function() {
 
 }
 
-var Bird = function(x, y){
-    this.sprite = 'img/bird.png';
+var Bird = function(x, y, sprite){
+    this.sprite = 'img/'+sprite;
     this.x = x;
     this.y = y;
 };
@@ -314,20 +314,7 @@ Player.prototype.update = function() {
 
 
   //  console.log(player.x, player.y, 'player');
-  /*  model.eachBird().forEach(function(each){
-        var floor = Math.floor(each.x/100)*100;
-        var ceil = Math.ceil(each.x);
-        var equal = (player.x == (floor || ceil))
-     //   console.log(each.x);
-        if(equal){
-  //          console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
-            console.log("SUPRE EQUAL");
-            console.log(each);
-            
-         //   console.log
-            
-        }
-    })*/
+
     //console.log(bird.x, bird.y, 'bird');
 
 };
@@ -344,7 +331,13 @@ Player.prototype.handleInput = function() {
 	var that = this;
 
     if (event.keyCode == 37) {
-       this.x += -100; 
+        if(that.y < 330){
+            that.x += 0;
+        }
+        else {
+           this.x += -100; 
+        }
+        
     }
     if (event.keyCode == 39) {
         this.x += 100;
@@ -365,25 +358,42 @@ Player.prototype.handleInput = function() {
 
     
     if(player.x == 800){
-       // console.log('eight hundred!');
+
         if(event.keyCode == 38){
             if(that.y > -120){
                 that.y += -90;
             }
-
         }
+
         if(event.keyCode == 40){
             if(that.y < 330){
                 that.y += 90;
             }
-            console.log(player.y);
- 
+            console.log(player.y); 
+        }
+    }
+
+       model.eachBird().forEach(function(each){
+        var floor = Math.floor(each.x/100)*100;
+        var ceil = Math.ceil(each.x);
+        var equal = (player.x == (floor || ceil))
+     //   console.log(each.x);
+        if(equal && event.keyCode == 13){
+  //          console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
+            console.log("SUPRE EQUAL");
+            console.log(each);
+            if(each.sprite == 'img/bird-git.png'){
+                viewModel.openGitHub();
+            }
+            else {
+                viewModel.openLinkedIn();
+            }
+
+            
+         //   console.log
             
         }
-       /* if(that.y > -120){
-            that.y == -120;
-        }*/
-    }
+    })
 };
 
 document.addEventListener('keyup', function(e) {

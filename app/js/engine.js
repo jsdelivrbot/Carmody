@@ -255,6 +255,7 @@ function startMeUp(){
             'img/portfolio-header.png',
             'img/school-header.png',
             'img/bird-linked.png',
+            'img/bird-git.png',
             'img/bird.png',
             'img/ladder.png'
         ]);
