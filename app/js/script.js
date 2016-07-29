@@ -1,6 +1,12 @@
 'use strict';
 
 var canvas = document.createElement('canvas');
+/*console.log(canvas);
+canvas.addEventListener('mousemove', function(mouse) {
+    console.log(mouse.clientX, mouse.clientY, 'client');
+    console.log(mouse.screenX, mouse.screenY, 'screen');
+    //console.log(mouse.clientY);
+})*/
 
 var model = {
 	eachWind: ko.observableArray(),
@@ -130,38 +136,15 @@ var viewModel = {
         
     },
 
-    generateRandomCoordinates: function() {
-
-        var xArray = [300, 600];
-        var yArray = [30, 70];
-     //   var spriteArray = ['bird-linked.png', 'bird-git.png'];
-
-        var coordX = xArray[Math.floor(Math.random() 
-            * xArray.length)];
-        var coordY = yArray[Math.floor(Math.random() 
-            * yArray.length)];
-
-   
-        console.log(coordX, coordY);
-        return [coordX, coordY];
-
-
-    },
-
     createBirds: function(){
-    //    console.log(viewModel.generateRandomCoordinates());
-        console.log('birds!');
-      //  var xArray = [30, 60];
-       // xArray.forEach(function(each){
+
         var xArray = [300, 600];
         var yArray = [30, 70];
         var bird, bird2;
         var spriteArray = ['bird-git.png', 'bird-linked.png'];
         spriteArray.forEach(function(sprite){
-          //  console.log(sprite);
             bird = new Bird(400, 10, 'bird-git.png');
-            bird2 = new Bird(100, 120, 'bird-linked.png');
-            
+            bird2 = new Bird(100, 120, 'bird-linked.png');     
         });
         model.eachBird.push(bird, bird2);
 
@@ -195,6 +178,7 @@ var viewModel = {
     }
 };
 
+
 var Window = function(x, y) {
 
 	this.sprite = 'img/window.png';
@@ -215,7 +199,7 @@ Window.prototype.render = function() {
 var Bird = function(x, y, sprite){
     this.sprite = 'img/'+sprite;
     this.x = x;
-    this.y = y;
+    this.y = 60;
 };
 
 Bird.prototype.render = function() {
@@ -313,15 +297,15 @@ Player.prototype.handleInput = function() {
         this.x += 100;
     }
 
-    if (event.keyCode == 38) {
+    if (event.keyCode == 13) {
         viewModel.doorChoice();
     }
 
     if (event.keyCode == 74){
-    	this.y += -90; 	
+    	this.y += -290; 	
     	
     	function down(){
-    		that.y += 90;
+    		that.y += 290;
     	};
     	setTimeout(down, 200);
     }
@@ -403,5 +387,6 @@ var wind = new Window();
 var door = new Door();
 var header = new Header();
 var bird = new Bird();
+
 
 ko.applyBindings(viewModel.init());

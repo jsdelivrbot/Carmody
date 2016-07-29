@@ -178,7 +178,7 @@ function startMeUp(){
                 enemy.render();
             });
 */
-            player.render();
+            
 
            /* model.eachWind().forEach(function(winds){
                 winds.render();
@@ -196,7 +196,7 @@ function startMeUp(){
             //    console.log(birds);
                 birds.render();
             });
-
+            player.render();
         //    door.render();
            /* model.allObstacles().forEach(function(obs){
                  obs.render();
