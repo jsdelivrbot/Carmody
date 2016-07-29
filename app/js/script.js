@@ -1,14 +1,153 @@
-canvas = document.createElement('canvas');
+'use strict';
+
+var canvas = document.createElement('canvas');
 
 var model = {
-	eachWind: ko.observableArray()
+	eachWind: ko.observableArray(),
+    eachDoor: ko.observableArray(),
+    eachHeader: ko.observableArray(),
+    floorNum: ko.observable(),
+    floorName: [
+        {
+            name: 'Projects',
+            navId: 'projects',
+            src: ko.observable('img/desk.png'),
+            project: [{
+                src: 'img/udacity.png',
+                name: 'Udacity Projects',
+                picId: 'udacity',
+                allId: 'projects-sub'
+            }, {
+                src: 'img/template.png',
+                name: 'Templates',
+                picId: 'template',
+                allId: 'projects-sub'
+            }, {
+                src: 'img/globe.png',
+                name: 'APIs',
+                picId: 'api',
+                allId: 'projects-sub'
+            }, {
+                src: 'img/book.png',
+                name: 'Published Projects',
+                picId: 'published',
+                allId: 'projects-sub'
+            }]
+        }, {
+            name: 'Education',
+            navId: 'education',
+            src: ko.observable('img/notebook.png'),
+            project: [{
+                src: 'img/bc.png',
+                name: 'Boston College',
+                allId: 'school',
+                picId: 'boston-college'
+            }, {
+                src: 'img/udacity.png',
+                name: 'Udacity',
+                allId: 'school',
+                picId: 'udacity-college'
+            }]
+        }, {
+            name: 'Extras',
+            navId: 'extras',
+            src: ko.observable('img/notebook.png'),
+            project: ko.observable(false)
+        }, {
+            name: 'Resume',
+            navId: 'resume',
+            src: ko.observable('img/notebook.png'),
+            project: ko.observable(false)
+        }, {
+            name: 'GitHub',
+            navId: 'github',
+            src: ko.observable('img/notebook.png'),
+            project: ko.observable(false)
+        }, {
+            name: 'LinkedIn',
+            navId: 'linkedin',
+            src: ko.observable('img/notebook.png'),
+            project: ko.observable(false)
+        }
+    ]
 };
 
-var Window = function(y) {
+var viewModel = {
+
+    init: function() {
+
+        viewModel.createHeaders();
+        viewModel.createDoor();
+        startMeUp();
+
+    },
+
+    createHeaders: function() {
+
+        var y = 210;
+        var xArray = [300, 500, 700];
+
+        var head = new Header(300, 'resume-header.png');
+        var head2 = new Header(500, 'portfolio-header.png');
+        var head3 = new Header(700, 'school-header.png');
+
+        model.eachHeader.push(head, head2, head3);
+
+    },
+
+    createDoor: function() {
+        
+        var yArray = [300, 370, 423];
+        yArray.forEach(function(each){
+            var door = new Door(300, each);
+            var door2 = new Door(500, each);
+            var door3 = new Door(700, each);
+            model.eachDoor.push(door);
+            model.eachDoor.push(door2);
+            model.eachDoor.push(door3);
+        });
+    },
+
+    doorChoice: function() {
+        console.log(player.x, player.y);
+        if(player.x == 500){
+            
+            viewModel.selectProjects();
+        }
+        if(player.x == 700){
+            viewModel.selectEdu();
+        }
+        viewModel.fade();
+    },
+
+    fade: function() {
+
+        $('.canvas').fadeOut();
+        
+    },
+
+    selectProjects: function() {
+
+        console.log('projects selected!');
+        $('.sections').fadeIn();
+        $('.all-sections').hide();
+        $('#projects').show();
+    },
+
+    selectEdu: function() {
+        console.log('education selected!');
+        $('.sections').fadeIn();
+        $('.all-sections').hide();
+        $('#education').show();
+
+    }
+};
+
+var Window = function(x, y) {
 
 	this.sprite = 'img/window.png';
-	this.x = 100;
-	this.y = y
+	this.x = x;
+	this.y = y;
 };
 
 Window.prototype.update = function() {
@@ -21,30 +160,41 @@ Window.prototype.render = function() {
     	this.x, this.y);
 };
 
-var createWindows = {
+var Door = function(x, y) {
+    this.sprite = 'img/blackbox.png';
+    this.x = x;
+    this.y = y;
 
-	init: function() {
-
-		var yArray = [150, 80, 120];
-		yArray.forEach(function(each){
-			model.eachWind.push(each);
-					model.eachWind().forEach(function(all){
-			console.log(all);
-			wind = new Window(all);
-			console.log(wind);
-			wind.render();
-		});
-
-		});
-
-
-
-	}
 };
 
+Door.prototype.update = function( ){
 
+};
 
-//var winds = new Window();
+Door.prototype.render = function() {
+    
+    ctx.drawImage(Resources.get(this.sprite), 
+        this.x, this.y);
+
+};
+
+var Header = function(x, sprite) {
+
+    this.sprite = 'img/'+sprite;
+    this.x = x;
+    this.y = 210;
+
+};
+
+Header.prototype.update = function() {
+
+};
+
+Header.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite),
+        this.x, this.y);
+
+};
 
 
 var Player = function() {
@@ -78,10 +228,14 @@ Player.prototype.handleInput = function() {
 	var that = this;
 
     if (event.keyCode == 37) {
-       this.x += 100; 
+       this.x += -100; 
     }
     if (event.keyCode == 39) {
         this.x += 100;
+    }
+
+    if (event.keyCode == 38) {
+        viewModel.doorChoice();
     }
 
     if (event.keyCode == 74){
@@ -107,9 +261,67 @@ document.addEventListener('keyup', function(e) {
 
 });
 
+
+var going = {
+
+    up: function(){
+        console.log('going up!');
+        $('.canvas-header').hide();
+        $('.canvas').animate({
+            width: 0.25
+        }, 'slow', function(){
+            $('.welcome').fadeIn();
+            $('.splash').fadeOut(function() {
+                $('.black').fadeIn('slow');
+            });
+        });
+    },
+
+    down: function() {
+        console.log('going down!');
+    },
+
+    floorChoice: function() {
+
+        var clickId = '#'+this.navId;
+        $('.black').fadeOut(function(){
+            $('.sections').show();
+            $('.all-sections').hide();
+            $(clickId).show();
+        });
+    }
+};
+
+var hover = {
+
+    over: function() {
+        var clickId = "."+this.picId;
+        console.log(clickId);
+        $(clickId).css('opacity', '1');
+
+    },
+
+    out: function() {
+        var clickId = "."+this.picId;
+        $(clickId).css('opacity', '0.7');
+    }
+};
+
+var back = {
+
+    init: function() {
+        $('.sections').fadeOut(function() {
+            $('.canvas').fadeIn();
+            player.x = 0;
+        });
+
+        
+    }
+};
+
 var player = new Player();
+var wind = new Window();
+var door = new Door();
+var header = new Header();
 
-startMeUp();
-createWindows.init();
-
-ko.applyBindings();
+ko.applyBindings(viewModel.init());

@@ -106,6 +106,7 @@ function startMeUp(){
             });*/
             player.update();
             wind.update();
+            header.update();
 
 /*
             model.allMowers().forEach(function(mow){
@@ -140,8 +141,6 @@ function startMeUp(){
                 numCols = 9,
                 row, col;
             
-                
-
             /* Loop through the number of rows and columns we've defined above
              * and, using the rowImages array, draw the correct image for that
              * portion of the "grid"
@@ -178,7 +177,20 @@ function startMeUp(){
             });
 */
             player.render();
-            wind.render()
+
+           /* model.eachWind().forEach(function(winds){
+                winds.render();
+            });*/
+
+            model.eachDoor().forEach(function(door){
+                door.render();
+            });
+
+            model.eachHeader().forEach(function(header){
+                header.render();
+            })
+
+        //    door.render();
            /* model.allObstacles().forEach(function(obs){
                  obs.render();
              });
@@ -225,7 +237,11 @@ function startMeUp(){
             'img/brick.jpg',
             'img/blue.png',
             'img/robot.png',
-            'img/window.png'
+            'img/window.png',
+            'img/blackbox.png',
+            'img/resume-header.png',
+            'img/portfolio-header.png',
+            'img/school-header.png'
         ]);
         Resources.onReady(init);
 
