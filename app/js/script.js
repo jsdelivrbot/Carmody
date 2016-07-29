@@ -6,6 +6,7 @@ var model = {
 	eachWind: ko.observableArray(),
     eachDoor: ko.observableArray(),
     eachHeader: ko.observableArray(),
+    eachBird: ko.observableArray(),
     floorNum: ko.observable(),
     floorName: [
         {
@@ -78,6 +79,8 @@ var viewModel = {
 
         viewModel.createHeaders();
         viewModel.createDoor();
+        viewModel.createBirds();
+      //  viewModel.generateRandomCoordinates();
         startMeUp();
 
     },
@@ -127,6 +130,43 @@ var viewModel = {
         
     },
 
+    generateRandomCoordinates: function() {
+
+        var xArray = [300, 600];
+        var yArray = [30, 70];
+     //   var spriteArray = ['bird-linked.png', 'bird-git.png'];
+
+        var coordX = xArray[Math.floor(Math.random() 
+            * xArray.length)];
+        var coordY = yArray[Math.floor(Math.random() 
+            * yArray.length)];
+
+   
+        console.log(coordX, coordY);
+        return [coordX, coordY];
+
+
+    },
+
+    createBirds: function(){
+    //    console.log(viewModel.generateRandomCoordinates());
+        console.log('birds!');
+      //  var xArray = [30, 60];
+       // xArray.forEach(function(each){
+        var xArray = [300, 600];
+        var yArray = [30, 70];
+        var bird, bird2;
+        var spriteArray = ['bird-git.png', 'bird-linked.png'];
+        spriteArray.forEach(function(sprite){
+          //  console.log(sprite);
+            bird = new Bird(400, 10, 'bird-git.png');
+            bird2 = new Bird(100, 120, 'bird-linked.png');
+            
+        });
+        model.eachBird.push(bird, bird2);
+
+    },
+
     fade: function() {
 
         $('.canvas').fadeOut();
@@ -170,6 +210,33 @@ Window.prototype.update = function() {
 Window.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), 
     	this.x, this.y);
+};
+
+var Bird = function(x, y, sprite){
+    this.sprite = 'img/'+sprite;
+    this.x = x;
+    this.y = y;
+};
+
+Bird.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite),
+        this.x, this.y);
+};
+
+Bird.prototype.update = function() {
+
+    var time = new Date().getTime() * (0.0002);
+    var which = model.eachBird()[0];
+    model.eachBird().forEach(function(which){
+        var speed = (Math.tan(time) * 600 + 100);
+        if(which.sprite == 'img/bird-git.png'){
+            console.log(which.sprite);
+            which.x = speed * 0.5 + 200;
+        }
+        else {
+            which.x = speed * 1.2 + 200;
+        }
+    });
 };
 
 var Door = function(x, y) {
@@ -335,5 +402,6 @@ var player = new Player();
 var wind = new Window();
 var door = new Door();
 var header = new Header();
+var bird = new Bird();
 
 ko.applyBindings(viewModel.init());
