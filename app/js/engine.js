@@ -198,9 +198,9 @@ function startMeUp(){
                 birds.render();
             });*/
             
-            model.eachLadder().forEach(function(ladders){
+           /* model.eachLadder().forEach(function(ladders){
                 ladders.render();
-            });
+            });*/
 
 
             player.render();

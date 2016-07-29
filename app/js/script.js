@@ -111,16 +111,16 @@ var viewModel = {
         
        // var yArray = [300, 370, 423];
         //yArray.forEach(function(each){
-       //     var door = new Door(390, 330, 'linkedInSmall.png');
-         //   var door1 = new Door(500, 330, 'gitHubSmall.png');
-           // var door2 = new Door(600, 330, 'resumeSmall.png');
-            var door3 = new Door(800, 90, 'sun.png');
+            var door = new Door(800, 355, 'blackbox.png');
+            var door1 = new Door(800, 425, 'blackbox.png');
+            var door2 = new Door(800, 285, 'blackbox.png');
+          //  var door3 = new Door(800, 90, 'sun.png');
             var door4 = new Door(500, 110, 'coin.png');
             var door5 = new Door(200, 130, 'coin.png');
             var door6 = new Door(150, 30, 'cloud.png');
             var door7 = new Door(600, 10, 'cloud.png');
        
-            model.eachDoor.push(/*door, door1, door2,*/door3, door4, door5,
+            model.eachDoor.push(door, door1, door2,/* door3,*/ door4, door5,
                 door6, door7);
 
         //});
@@ -166,7 +166,7 @@ var viewModel = {
         var ladderArray = [330, 180];
         ladderArray.forEach(function(ladders){
 
-            ladder = new Ladder(ladders);
+        //    ladder = new Ladder(ladders);
             model.eachLadder.push(ladder);
         });
     },
@@ -354,12 +354,12 @@ Player.prototype.handleInput = function() {
     if (event.keyCode == 39) {
         this.x += 100;
     }
-    if(player.x == 800 && player.y == 60){
-        if (event.keyCode == 13) {
+    if(player.x == 800 /*&& player.y == 60*/ && event.keyCode == 13){
+      //  if (event.keyCode == 13) {
             //viewModel.doorChoice();
-            viewModel.fade();
+           // viewModel.fade();
             window.open('http://jack-masterson.com');
-        }
+       // }
         
     }
 
@@ -374,7 +374,7 @@ Player.prototype.handleInput = function() {
     }
 
     
-    if(player.x == 800){
+  /*  if(player.x == 800){
 
         if(event.keyCode == 38){
             if(that.y > -120){
@@ -389,7 +389,7 @@ Player.prototype.handleInput = function() {
     //        console.log(player.y); 
         }
 
-    }
+    }*/
         if((player.x == 200) && (player.y == 60)){
             setTimeout(function(){
                 viewModel.selectEdu();
