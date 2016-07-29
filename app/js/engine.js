@@ -109,7 +109,8 @@ function startMeUp(){
             header.update();
             model.eachBird().forEach(function(each){
                 each.update(dt);
-            })
+            });
+            ladder.update();
 /*
             model.allMowers().forEach(function(mow){
                 mow.update(dt);
@@ -197,6 +198,9 @@ function startMeUp(){
                 birds.render();
             });
             player.render();
+            model.eachLadder().forEach(function(ladders){
+                ladders.render();
+            })
         //    door.render();
            /* model.allObstacles().forEach(function(obs){
                  obs.render();
@@ -250,7 +254,8 @@ function startMeUp(){
             'img/portfolio-header.png',
             'img/school-header.png',
             'img/bird-linked.png',
-            'img/bird-git.png'
+            'img/bird.png',
+            'img/ladder.png'
         ]);
         Resources.onReady(init);
 
