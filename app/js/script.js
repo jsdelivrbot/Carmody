@@ -374,23 +374,23 @@ Player.prototype.handleInput = function() {
         }
     }
 
-       model.eachBird().forEach(function(each){
+   /*    model.eachBird().forEach(function(each){
         var floorX = Math.floor(each.x/100)*100;
         var ceilX = Math.ceil(each.x);
         var floorY = Math.floor(each.y/100)*100;
         var ceilY = Math.ceil(each.y);
         var equalX = (player.x == (floorX || ceilX));
         var equalY = (player.y == (floorY || ceilY));
-        var equal = equalX == equalY;
+        var equal = equalX === equalY;
      //   console.log(each.x);
         if(equal && event.keyCode == 13){
   //          console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
        //     console.log("SUPRE EQUAL");
          //   console.log(each);
             if(each.sprite == 'img/bird-linked.png'){
-                viewModel.openGitHub();
+            //    viewModel.openGitHub();
             }
-            else {
+            if(each.sprite == 'img/bird-git.png') {
                 viewModel.openLinkedIn();
             }
 
@@ -398,7 +398,7 @@ Player.prototype.handleInput = function() {
          //   console.log
             
         }
-    })
+    })*/
 };
 
 document.addEventListener('keyup', function(e) {
