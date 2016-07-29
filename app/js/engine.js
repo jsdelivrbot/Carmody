@@ -197,10 +197,11 @@ function startMeUp(){
             //    console.log(birds);
                 birds.render();
             });
-            player.render();
+            
             model.eachLadder().forEach(function(ladders){
                 ladders.render();
-            })
+            });
+            player.render();
         //    door.render();
            /* model.allObstacles().forEach(function(obs){
                  obs.render();

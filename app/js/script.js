@@ -122,20 +122,20 @@ var viewModel = {
 
     doorChoice: function() {
         console.log(player.x, player.y);
-        if(player.x == 500){
+        if(player.x == 300){
             
             viewModel.selectProjects();
             viewModel.fade();
         }
-        if(player.x == 700){
+        if(player.x == 500){
             viewModel.selectEdu();
             viewModel.fade();
         }
 
-        if(player.x == 300){
+       /* if(player.x == 300){
             viewModel.selectResume();
             player.x = 0;
-        }
+        }*/
         
     },
 
@@ -312,21 +312,22 @@ Player.prototype.update = function() {
     	player.x = 800;
     }
 
+
   //  console.log(player.x, player.y, 'player');
-    model.eachBird().forEach(function(each){
+  /*  model.eachBird().forEach(function(each){
         var floor = Math.floor(each.x/100)*100;
         var ceil = Math.ceil(each.x);
         var equal = (player.x == (floor || ceil))
      //   console.log(each.x);
         if(equal){
-            console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
+  //          console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
             console.log("SUPRE EQUAL");
             console.log(each);
             
          //   console.log
             
         }
-    })
+    })*/
     //console.log(bird.x, bird.y, 'bird');
 
 };
@@ -360,6 +361,28 @@ Player.prototype.handleInput = function() {
     		that.y += 270;
     	};
     	setTimeout(down, 200);
+    }
+
+    
+    if(player.x == 800){
+       // console.log('eight hundred!');
+        if(event.keyCode == 38){
+            if(that.y > -120){
+                that.y += -90;
+            }
+
+        }
+        if(event.keyCode == 40){
+            if(that.y < 330){
+                that.y += 90;
+            }
+            console.log(player.y);
+ 
+            
+        }
+       /* if(that.y > -120){
+            that.y == -120;
+        }*/
     }
 };
 
