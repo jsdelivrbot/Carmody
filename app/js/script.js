@@ -121,13 +121,14 @@ var viewModel = {
     },
 
     doorChoice: function() {
-        console.log(player.x, player.y);
-        if(player.x == 300){
+        console.log('hey!');
+     //   console.log(player.x, player.y);
+        if(player.x == 400){
             
             viewModel.selectProjects();
             viewModel.fade();
         }
-        if(player.x == 500){
+        if(player.x == 600){
             viewModel.selectEdu();
             viewModel.fade();
         }
@@ -144,8 +145,8 @@ var viewModel = {
         var bird, bird2;
         var spriteArray = ['bird-git.png', 'bird-linked.png'];
         spriteArray.forEach(function(sprite){
-            bird = new Bird(400, 10, 'bird-git.png');
-            bird2 = new Bird(100, 120, 'bird-linked.png');     
+            bird = new Bird(400, 10, 'bird-linked.png');
+            bird2 = new Bird(100, 120, 'bird-git.png');     
         });
         model.eachBird.push(bird, bird2);
 
@@ -169,14 +170,14 @@ var viewModel = {
 
     selectProjects: function() {
 
-        console.log('projects selected!');
+     //   console.log('projects selected!');
         $('.sections').fadeIn();
         $('.all-sections').hide();
         $('#projects').show();
     },
 
     selectEdu: function() {
-        console.log('education selected!');
+    //    console.log('education selected!');
         $('.sections').fadeIn();
         $('.all-sections').hide();
         $('#education').show();
@@ -369,20 +370,24 @@ Player.prototype.handleInput = function() {
             if(that.y < 330){
                 that.y += 90;
             }
-            console.log(player.y); 
+    //        console.log(player.y); 
         }
     }
 
        model.eachBird().forEach(function(each){
-        var floor = Math.floor(each.x/100)*100;
-        var ceil = Math.ceil(each.x);
-        var equal = (player.x == (floor || ceil))
+        var floorX = Math.floor(each.x/100)*100;
+        var ceilX = Math.ceil(each.x);
+        var floorY = Math.floor(each.y/100)*100;
+        var ceilY = Math.ceil(each.y);
+        var equalX = (player.x == (floorX || ceilX));
+        var equalY = (player.y == (floorY || ceilY));
+        var equal = equalX == equalY;
      //   console.log(each.x);
         if(equal && event.keyCode == 13){
   //          console.log('THEYRE EQUAL!!!!!!!!!!!!!!!!!!!');
-            console.log("SUPRE EQUAL");
-            console.log(each);
-            if(each.sprite == 'img/bird-git.png'){
+       //     console.log("SUPRE EQUAL");
+         //   console.log(each);
+            if(each.sprite == 'img/bird-linked.png'){
                 viewModel.openGitHub();
             }
             else {
@@ -413,7 +418,7 @@ document.addEventListener('keyup', function(e) {
 var going = {
 
     up: function(){
-        console.log('going up!');
+    //    console.log('going up!');
         $('.canvas-header').hide();
         $('.canvas').animate({
             width: 0.25
@@ -426,7 +431,7 @@ var going = {
     },
 
     down: function() {
-        console.log('going down!');
+   //     console.log('going down!');
     },
 
     floorChoice: function() {
@@ -444,7 +449,7 @@ var hover = {
 
     over: function() {
         var clickId = "."+this.picId;
-        console.log(clickId);
+  //      console.log(clickId);
         $(clickId).css('opacity', '1');
 
     },
