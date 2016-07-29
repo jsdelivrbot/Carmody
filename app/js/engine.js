@@ -106,10 +106,10 @@ function startMeUp(){
             });*/
             player.update();
             wind.update();
-            header.update();
-            model.eachBird().forEach(function(each){
+    //        header.update();
+          /*  model.eachBird().forEach(function(each){
                 each.update(dt);
-            });
+            });*/
             ladder.update();
 /*
             model.allMowers().forEach(function(mow){
@@ -189,18 +189,20 @@ function startMeUp(){
                 door.render();
             });
 
-            model.eachHeader().forEach(function(header){
+       /*     model.eachHeader().forEach(function(header){
                 header.render();
-            });
+            });*/
          //   console.log(bird);
-            model.eachBird().forEach(function(birds){
+           /* model.eachBird().forEach(function(birds){
             //    console.log(birds);
                 birds.render();
-            });
+            });*/
             
             model.eachLadder().forEach(function(ladders){
                 ladders.render();
             });
+
+
             player.render();
         //    door.render();
            /* model.allObstacles().forEach(function(obs){
@@ -257,7 +259,13 @@ function startMeUp(){
             'img/bird-linked.png',
             'img/bird-git.png',
             'img/bird.png',
-            'img/ladder.png'
+            'img/ladder.png',
+            'img/sun.png',
+            'img/cloud.png',
+            'img/resumeSmall.png',
+            'img/gitHubSmall.png',
+            'img/linkedInSmall.png',
+            'img/coin.png'
         ]);
         Resources.onReady(init);
 

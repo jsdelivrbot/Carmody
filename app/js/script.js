@@ -11,7 +11,7 @@ canvas.addEventListener('mousemove', function(mouse) {
 var model = {
 	eachWind: ko.observableArray(),
     eachDoor: ko.observableArray(),
-    eachHeader: ko.observableArray(),
+ //   eachHeader: ko.observableArray(),
     eachBird: ko.observableArray(),
     eachLink: ko.observable(),
     floorNum: ko.observable(),
@@ -85,16 +85,16 @@ var viewModel = {
 
     init: function() {
 
-        viewModel.createHeaders();
+  //      viewModel.createHeaders();
         viewModel.createDoor();
-        viewModel.createBirds();
+    //    viewModel.createBirds();
         viewModel.createLadder();
       //  viewModel.generateRandomCoordinates();
         startMeUp();
 
     },
 
-    createHeaders: function() {
+    /*createHeaders: function() {
 
         var y = 210;
         var xArray = [400, 600];
@@ -105,19 +105,26 @@ var viewModel = {
 
         model.eachHeader.push(head, head2);
 
-    },
+    },*/
 
     createDoor: function() {
         
-        var yArray = [300, 370, 423];
-        yArray.forEach(function(each){
-            var door = new Door(400, each);
-            var door2 = new Door(600, each);
-        //    var door3 = new Door(700, each);
-            model.eachDoor.push(door);
-            model.eachDoor.push(door2);
-          //  model.eachDoor.push(door3);
-        });
+       // var yArray = [300, 370, 423];
+        //yArray.forEach(function(each){
+       //     var door = new Door(390, 330, 'linkedInSmall.png');
+         //   var door1 = new Door(500, 330, 'gitHubSmall.png');
+           // var door2 = new Door(600, 330, 'resumeSmall.png');
+            var door3 = new Door(800, 90, 'sun.png');
+            var door4 = new Door(500, 110, 'coin.png');
+            var door5 = new Door(200, 130, 'coin.png');
+            var door6 = new Door(150, 30, 'cloud.png');
+            var door7 = new Door(600, 10, 'cloud.png');
+       
+            model.eachDoor.push(/*door, door1, door2,*/door3, door4, door5,
+                door6, door7);
+
+        //});
+
     },
 
     doorChoice: function() {
@@ -133,6 +140,8 @@ var viewModel = {
             viewModel.fade();
         }
 
+
+
        /* if(player.x == 300){
             viewModel.selectResume();
             player.x = 0;
@@ -140,7 +149,7 @@ var viewModel = {
         
     },
 
-    createBirds: function(){
+   /* createBirds: function(){
 
         var bird, bird2;
         var spriteArray = ['bird-git.png', 'bird-linked.png'];
@@ -150,11 +159,11 @@ var viewModel = {
         });
         model.eachBird.push(bird, bird2);
 
-    },
+    },*/
 
     createLadder: function() {
         var ladder;
-        var ladderArray = [330, 180, 30];
+        var ladderArray = [330, 180];
         ladderArray.forEach(function(ladders){
 
             ladder = new Ladder(ladders);
@@ -232,7 +241,7 @@ Ladder.prototype.update = function() {
 
 }
 
-var Bird = function(x, y, sprite){
+/*var Bird = function(x, y, sprite){
     this.sprite = 'img/'+sprite;
     this.x = x;
     this.y = y;
@@ -257,10 +266,10 @@ Bird.prototype.update = function() {
             which.x = speed * 1.2 + 200;
         }
     });
-};
+};*/
 
-var Door = function(x, y) {
-    this.sprite = 'img/blackbox.png';
+var Door = function(x, y, sprite) {
+    this.sprite = 'img/'+sprite;
     this.x = x;
     this.y = y;
 
@@ -277,7 +286,7 @@ Door.prototype.render = function() {
 
 };
 
-var Header = function(x, sprite) {
+/*var Header = function(x, sprite) {
 
     this.sprite = 'img/'+sprite;
     this.x = x;
@@ -294,7 +303,7 @@ Header.prototype.render = function() {
         this.x, this.y);
 
 };
-
+*/
 
 var Player = function() {
 
@@ -314,6 +323,7 @@ Player.prototype.update = function() {
     }
 
 
+
   //  console.log(player.x, player.y, 'player');
 
     //console.log(bird.x, bird.y, 'bird');
@@ -331,6 +341,7 @@ Player.prototype.handleInput = function() {
 	var speed = (Math.tan(time) * 600 + 100);
 	var that = this;
 
+
     if (event.keyCode == 37) {
         if(that.y < 330){
             that.x += 0;
@@ -343,10 +354,15 @@ Player.prototype.handleInput = function() {
     if (event.keyCode == 39) {
         this.x += 100;
     }
-
-    if (event.keyCode == 13) {
-        viewModel.doorChoice();
+    if(player.x == 800 && player.y == 60){
+        if (event.keyCode == 13) {
+            //viewModel.doorChoice();
+            viewModel.fade();
+            window.open('http://jack-masterson.com');
+        }
+        
     }
+
 
     if (event.keyCode == 74){
     	this.y += -270; 	
@@ -372,7 +388,23 @@ Player.prototype.handleInput = function() {
             }
     //        console.log(player.y); 
         }
+
     }
+        if((player.x == 200) && (player.y == 60)){
+            setTimeout(function(){
+                viewModel.selectEdu();
+                viewModel.fade();
+            }, 200)
+
+        }
+        if((player.x == 500) && (player.y == 60)){
+            setTimeout(function(){
+                viewModel.selectProjects();
+                viewModel.fade();
+            }, 200)
+
+        }
+    console.log(player.x, player.y);
 
    /*    model.eachBird().forEach(function(each){
         var floorX = Math.floor(each.x/100)*100;
@@ -475,8 +507,8 @@ var back = {
 var player = new Player();
 var wind = new Window();
 var door = new Door();
-var header = new Header();
-var bird = new Bird();
+//var header = new Header();
+//var bird = new Bird();
 var ladder = new Ladder();
 
 
