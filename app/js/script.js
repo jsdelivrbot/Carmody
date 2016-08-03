@@ -176,6 +176,83 @@ var model = {
 		}*/
 	],
 	projects: [
+	{
+			title: 'In Progress Web Apps',
+			divider: ['|', '|', '|'],
+			text: 'APIs I have experience with '+
+				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
+			href: 'collapseFour',
+			clickHref: '#collapseFour',
+			id: 'api-head',
+			src: 'img/globe.png',
+			examples: [
+				{
+					name: 'Calorie Tracker Health App',
+					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
+					date: 'May 20 - May 30, 2016',
+					skills: ['BackboneJS', ' Underscore', ' Local Storage'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/calorie-two.png',
+							second: 'img/calorie-one.png'
+						}
+					]
+				},
+				{
+					name: 'Music App',
+					url: '#/',
+					date: 'Started June 10, 2016',
+					description: 'Filler text',
+					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
+					img: [
+						{
+							first: 'img/musicTwo.png',
+							second: 'img/musicOne.png'
+						}
+					]
+				},
+				{
+					name: 'Cause of Death App',
+					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
+					date: 'Started June 17, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Charts API', ' Socrata ODN API'],
+					img: [
+						{
+							first: 'img/deathOne.png',
+							second: 'img/deathTwo.png'
+						}
+					]
+				},
+				{
+					name: 'Sports Draft App',
+					url: '#/',
+					date: 'Started June 25, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Geolocation', ' Fantasy Football API'],
+					img: [
+						{
+							first: 'img/sportsOne.png',
+							second: 'img/sportsTwo.png'
+						}
+					]
+				}/*,
+				{
+					name: 'Wedding Page - BARM',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
+					date: 'Started February 12, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
+						}
+					]
+				}*/
+			]
+		},
 		{
 			title: 'Udacity Projects',
 			divider: ['|'],
@@ -214,7 +291,7 @@ var model = {
 					name: 'Froggerish',
 					url: 'https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html',
 					date: 'January 8, 2015 - February 7, 2016',
-					skills: ['HTML5 Canvas', ' Separation of Concerns', 'Object Prototypes ', 'Code Simplification '],
+					skills: ['HTML5 Canvas', ' Separation of Concerns', ' Object Prototypes', ' Code Simplification'],
 					description: 'According to the Udacity instructor who' +
 					' reviewed it, "excellently implemented game...I am really' +
 					' impressed by your work." This was a fun one. It took' +
@@ -229,8 +306,8 @@ var model = {
 					' it a try and let me know what you think!',
 					img: [
 						{
-							first: 'img/arcade.png',
-							second: 'img/iron-arcade.png'
+							second: 'img/arcade.png',
+							first: 'img/iron-arcade.png'
 						}
 					],
 					link: 'https://github.com/jackmasterson/canvasArcade/tree/master/app'
@@ -247,7 +324,7 @@ var model = {
 							second: 'img/jasmine-two.png'
 						}
 					]
-				},
+				}/*,
 				{
 					name: 'Online Resume',
 					url: 'https://cdn.rawgit.com/jackmasterson/ResumeBuilder/master/src/index.html',
@@ -268,7 +345,7 @@ var model = {
 							second: 'img/resume-work.png'
 						}
 					]
-				},
+				},*/
 			]
 		},
 		{
@@ -346,83 +423,6 @@ var model = {
 						}
 					]
 				}
-			]
-		},
-		{
-			title: 'APIs',
-			divider: ['|', '|', '|'],
-			text: 'APIs I have experience with '+
-				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
-			href: 'collapseFour',
-			clickHref: '#collapseFour',
-			id: 'api-head',
-			src: 'img/globe.png',
-			examples: [
-				{
-					name: 'Calorie Tracker Health App',
-					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
-					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
-					description: "Filler Text",
-					img: [
-						{
-							first: 'img/calorie-two.png',
-							second: 'img/calorie-one.png'
-						}
-					]
-				},
-				{
-					name: 'Music App',
-					url: '#/',
-					date: 'Started June 10, 2016',
-					description: 'Filler text',
-					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
-					img: [
-						{
-							first: 'img/musicTwo.png',
-							second: 'img/musicOne.png'
-						}
-					]
-				},
-				{
-					name: 'Cause of Death App',
-					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
-					date: 'Started June 17, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Charts API', ' Socrata ODN API'],
-					img: [
-						{
-							first: 'img/deathOne.png',
-							second: 'img/deathTwo.png'
-						}
-					]
-				},
-				{
-					name: 'Sports Draft App',
-					url: '#/',
-					date: 'Started June 25, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Geolocation', ' Fantasy Football API'],
-					img: [
-						{
-							first: 'img/sportsOne.png',
-							second: 'img/sportsTwo.png'
-						}
-					]
-				}/*,
-				{
-					name: 'Wedding Page - BARM',
-					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
-					date: 'Started February 12, 2016',
-					description: 'Beth is getting married!',
-					skills: ko.observable(''),
-					img: [
-						{
-							first: 'img/no-photos.png',
-							second: 'img/no-photos.png'
-						}
-					]
-				}*/
 			]
 		},
 		{
@@ -508,12 +508,14 @@ var toggle = {
 		$('.light-back').hide();
 
 		$(clickedID).fadeToggle('slow');
-		$('.nav').css('color', 'black');
-		$(clickedHeadID).css('color', 'gray');
-		$('.intro-sub').show();
+	/*	$('.nav').css('color', 'white');
+		$(clickedHeadID).css('color', 'antique white');*/
+	//	$('.intro-sub').show();
 		if(this.divID === 'intro'){
 			$('.scroll').hide();
 			$('.intro').show();
+			$('.intro-sub').show();
+			$('.nav-head').hide();
 			document.location.href="#/"
 		}
 		if(this.divID === 'portfolio'){
@@ -521,6 +523,7 @@ var toggle = {
 			$('.scroll-up').hide();
 			$('.port-nav').show();
 			$('.divide-hide').show();
+			$('.nav-head').show();
 		}
 		else {
 			$('.port-nav').hide();
@@ -534,8 +537,10 @@ var toggle = {
 	moreInfo: function(clicked) {
 		$('.show').show();
 		
-		$('.nav').css('color', 'black');
-		$('#port').css('color', 'gray');
+	/*	$('.nav').css('color', 'white');
+		$('#port').css('color', 'antique white');*/
+		$('.intro-sub').hide();
+		$('.nav-head').show();
 
 		$('.hide').hide();
 
