@@ -177,84 +177,7 @@ var model = {
 	],
 	projects: [
 	{
-			title: 'In Progress Web Apps',
-			divider: ['|', '|', '|'],
-			text: 'APIs I have experience with '+
-				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
-			href: 'collapseFour',
-			clickHref: '#collapseFour',
-			id: 'api-head',
-			src: 'img/globe.png',
-			examples: [
-				{
-					name: 'Calorie Tracker Health App',
-					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
-					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Local Storage'],
-					description: "Filler Text",
-					img: [
-						{
-							first: 'img/calorie-two.png',
-							second: 'img/calorie-one.png'
-						}
-					]
-				},
-				{
-					name: 'Music App',
-					url: '#/',
-					date: 'Started June 10, 2016',
-					description: 'Filler text',
-					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
-					img: [
-						{
-							first: 'img/musicTwo.png',
-							second: 'img/musicOne.png'
-						}
-					]
-				},
-				{
-					name: 'Cause of Death App',
-					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
-					date: 'Started June 17, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Charts API', ' Socrata ODN API'],
-					img: [
-						{
-							first: 'img/deathOne.png',
-							second: 'img/deathTwo.png'
-						}
-					]
-				},
-				{
-					name: 'Sports Draft App',
-					url: '#/',
-					date: 'Started June 25, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Geolocation', ' Fantasy Football API'],
-					img: [
-						{
-							first: 'img/sportsOne.png',
-							second: 'img/sportsTwo.png'
-						}
-					]
-				}/*,
-				{
-					name: 'Wedding Page - BARM',
-					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
-					date: 'Started February 12, 2016',
-					description: 'Beth is getting married!',
-					skills: ko.observable(''),
-					img: [
-						{
-							first: 'img/no-photos.png',
-							second: 'img/no-photos.png'
-						}
-					]
-				}*/
-			]
-		},
-		{
-			title: 'Udacity Projects',
+			title: 'Featured Udacity Projects',
 			divider: ['|'],
 			text: 'Everything I completed in Udacity\'s Nanodegree program.',
 			href: 'collapseOne',
@@ -264,7 +187,7 @@ var model = {
 			examples: [
 				{
 					name: 'Neighborhood Map',
-					url: 'https://cdn.rawgit.com/jackmasterson/mapped/master/app/index.html',
+					url: 'https://rawgit.com/jackmasterson/mapped/master/app/index.html',
 					date: 'March 3 - May 10, 2016',
 					skills: ['Knockout/MVVM', ' Google Maps API', ' Magic Seaweed API ', ' Search Bar on Type'],
 					description: "This project utilizes Knockout's" +
@@ -311,7 +234,7 @@ var model = {
 						}
 					],
 					link: 'https://github.com/jackmasterson/canvasArcade/tree/master/app'
-				},				
+				}/*,				
 				{
 					name: 'Writing Tests',
 					url: 'https://rawgit.com/jackmasterson/jasmine/master/index.html',
@@ -349,6 +272,83 @@ var model = {
 			]
 		},
 		{
+			title: 'In Progress Web Apps',
+			divider: ['|', '|', '|'],
+			text: 'APIs I have experience with '+
+				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
+			href: 'collapseFour',
+			clickHref: '#collapseFour',
+			id: 'api-head',
+			src: 'img/globe.png',
+			examples: [
+				{
+					name: 'Calorie Tracker Health App',
+					url: 'https://rawgit.com/jackmasterson/HealthApp/master/app/index.html',
+					date: 'May 20 - May 30, 2016',
+					skills: ['BackboneJS', ' Underscore', ' Local Storage'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/calorie-two.png',
+							second: 'img/calorie-one.png'
+						}
+					]
+				}/*,
+				{
+					name: 'Music App',
+					url: '#/',
+					date: 'Started June 10, 2016',
+					description: 'Filler text',
+					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
+					img: [
+						{
+							first: 'img/musicTwo.png',
+							second: 'img/musicOne.png'
+						}
+					]
+				}*/,
+				{
+					name: 'Cause of Death App',
+					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
+					date: 'Started June 17, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Charts API', ' Socrata ODN API'],
+					img: [
+						{
+							first: 'img/deathOne.png',
+							second: 'img/deathTwo.png'
+						}
+					]
+				}/*,
+				{
+					name: 'Sports Draft App',
+					url: '#/',
+					date: 'Started June 25, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Geolocation', ' Fantasy Football API'],
+					img: [
+						{
+							first: 'img/sportsOne.png',
+							second: 'img/sportsTwo.png'
+						}
+					]
+				}/*,
+				{
+					name: 'Wedding Page - BARM',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
+					date: 'Started February 12, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
+						}
+					]
+				}*/
+			]
+		},
+		{
 			title: 'Templates',
 			divider: ['|', '|'],
 			text: 'Design templates I\'ve been working on '+
@@ -383,7 +383,7 @@ var model = {
 							second: 'img/barTwo.png'
 						}
 					]
-				},
+				}/*,
 				{
 					name: 'Cooking Template',
 					url: 'https://rawgit.com/jackmasterson/cooking/noNav/index.html',
@@ -396,7 +396,7 @@ var model = {
 							second: 'img/cookingTwo.png'
 						}
 					]
-				},
+				}*/,
 				{
 					name: 'Pack-A-Day',
 					url: 'https://rawgit.com/jackmasterson/charity-example/master/index.html',
@@ -409,7 +409,7 @@ var model = {
 							second: 'img/pack-school.png'
 						}
 					]
-				},
+				}/*,
 				{
 					name: 'Shore Fun Improv',
 					url: 'https://cdn.rawgit.com/jackmasterson/improv/master/index.html#/',
@@ -422,7 +422,7 @@ var model = {
 							second: 'img/improv.png'
 						}
 					]
-				}
+				}*/
 			]
 		},
 		{
