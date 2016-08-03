@@ -10,7 +10,8 @@
 
 body {
   overflow: scroll;
-  margin: 0px; }
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.09); }
 
 h1, h2, h3, h4 {
   margin-top: 0px; }
@@ -58,14 +59,18 @@ a {
 .scroll {
   width: 15%;
   text-align: center;
-  margin: 0% 5.5% 0% 5.5%; }
+  margin: 0% 5.5% 0% 5.5%;
+  color: none; }
 
 .nav-head {
-  background-color: white; }
+  background: url(..//img/boat.jpg) no-repeat fixed;
+  background-size: 100vw 33vh;
+  border-bottom: 2px solid black;
+  height: 20vh; }
 
 .nav {
   display: inline-block;
-  color: black;
+  color: white;
   margin-left: 0; }
 
 .nav-img {
@@ -78,9 +83,6 @@ a {
   font-size: 20px;
   margin: 2% 5% 2% 5%;
   display: block; }
-
-#port {
-  color: gray; }
 
 #collapseThree {
   display: none; }
@@ -146,26 +148,38 @@ a {
   margin-bottom: 10vh; }
 
 .port-img {
-  height: 200px;
-  width: 29.5vw;
+  height: 40vh;
+  width: 100%;
   border-bottom: 1px solid gray; }
 
 .port-info-shade {
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.03);
   margin: 0;
   padding: 0;
-  height: 45vh;
-  width: 30vw;
+  height: 55vh;
+  width: 40vw;
   display: inline-block;
   margin: 25px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
 
+.port-skills {
+  font-weight: lighter;
+  font-size: 10px; }
+
+.port-skills-header {
+  width: 80%;
+  margin-left: 10%; }
+
+.port-skills-name {
+  margin-top: 10px; }
+
 .port-ul {
   display: inline-block;
-  margin: 0px;
-  padding: 0; }
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
 .port-info-div {
   width: 100vw;
@@ -181,10 +195,13 @@ a {
   margin: auto 5% 5% 5%; }
 
 .header {
-  font-size: 25px;
+  font-size: 20px;
   min-width: 100%;
-  text-align: right;
-  margin: 0 0 5px 0; }
+  height: 20vh;
+  padding-top: 6vh;
+  text-align: left;
+  margin: 0 0 5px 0;
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .light-back {
   text-align: center;
@@ -269,7 +286,7 @@ a {
   padding-left: 0; }
 
 .port-skills {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 5%; }
 
 .port-date {

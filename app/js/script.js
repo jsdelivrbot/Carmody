@@ -190,7 +190,7 @@ var model = {
 					name: 'Calorie Tracker Health App',
 					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
 					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
+					skills: ['BackboneJS', ' Underscore', ' Local Storage'],
 					description: "Filler Text",
 					img: [
 						{
@@ -291,7 +291,7 @@ var model = {
 					name: 'Froggerish',
 					url: 'https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html',
 					date: 'January 8, 2015 - February 7, 2016',
-					skills: ['HTML5 Canvas', ' Separation of Concerns', 'Object Prototypes ', 'Code Simplification '],
+					skills: ['HTML5 Canvas', ' Separation of Concerns', ' Object Prototypes', ' Code Simplification'],
 					description: 'According to the Udacity instructor who' +
 					' reviewed it, "excellently implemented game...I am really' +
 					' impressed by your work." This was a fun one. It took' +
@@ -508,12 +508,14 @@ var toggle = {
 		$('.light-back').hide();
 
 		$(clickedID).fadeToggle('slow');
-		$('.nav').css('color', 'black');
-		$(clickedHeadID).css('color', 'gray');
-		$('.intro-sub').show();
+	/*	$('.nav').css('color', 'white');
+		$(clickedHeadID).css('color', 'antique white');*/
+	//	$('.intro-sub').show();
 		if(this.divID === 'intro'){
 			$('.scroll').hide();
 			$('.intro').show();
+			$('.intro-sub').show();
+			$('.nav-head').hide();
 			document.location.href="#/"
 		}
 		if(this.divID === 'portfolio'){
@@ -521,6 +523,7 @@ var toggle = {
 			$('.scroll-up').hide();
 			$('.port-nav').show();
 			$('.divide-hide').show();
+			$('.nav-head').show();
 		}
 		else {
 			$('.port-nav').hide();
@@ -534,9 +537,10 @@ var toggle = {
 	moreInfo: function(clicked) {
 		$('.show').show();
 		
-		$('.nav').css('color', 'black');
-		$('#port').css('color', 'gray');
+	/*	$('.nav').css('color', 'white');
+		$('#port').css('color', 'antique white');*/
 		$('.intro-sub').hide();
+		$('.nav-head').show();
 
 		$('.hide').hide();
 
