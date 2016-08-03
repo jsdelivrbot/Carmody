@@ -36,15 +36,13 @@
 		<div class="port-info-div" data-bind="foreach: examples">
 			<div class="port-info-shade">
 				<ul class="port-ul">
-					<li>
-						<img class="port-img" data-bind="attr: {src: img[0].first}">
-					</li>
-					<li class="port-skills-name">
-						<h3 data-bind="text: name"></h3>
-					</li>
-					<li class="port-skills-header">
-						<h4 class="port-skills" data-bind="text: skills"></h4>
-					</li>
+					<a class="port-url" target="_blank" data-bind="attr: {href: url}">
+						<li class="port-li">
+							<img class="port-img" data-bind="attr: {src: img[0].first}">
+							<h3 class="port-skills-name" data-bind="text: name"></h3>
+							<h4 class="port-skills" data-bind="text: skills"></h4>
+						</li>
+					</a>
 				</ul>
 			</div>
 		</div>
