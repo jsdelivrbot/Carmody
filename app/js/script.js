@@ -176,6 +176,83 @@ var model = {
 		}*/
 	],
 	projects: [
+	{
+			title: 'In Progress Web Apps',
+			divider: ['|', '|', '|'],
+			text: 'APIs I have experience with '+
+				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
+			href: 'collapseFour',
+			clickHref: '#collapseFour',
+			id: 'api-head',
+			src: 'img/globe.png',
+			examples: [
+				{
+					name: 'Calorie Tracker Health App',
+					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
+					date: 'May 20 - May 30, 2016',
+					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
+					description: "Filler Text",
+					img: [
+						{
+							first: 'img/calorie-two.png',
+							second: 'img/calorie-one.png'
+						}
+					]
+				},
+				{
+					name: 'Music App',
+					url: '#/',
+					date: 'Started June 10, 2016',
+					description: 'Filler text',
+					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
+					img: [
+						{
+							first: 'img/musicTwo.png',
+							second: 'img/musicOne.png'
+						}
+					]
+				},
+				{
+					name: 'Cause of Death App',
+					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
+					date: 'Started June 17, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Charts API', ' Socrata ODN API'],
+					img: [
+						{
+							first: 'img/deathOne.png',
+							second: 'img/deathTwo.png'
+						}
+					]
+				},
+				{
+					name: 'Sports Draft App',
+					url: '#/',
+					date: 'Started June 25, 2016',
+					description: 'It sure is fun!',
+					skills: ['Google Geolocation', ' Fantasy Football API'],
+					img: [
+						{
+							first: 'img/sportsOne.png',
+							second: 'img/sportsTwo.png'
+						}
+					]
+				}/*,
+				{
+					name: 'Wedding Page - BARM',
+					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
+					date: 'Started February 12, 2016',
+					description: 'Beth is getting married!',
+					skills: ko.observable(''),
+					img: [
+						{
+							first: 'img/no-photos.png',
+							second: 'img/no-photos.png'
+						}
+					]
+				}*/
+			]
+		},
 		{
 			title: 'Udacity Projects',
 			divider: ['|'],
@@ -229,8 +306,8 @@ var model = {
 					' it a try and let me know what you think!',
 					img: [
 						{
-							first: 'img/arcade.png',
-							second: 'img/iron-arcade.png'
+							second: 'img/arcade.png',
+							first: 'img/iron-arcade.png'
 						}
 					],
 					link: 'https://github.com/jackmasterson/canvasArcade/tree/master/app'
@@ -349,83 +426,6 @@ var model = {
 			]
 		},
 		{
-			title: 'APIs',
-			divider: ['|', '|', '|'],
-			text: 'APIs I have experience with '+
-				'including Spotify, Fantasy Football, Google Charts/Geolocation, and more.',
-			href: 'collapseFour',
-			clickHref: '#collapseFour',
-			id: 'api-head',
-			src: 'img/globe.png',
-			examples: [
-				{
-					name: 'Calorie Tracker Health App',
-					url: 'https://rawgit.com/jackmasterson/HealthApp/master/index.html',
-					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Self-taught through documentation'],
-					description: "Filler Text",
-					img: [
-						{
-							first: 'img/calorie-two.png',
-							second: 'img/calorie-one.png'
-						}
-					]
-				},
-				{
-					name: 'Music App',
-					url: '#/',
-					date: 'Started June 10, 2016',
-					description: 'Filler text',
-					skills: ['Spotify API', ' oAuth', ' Autofill', ' Up-voting'],
-					img: [
-						{
-							first: 'img/musicTwo.png',
-							second: 'img/musicOne.png'
-						}
-					]
-				},
-				{
-					name: 'Cause of Death App',
-					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
-					date: 'Started June 17, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Charts API', ' Socrata ODN API'],
-					img: [
-						{
-							first: 'img/deathOne.png',
-							second: 'img/deathTwo.png'
-						}
-					]
-				},
-				{
-					name: 'Sports Draft App',
-					url: '#/',
-					date: 'Started June 25, 2016',
-					description: 'It sure is fun!',
-					skills: ['Google Geolocation', ' Fantasy Football API'],
-					img: [
-						{
-							first: 'img/sportsOne.png',
-							second: 'img/sportsTwo.png'
-						}
-					]
-				}/*,
-				{
-					name: 'Wedding Page - BARM',
-					url: 'https://cdn.rawgit.com/jackmasterson/BARM/master/index.html',
-					date: 'Started February 12, 2016',
-					description: 'Beth is getting married!',
-					skills: ko.observable(''),
-					img: [
-						{
-							first: 'img/no-photos.png',
-							second: 'img/no-photos.png'
-						}
-					]
-				}*/
-			]
-		},
-		{
 			title: 'Published Projects',
 			divider: ['|', '|', '|', '|'],
 			text: 'Projects that are live, including two very different wedding landing '+
@@ -536,6 +536,7 @@ var toggle = {
 		
 		$('.nav').css('color', 'black');
 		$('#port').css('color', 'gray');
+		$('.intro-sub').hide();
 
 		$('.hide').hide();
 

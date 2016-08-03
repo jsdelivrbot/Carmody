@@ -27,39 +27,24 @@
 				<li class="nav" data-bind="attr: { id: id }, text: title"></li>
 			</a>
 		</div>
-		<div class="port-nav show" data-bind="foreach: model.projects">
-			<ul class="proj-head-ul">
-				<li class="proj-nav-li" data-bind="attr: { id: id }">
-					<a data-bind="click: toggle.portTog, text: title"></a>
-				</li>
-				<li class="divide-hide show" data-bind="foreach: divider">
-					<h2 class="divider">|</h2>
-				</li>				
-				<li class="divide-hide">
-					<p data-bind="text: text"></p>
-				</li>
-			</ul>
-		</div>
+
 	</div>
 </div>
 <div class="light-back show" id="portfolio">
 	<div data-bind="foreach: model.projects">
-		<div data-bind="attr: { id: href }" class="port-sect">
-			<div class="examples hide" data-bind="foreach: examples">	
-				<a target="_blank" data-bind="attr: { href: url }">
-					<span class="port-name" data-bind="text: name"></span>
-				</a>
-				<span class="port-date" data-bind="text: date"></span>
-				<h3 class="port-skills" data-bind="if: skills">Quick Skills:
-					<h4 data-bind="text: skills"></h4>
-				</h3>
-	 			<div data-bind="foreach: img" class="port-img-div">
-	        		<img class="example-img" data-bind="attr: { src: first }">
-	        		<img class="example-img" data-bind="attr: { src: second }">
-	    		</div>
-	    		<br>
-    		</div>
-    	</div>
+		<h2 class="port-header" data-bind="text: title"></h2>
+		<div class="port-info-div" data-bind="foreach: examples">
+			<div class="port-info-shade">
+				<ul class="port-ul">
+					<li>
+						<img class="port-img" data-bind="attr: {src: img[0].first}">
+					</li>
+					<li>
+						<h3 data-bind="text: name"></h3>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="scroll-up hide" data-bind="click: toggle.scrollUp">
 		<h4>Back to the Top</h4>
