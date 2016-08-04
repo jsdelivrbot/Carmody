@@ -62,7 +62,7 @@ var model = {
 				},
 				{
 					title: 'resume',
-					imgHref: 'https://www.dropbox.com/s/mz6405mwjwymdjf/Jack%20Masterson_Resume.docx?dl=0',
+					imgHref: 'https://www.dropbox.com/s/8b43309iw4ugu8t/Jack%20Masterson_Resume.docx?dl=0',
 					imgSrc: 'img/dropRes.png',
 					id: 'dropRes'
 				}
