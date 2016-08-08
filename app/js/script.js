@@ -536,6 +536,7 @@ var toggle = {
 					return 'green'
 				}
 			})
+			.duration(900)
 			.delay(2000);
 		
 
