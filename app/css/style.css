@@ -60,8 +60,10 @@ a {
 .scroll {
   width: 15%;
   text-align: center;
-  margin: 0% 5.5% 0% 5.5%;
-  color: none; }
+  margin: 0% 2.5% 0% 5.5%;
+  color: none;
+  cursor: pointer;
+  display: inline; }
 
 .nav-head {
   background: url(..//img/boat.jpg) no-repeat fixed;
