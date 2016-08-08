@@ -14,7 +14,7 @@
 			console.log(i);
 			//all.push([randCoord(), randCoord()])
 		}
-		var body = d3.select('body')
+		var body = d3.select('#education')
 			.append('div')
 		//	.attr('class', 'new-charts')
 		//	.attr('border', '2px solid black')
@@ -44,24 +44,11 @@
 				})
 				.attr('fill', 'black');
 		}
-		//row(5);
-	//	row(250, 'first');
-	//	row(350, 'second');
+
 		for(var i=0; i<w; i+=10){
 			var classy = 'array'+i;
-
 			row(i, classy);
 		}
-		svg.selectAll('circle')
-			.transition()
-			.attr('fill', function(d, i, h){
-				console.log(d);
-				//console.log(i);
-				//console.log(h[i]);
-			//	console.log((2/3)*w);
-				if(d < ((acceptanceRate)*w)){
-					return 'green'
-				}
-			})
-			.delay(2000);
+
+
 

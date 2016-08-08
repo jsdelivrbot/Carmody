@@ -529,6 +529,14 @@ var toggle = {
 			$('.port-nav').hide();
 			$('.divide-hide').hide();
 		}
+		svg.selectAll('circle')
+			.transition()
+			.attr('fill', function(d, i, h){
+				if(d < ((acceptanceRate)*w)){
+					return 'green'
+				}
+			})
+			.delay(2000);
 		
 
 
