@@ -52,19 +52,20 @@
 	</div>
 </div>
 <div class="light-back" id="education">
-	<div class="box" data-bind="foreach: model.education">
-		<ul class="edu-ul">
-			<img class="work-img" data-bind="attr: { src: img, id: id }">
-			<li class="work-li">
-				<a target="_blank" data-bind="attr: { href: url }, text: school"></a>
-			</li>
-			<li class="work-li" id="degree"> 
-				<span data-bind="text: focus"></span>
-			</li>
-			<li class="work-li" id="gpa"> 
-				<span data-bind="text: heading"></span><span data-bind="text: GPA"></span>
-			</li>
-		</ul>
+	<div class="port-info-div" data-bind="foreach: model.education">	
+	<a class="port-url" target="_blank"data-bind="attr: { href: url }">
+		<div class="port-info-shade">
+			<h2 class="port-header" data-bind="text: school"></h2>
+			<ul class="port-ul">
+	
+					<li class="port-li">
+						<img class="work-img" data-bind="attr: { src: img, id: id }">
+						<h3 class="port-skills-name" data-bind="text: focus"></h3>
+						<h4 class="port-skills"><span data-bind="text: heading"></span> <span data-bind="text: GPA"></span></h4>
+					</li>
+			</ul>
+		</div>
+	</a>
 	</div>
 </div>
 <div class="intro-sub" data-bind="foreach: model.contact">
