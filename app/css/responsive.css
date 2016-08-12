@@ -1,0 +1,45 @@
+@media only screen and (min-device-width: 515px) and (max-device-width: 750px) {
+	h3 {
+		font-size: 15px;
+	}
+
+	.head-shot {
+		height: 120px;
+		width: auto;
+	}
+
+	.nav-img {
+		height: 50px;
+		width: auto;
+	}
+
+	.intro-sub {
+		height: auto;
+	}
+
+	.name {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+	.more-info {
+		font-size: 18px;
+	}
+
+}
+
+@media only screen and (min-device-width: 560px) and (max-device-width: 570px) {
+	.more-info {
+		font-size: 15px;
+	}
+
+	.more-info-div {
+		padding-top: 7px;
+	}
+
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+
+
+}
