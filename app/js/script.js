@@ -111,7 +111,7 @@ var model = {
 				other: 'GitHub, Knockout, gulp, ngrok'
 			},
 			GPA: 'HTML5, CSS3, JavaScript, jQuery, Bootstrap, ' +
-				'ngrok, gulp, Slick, Knockout, MVVM practices',
+				'ngrok, gulp, Knockout, Backbone, MVC, Google PageSpeedInsights',
 			img: 'img/udacity.png',
 			id: 'udacity'
 		}
@@ -189,7 +189,7 @@ var model = {
 					name: 'Neighborhood Map',
 					url: 'https://rawgit.com/jackmasterson/mapped/master/app/index.html',
 					date: 'March 3 - May 10, 2016',
-					skills: ['Knockout/MVVM', ' Google Maps API', ' Magic Seaweed API ', ' Search Bar on Type'],
+					skills: ['Knockout/MVVM', ' Google Maps API', ' Search Bar on Type'],
 					description: "This project utilizes Knockout's" +
 						" MVVM approach to organizing code and I learned all" +
 						" about data-binding." +
@@ -285,7 +285,7 @@ var model = {
 					name: 'Calorie Tracker Health App',
 					url: 'https://rawgit.com/jackmasterson/HealthApp/master/app/index.html',
 					date: 'May 20 - May 30, 2016',
-					skills: ['BackboneJS', ' Underscore', ' Local Storage'],
+					skills: ['BackboneJS/MVC', ' Underscore', ' Local Storage'],
 					description: "Filler Text",
 					img: [
 						{
@@ -312,7 +312,7 @@ var model = {
 					url: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
 					date: 'Started June 17, 2016',
 					description: 'It sure is fun!',
-					skills: ['Google Charts API', ' Socrata ODN API'],
+					skills: ['D3 Dynamic Data-Updates', ' D3 Transitions', ' Socrata ODN API'],
 					img: [
 						{
 							first: 'img/deathOne.png',
@@ -530,7 +530,7 @@ var toggle = {
 			$('.divide-hide').hide();
 		}
 
-		
+
 
 		
 

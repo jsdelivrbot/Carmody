@@ -208,6 +208,11 @@ a {
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
+.not-see-through {
+	background-color: rgba(255, 255, 255, 0.7)
+}
+
+
 .port-skills {
 	font-size: 12px;
 	font-weight: lighter;
@@ -326,8 +331,15 @@ a {
 }
 
 #education {
-	margin-bottom: 14vh;
-	margin-top: 5vh;
+	height: 100vh;
+	background: url(..//img/bc.jpg);
+	background-size: cover;
+}
+
+
+.larger {
+	height: 100vh;
+	margin: 0;
 }
 
 #workman {

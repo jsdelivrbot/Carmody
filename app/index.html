@@ -52,9 +52,9 @@
 	</div>
 </div>
 <div class="light-back" id="education">
-	<div class="port-info-div" data-bind="foreach: model.education">	
+	<div class="port-info-div larger" data-bind="foreach: model.education">	
 	<a class="port-url" target="_blank"data-bind="attr: { href: url }">
-		<div class="port-info-shade">
+		<div class="port-info-shade not-see-through">
 			<h2 class="port-header" data-bind="text: school"></h2>
 			<ul class="port-ul">
 	
@@ -97,9 +97,6 @@
 <!--build:js js/script.min.js -->
 <script src="js/lib/knockout-3.2.0.js"></script>
 <script src="js/lib/jquery.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="js/d3.js"></script>
 <script src="js/script.js"></script>
 <!-- endbuild -->
 
