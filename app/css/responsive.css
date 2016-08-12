@@ -3,9 +3,24 @@
 		background-color: white;
 	}
 
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-top: 5px;
+	}
+
 	.port-info-shade {
 		width: 78vw;
 		height: auto;
+	}
+
+	.port-header {
+		margin-top: 10px;
+	}
+
+	.port-info-div {
+		margin-top: 8px;
 	}
 
 	.port-img {
@@ -25,6 +40,11 @@
 
 	.not-see-through {
 		background-color: rgba(0,0,0,0.03);
+	}
+
+	.name {
+		font-size: 20px;
+		margin-bottom: 5px;
 	}
 
 	.larger {
