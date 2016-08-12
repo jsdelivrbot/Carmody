@@ -1,8 +1,13 @@
 @media only screen and (min-device-width: 315px) and (max-device-width: 514px) {
+	body {
+		background-color: white;
+	}
+
 	.port-info-shade {
 		width: 78vw;
 		height: auto;
 	}
+
 	.port-img {
 		width: 78vw;
 		height: auto;
@@ -11,6 +16,19 @@
 	.edu-img {
 		height: 75px;
 		width: auto;
+	}
+
+	#education {
+		background: white;
+		height: 100vh;
+	}
+
+	.not-see-through {
+		background-color: rgba(0,0,0,0.03);
+	}
+
+	.larger {
+		height: 100vh;
 	}
 }
 
