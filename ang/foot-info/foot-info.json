@@ -1,0 +1,20 @@
+[
+	{
+		"title": "linkedIn",
+		"imgHref": "https://linkedin.com/in/mastersonjack",
+		"imgSrc": "img/linkedin.png",
+		"id": "linked"
+	},
+	{
+		"title": "gitHub",
+		"imgHref": "https://github.com/jackmasterson",
+		"imgSrc": "img/gitHub.png",
+		"id": "git"
+	},
+	{
+		"title": "resume",
+		"imgHref": "https://www.dropbox.com/s/8b43309iw4ugu8t/Jack%20Masterson_Resume.docx?dl=0",
+		"imgSrc": "img/dropRes.png",
+		"id": "dropRes"
+	}
+]
