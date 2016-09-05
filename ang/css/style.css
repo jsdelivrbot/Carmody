@@ -1,0 +1,389 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  text-align: center;
+  vertical-align: middle;
+  list-style-type: none; }
+
+body {
+  overflow: scroll;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.09); }
+
+h1, h2, h3, h4 {
+  margin-top: 0px; }
+
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+a {
+  cursor: pointer; }
+
+.intro {
+  background: url(..//img/stand.jpg) no-repeat fixed;
+  background-size: 100vw 73vh;
+  height: 73vh;
+  width: 100vw;
+  z-index: 5; }
+
+.shade {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 73vh; }
+
+.intro-sub {
+  height: 27vh;
+  padding-top: 4vh;
+  background-color: white; }
+
+.basic-info {
+  color: white;
+  padding-top: 5vh; }
+
+.head-shot {
+  height: 200px;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 15px; }
+
+.more-info-div {
+  padding-top: 5vh; }
+
+.more-info {
+  color: white;
+  font-size: 25px;
+  text-decoration: underline; }
+
+.scroll {
+  width: 15%;
+  text-align: center;
+  margin: 0% 2.5% 0% 5.5%;
+  color: none;
+  cursor: pointer;
+  display: inline; }
+
+.nav-head {
+  background: url(..//img/boat.jpg) no-repeat fixed;
+  background-size: 100vw 33vh;
+  border-bottom: 2px solid black;
+  height: 20vh; }
+
+.nav {
+  display: inline-block;
+  color: white;
+  margin-left: 0; }
+
+.nav-img {
+  height: 90px;
+  width: 90px;
+  margin: 2%;
+  display: inline-block; }
+
+.port {
+  font-size: 20px;
+  margin: 2% 5% 2% 5%;
+  display: block; }
+
+#collapseThree {
+  display: none; }
+
+#collapseTwo {
+  display: none; }
+
+#collapseOne {
+  display: none; }
+
+#collapseFour {
+  display: none; }
+
+.contact {
+  color: #7e7e7e;
+  font-size: 20px;
+  line-height: 25px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 0px; }
+
+.top-header {
+  font-size: 40px;
+  width: 100%;
+  color: black;
+  margin-top: 15vh;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none; }
+
+.explain {
+  margin-top: 10vh;
+  font-size: 20px;
+  padding: 15vw;
+  padding-top: 0; }
+
+.scroll-up {
+  display: none;
+  padding-bottom: 15px;
+  cursor: pointer; }
+
+.raw-head {
+  border: none;
+  margin: 15px; }
+
+.nav-title {
+  display: inline-block; }
+
+.imgNav-div {
+  font-size: 15px;
+  margin: 0;
+  width: 30vw;
+  display: inline-block; }
+
+.example-img {
+  height: 40vh;
+  width: 40vw;
+  margin: 15px;
+  border: 1px solid black; }
+
+.port-img-div {
+  margin-bottom: 10vh; }
+
+.port-img {
+  height: 40vh;
+  width: 100%;
+  border-bottom: 1px solid gray; }
+
+.port-info-shade {
+  background-color: rgba(0, 0, 0, 0.03);
+  margin: 0;
+  padding: 0;
+  height: 55vh;
+  width: 40vw;
+  display: inline-block;
+  margin: 25px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.not-see-through {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.port-skills {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 5px; }
+
+.port-skills-header {
+  width: 70%;
+  margin-left: 10%; }
+
+.port-skills-name {
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.port-url {
+  text-decoration: none;
+  color: black; }
+
+.port-ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.port-info-div {
+  width: 100vw;
+  margin: 30px 0 30px 0px; }
+
+.port-header {
+  margin: 30px 0 10px 0; }
+
+.img-header {
+  width: 30vw; }
+
+.description {
+  margin: auto 5% 5% 5%; }
+
+.header {
+  font-size: 20px;
+  min-width: 100%;
+  height: 20vh;
+  padding-top: 6vh;
+  text-align: left;
+  margin: 0 0 5px 0;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.light-back {
+  text-align: center;
+  height: 52vh; }
+
+.blog-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  margin-left: 35%; }
+
+#interests {
+  height: 1000px; }
+
+.inline {
+  display: inline-block; }
+
+.inline-head {
+  margin-bottom: 15%; }
+
+.work-ul {
+  font-size: 25px;
+  margin-bottom: 4%; }
+
+.work-li {
+  text-align: left; }
+
+#degree {
+  font-size: 20px; }
+
+.work-img {
+  float: right;
+  height: 120px;
+  width: 120px;
+  margin-right: 3%; }
+
+.edu-img {
+  height: 120px;
+  width: 120px; }
+
+.edu-ul {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 6%;
+  padding-left: 3%; }
+
+#education {
+  height: 100vh;
+  background: url(..//img/bc.jpg);
+  background-size: cover; }
+
+.larger {
+  height: 100vh;
+  margin: 0; }
+
+#workman {
+  height: 50px;
+  width: 175px; }
+
+#gpa {
+  width: 45%;
+  font-size: 20px; }
+
+.date {
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 20px; }
+
+.employer {
+  font-size: 30px; }
+
+.box {
+  width: 100vw;
+  height: 68vh;
+  padding-top: 5vh; }
+
+.int-head {
+  margin-top: 5%; }
+
+.port-nav {
+  margin-top: 3vh;
+  display: inline-block; }
+
+.port-name {
+  font-size: 25px;
+  margin-right: 20%; }
+
+.port-nav-img-div {
+  margin-left: 0;
+  padding-left: 0; }
+
+.port-date {
+  font-size: 15px;
+  text-align: right;
+  font-style: italic;
+  margin-left: 13%; }
+
+.slick-list {
+  margin-top: 7%; }
+
+.search {
+  display: inline;
+  display: none;
+  width: 100vw; }
+
+.search-class {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center; }
+
+.search-img {
+  height: 75px;
+  width: 75px; }
+
+/* ---------------Slider --------------------*/
+#container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+#blog-ID {
+  padding: 0px; }
+
+.carousel {
+  height: 250px;
+  width: 350px;
+  font-size: 15px;
+  border: 5px solid black;
+  text-align: center;
+  margin-left: 33vw;
+  background-color: white; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px; }
+
+.inline, .slick-slide {
+  padding-left: 10px; }
+
+.proj-head-ul {
+  display: inline-block;
+  width: 20vw;
+  height: 10vh; }
+
+.proj-nav-li {
+  display: block; }
+
+.divider {
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+
+/* ------------- Bootstrap ------------*/
+#accordion {
+  margin: 12%;
+  background-color: #ccc; }
+
+.panel-group, .panel-heading, div.panel.panel-default,
+.panel-group .panel + .panel {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #ccc; }
+
+.improv-ul {
+  padding-left: 0px; }
+
+.improv {
+  display: inline;
+  font-size: 20px; }
+
+.improv-img {
+  height: 150px;
+  width: 200px; }

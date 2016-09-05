@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Neighborhood Map",
+		"url": "https://rawgit.com/jackmasterson/mapped/master/app/index.html",
+		"date": "March 3 - May 10, 2016",
+		"skills": ["Knockout/MVVM", " Google Maps API", " Search Bar on Type"],
+		"description": "This project utilizes ",
+		"img": [
+			{
+				"first": "img/map.png",
+				"second": "img/map2.png"
+			}
+		]
+	},
+	{
+		"name": "Froggerish",
+		"url": "https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html",
+		"date": "January 8, 2015 - February 7, 2016",
+		"skills": ["HTML5 Canvas", " Separation of Concerns", " Object Prototypes", " Code Simplification"],
+		"description": "According to the Udacity instructor who",
+		"img": [
+			{
+				"second": "img/arcade.png",
+				"first": "img/iron-arcade.png"
+			}
+		],
+		"link": "https://github.com/jackmasterson/canvasArcade/tree/master/app"
+	}
+]

@@ -1,0 +1,20 @@
+<div>
+	<div ng-repeat='work in $ctrl.works'>
+		<h2 class="port-header">{{work.name}}</h2>
+		<div class="port-info-div">
+			<div class="port-info-shade">
+				<ul class="port-ul">
+					<a class="port-url" target="_blank" href="{{work.url}}">
+						<li class="port-li">
+							<img class="port-img" src="{{work.img[0].first}}">
+							<h4 class="port-skills">{{work.skills}}</h4>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="scroll-up hide" data-bind="click: toggle.scrollUp">
+		<h4>Back to the Top</h4>
+	</div>
+</div>

@@ -2,5 +2,6 @@
 
 angular.module('angWork', [
 	'ngRoute',
-	'mainSplash'
+	'mainSplash',
+	'worksList'
 ]);

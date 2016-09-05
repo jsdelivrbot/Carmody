@@ -9,6 +9,9 @@ angular.
 			$routeProvider.
 				when('/', {
 					template: '<main-splash></main-splash>'
+				}).
+				when('/works', {
+					template: '<works-list></works-list>'
 				})
 		}
 	]);
