@@ -4,5 +4,6 @@ angular.module('angWork', [
 	'ngRoute',
 	'mainSplash',
 	'worksList',
-	'worksDetail'
+	'worksDetail',
+	'mainFoot'
 ]);
