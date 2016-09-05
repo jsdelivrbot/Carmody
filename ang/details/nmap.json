@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Neighborhood Map",
+		"url": "https://rawgit.com/jackmasterson/mapped/master/app/index.html",
+		"date": "March 3 - May 10, 2016",
+		"skills": ["Knockout/MVVM", " Google Maps API", " Search Bar on Type"],
+		"description": "This project utilizes ",
+		"img": [
+			{
+				"first": "img/map.png",
+				"second": "img/map2.png"
+			}
+		]
+	}
+]

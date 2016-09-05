@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Froggerish",
+		"url": "https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html",
+		"date": "January 8, 2015 - February 7, 2016",
+		"skills": ["HTML5 Canvas", " Separation of Concerns", " Object Prototypes", " Code Simplification"],
+		"id": "froggerish",
+		"description": "According to the Udacity instructor who",
+		"img": [
+			{
+				"second": "img/arcade.png",
+				"first": "img/iron-arcade.png"
+			}
+		],
+		"link": "https://github.com/jackmasterson/canvasArcade/tree/master/app"
+	}
+]

@@ -1,0 +1,16 @@
+[
+			{
+				"name": "The Coffee Place",
+				"url": "https://rawgit.com/jackmasterson/bagels/master/index.html",
+				"date": "May 22 - May 31, 2016",
+				"description": "Filler text",
+				"skills": "",
+				"id": "coffee",
+				"img": [
+					{
+						"first": "img/coffee-one.png",
+						"second": "img/coffee-two.png"
+					}
+				]
+			}
+]

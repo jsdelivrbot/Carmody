@@ -1,0 +1,16 @@
+[
+			{
+				"name": "Cause of Death App",
+				"url": "https://rawgit.com/jackmasterson/nycstats/master/index.html",
+				"date": "Started June 17, 2016",
+				"description": "It sure is fun!",
+				"skills": ["D3 Dynamic Data-Updates", " D3 Transitions", " Socrata ODN API"],
+				"id": "death",
+				"img": [
+					{
+						"first": "img/deathOne.png",
+						"second": "img/deathTwo.png"
+					}
+				]
+			}
+]
