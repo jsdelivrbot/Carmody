@@ -1,29 +1,145 @@
-[
+[ 
 	{
-		"name": "Neighborhood Map",
-		"url": "https://rawgit.com/jackmasterson/mapped/master/app/index.html",
-		"date": "March 3 - May 10, 2016",
-		"skills": ["Knockout/MVVM", " Google Maps API", " Search Bar on Type"],
-		"description": "This project utilizes ",
-		"img": [
+		"title": "Featured Udacity Projects",
+		"examples": 
+		[
 			{
-				"first": "img/map.png",
-				"second": "img/map2.png"
+				"name": "Neighborhood Map",
+				"url": "https://rawgit.com/jackmasterson/mapped/master/app/index.html",
+				"date": "March 3 - May 10, 2016",
+				"skills": ["Knockout/MVVM", " Google Maps API", " Search Bar on Type"],
+				"description": "This project utilizes ",
+				"img": [
+					{
+						"first": "img/map.png",
+						"second": "img/map2.png"
+					}
+				]
+			},
+			{
+				"name": "Froggerish",
+				"url": "https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html",
+				"date": "January 8, 2015 - February 7, 2016",
+				"skills": ["HTML5 Canvas", " Separation of Concerns", " Object Prototypes", " Code Simplification"],
+				"description": "According to the Udacity instructor who",
+				"img": [
+					{
+						"second": "img/arcade.png",
+						"first": "img/iron-arcade.png"
+					}
+				],
+				"link": "https://github.com/jackmasterson/canvasArcade/tree/master/app"
 			}
 		]
 	},
 	{
-		"name": "Froggerish",
-		"url": "https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html",
-		"date": "January 8, 2015 - February 7, 2016",
-		"skills": ["HTML5 Canvas", " Separation of Concerns", " Object Prototypes", " Code Simplification"],
-		"description": "According to the Udacity instructor who",
-		"img": [
+		"title": "Web Apps - In Progress",
+		"examples":
+		[	
 			{
-				"second": "img/arcade.png",
-				"first": "img/iron-arcade.png"
+				"name": "Calorie Tracker Health App",
+				"url": "https://rawgit.com/jackmasterson/HealthApp/master/app/index.html",
+				"date": "May 20 - May 30, 2016",
+				"skills": ["BackboneJS/MVC", " Underscore", " Local Storage"],
+				"description": "Filler Text",
+				"img": [
+					{
+						"first": "img/calorie-two.png",
+						"second": "img/calorie-one.png"
+					}
+				]
+			},
+			{
+				"name": "Cause of Death App",
+				"url": "https://rawgit.com/jackmasterson/nycstats/master/index.html",
+				"date": "Started June 17, 2016",
+				"description": "It sure is fun!",
+				"skills": ["D3 Dynamic Data-Updates", " D3 Transitions", " Socrata ODN API"],
+				"img": [
+					{
+						"first": "img/deathOne.png",
+						"second": "img/deathTwo.png"
+					}
+				]
 			}
-		],
-		"link": "https://github.com/jackmasterson/canvasArcade/tree/master/app"
+		]
+	},
+	{
+		"title": "Templates",
+		"examples": 
+		[
+			{
+				"name": "The Coffee Place",
+				"url": "https://rawgit.com/jackmasterson/bagels/master/index.html",
+				"date": "May 22 - May 31, 2016",
+				"description": "Filler text",
+				"skills": "",
+				"img": [
+					{
+						"first": "img/coffee-one.png",
+						"second": "img/coffee-two.png"
+					}
+				]
+			},
+			{
+				"name": "Bar Template",
+				"url": "https://rawgit.com/jackmasterson/bars/master/index.html",
+				"date": "June 7, 2016",
+				"description": "Beth is getting married!",
+				"skills": "",
+				"img": [
+					{
+						"first": "img/barOne.png",
+						"second": "img/barTwo.png"
+					}
+				]
+			},
+			{
+				"name": "Pack-A-Day",
+				"url": "https://rawgit.com/jackmasterson/charity-example/master/index.html",
+				"date": "Started April 30, 2016",
+				"description": "Filler text",
+				"skills": "",
+				"img": [
+					{
+						"first": "img/packaday.png",
+						"second": "img/pack-school.png"
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Published Projects",
+		"examples": 
+		[
+			{
+				"name": "Wedding Page One",
+				"url": "'#/'",
+				"date": "November 15 - Dec 19, 2015",
+				"description": "Created a landing page for a wedding",
+				"skills": "For privacy, I have not included a link to this page.",
+				"img": [
+					{
+						"first": "img/grub.png",
+						"second": "img/sass-beer.png"
+					}
+				]
+
+			},
+			{
+				"name": "Wedding Page Two",
+				"url": "#/",
+				"date": "Started May 31, 2016",
+				"description": "Filler Text",
+				"skills": "For privacy, I have not included a link to this page.",
+				"img": [
+					{
+						"first": "img/weddingOne.png",
+						"second": "img/weddingTwo.png"
+					}
+				]
+			}
+		]
 	}
 ]
