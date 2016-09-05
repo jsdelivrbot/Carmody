@@ -7,11 +7,11 @@ angular.
 			$locationProvider.hashPrefix('!');
 
 			$routeProvider.
-				when('/', {
-					template: '<main-splash></main-splash>'
-				}).
 				when('/works', {
-					template: '<main-splash></main-splash><works-list></works-list>'
+					template: '<works-list></works-list>'
+				}).
+				when('/works/:id', {
+					template: '<works-detail></works-detail>'
 				})
 		}
 	]);
