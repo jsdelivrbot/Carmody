@@ -11,7 +11,7 @@ angular.
 					template: '<main-splash></main-splash>'
 				}).
 				when('/works', {
-					template: '<works-list></works-list>'
+					template: '<main-splash></main-splash><works-list></works-list>'
 				})
 		}
 	]);
