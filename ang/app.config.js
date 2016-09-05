@@ -13,5 +13,8 @@ angular.
 				when('/works/:id', {
 					template: '<works-detail></works-detail>'
 				})
+				when('/', {
+					template: '<main-foot></main-foot>'
+				})
 		}
 	]);
