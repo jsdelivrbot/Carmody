@@ -1,20 +1,20 @@
 [
 	{
-		"title": "linkedIn",
-		"imgHref": "https://linkedin.com/in/mastersonjack",
-		"imgSrc": "img/linkedin.png",
+		"title": "works",
+		"imgHref": "#!/works",
+		"imgSrc": "img/folder.png",
 		"id": "linked"
 	},
 	{
-		"title": "gitHub",
-		"imgHref": "https://github.com/jackmasterson",
-		"imgSrc": "img/gitHub.png",
+		"title": "extras",
+		"imgHref": "/",
+		"imgSrc": "img/book.png",
 		"id": "git"
 	},
 	{
-		"title": "resume",
-		"imgHref": "https://www.dropbox.com/s/8b43309iw4ugu8t/Jack%20Masterson_Resume.docx?dl=0",
-		"imgSrc": "img/dropRes.png",
+		"title": "links",
+		"imgHref": "/",
+		"imgSrc": "img/three_icons.png",
 		"id": "dropRes"
 	}
 ]
