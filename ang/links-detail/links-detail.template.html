@@ -1,1 +1,14 @@
-hiiiii!
+<div class="intro-sub">
+	<div>
+		<ul  class="imgNav-div" ng-repeat="link in $ctrl.linkIt">
+			<li>
+				<a target="_blank" href="{{link.link}}">
+					<img  class="nav-img" src="{{link.img}}">
+				</a>
+			</li>
+			<li>
+				<h3 class="img-header">{{link.name}}</h3>
+			</li>
+		</ul>
+	</div>
+</div>

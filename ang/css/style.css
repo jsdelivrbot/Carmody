@@ -26,13 +26,13 @@ a {
 .intro {
   background: url(..//img/stand.jpg) no-repeat fixed;
   background-size: 100vw 73vh;
-  height: 73vh;
+  height: 70vh;
   width: 100vw;
   z-index: 5; }
 
 .shade {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 73vh; }
+  height: 70vh; }
 
 .intro-sub {
   height: 30vh;

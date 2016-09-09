@@ -1,0 +1,17 @@
+[
+	{
+		"name": "resume",
+		"link": "https://www.dropbox.com/s/rxaqbhz3bm8l3v4/Jack%20Masterson_Resume.docx?dl=0",
+		"img": "img/dropRes.png"
+	},
+	{
+		"name": "linkedin",
+		"link": "https://www.linkedin.com/in/mastersonjack",
+		"img": "img/linkedin.png"
+	},
+	{
+		"name": "github",
+		"link": "https://github.com/jackmasterson",
+		"img": "img/gitHub.png"
+	}
+]
