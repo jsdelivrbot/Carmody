@@ -5,5 +5,6 @@ angular.module('angWork', [
 	'mainSplash',
 	'worksList',
 	'worksDetail',
-	'mainFoot'
+	'mainFoot',
+	'linksDetail'
 ]);

@@ -15,6 +15,9 @@ angular.
 				}).
 				when('/', {
 					template: '<main-foot></main-foot>'
+				}).
+				when('/links', {
+					template: '<links-detail></links-detail>'
 				})
 		}
 	]);
