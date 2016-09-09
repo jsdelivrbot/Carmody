@@ -6,5 +6,6 @@ angular.module('angWork', [
 	'worksList',
 	'worksDetail',
 	'mainFoot',
-	'linksDetail'
+	'linksDetail',
+	'aboutDetails'
 ]);

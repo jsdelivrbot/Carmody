@@ -18,6 +18,9 @@ angular.
 				}).
 				when('/links', {
 					template: '<links-detail></links-detail>'
+				}).
+				when('/about', {
+					template: '<about-details></about-details>'
 				})
 		}
 	]);
