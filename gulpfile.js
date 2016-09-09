@@ -11,7 +11,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 
 gulp.task('sass', function() {
-	return gulp.src('app/scss/style.scss')
+	return gulp.src('ang/scss/style.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({
@@ -20,21 +20,21 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
-	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
+	gulp.watch('ang/scss/**/*.scss', ['sass']);
+	gulp.watch('ang/*.html', browserSync.reload);
+	gulp.watch('ang/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
-			baseDir: 'app'
+			baseDir: 'ang'
 		},
 	})
 });
 
 gulp.task('useref', function() {
-	return gulp.src('app/*.html')
+	return gulp.src('ang/*.html')
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
 		.pipe(gulpIf('*.css', cssnano()))
@@ -42,7 +42,7 @@ gulp.task('useref', function() {
 });
 
 gulp.task('images', function() {
-	return gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
+	return gulp.src('ang/img/**/*.+(png|jpg|gif|svg)')
 		.pipe(cache(imagemin()))
 		.pipe(gulp.dest('dist/img'))
 });
