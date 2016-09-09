@@ -6,14 +6,14 @@
 		"id": "linked"
 	},
 	{
-		"title": "extras",
+		"title": "about me",
 		"imgHref": "/",
-		"imgSrc": "img/book.png",
+		"imgSrc": "img/about.png",
 		"id": "git"
 	},
 	{
 		"title": "links",
-		"imgHref": "/",
+		"imgHref": "https://www.dropbox.com/s/rxaqbhz3bm8l3v4/Jack%20Masterson_Resume.docx?dl=0",
 		"imgSrc": "img/three_icons.png",
 		"id": "dropRes"
 	}
