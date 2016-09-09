@@ -4,7 +4,7 @@
 		"url": "https://rawgit.com/jackmasterson/mapped/master/app/index.html",
 		"date": "March 3 - May 10, 2016",
 		"skills": ["Knockout/MVVM", " Google Maps API", " Search Bar on Type"],
-		"description": "This project utilizes ",
+		"description": "Using the Google Maps API, users can search different things to do in Asbury Park, NJ. If the item isn't hard-coded into the website (there are only five locations at present), the site will redirect your search to Google.",
 		"img": [
 			{
 				"first": "img/map.png",

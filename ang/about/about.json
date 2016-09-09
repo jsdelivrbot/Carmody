@@ -1,11 +1,14 @@
 [
 	{
-		"section": "writing"
+		"section": "writing",
+		"id": "writing"
 	},
 	{
-		"section": "improv"
+		"section": "improv",
+		"id": "improv"
 	},
 	{
-		"section": "recent reads"
+		"section": "recent reads",
+		"id": "books"
 	}
 ]

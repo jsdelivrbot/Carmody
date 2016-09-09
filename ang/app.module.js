@@ -7,5 +7,6 @@ angular.module('angWork', [
 	'worksDetail',
 	'mainFoot',
 	'linksDetail',
-	'aboutDetails'
+	'aboutDetails',
+	'aboutMore'
 ]);

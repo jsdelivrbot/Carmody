@@ -3,7 +3,7 @@
 				"name": "Cause of Death App",
 				"url": "https://rawgit.com/jackmasterson/nycstats/master/index.html",
 				"date": "Started June 17, 2016",
-				"description": "It sure is fun!",
+				"description": "This app utilizes D3 to help make New York state data on opioid deaths a little more accessible to the average person. It seamlessly transitions from one set of data to the next.",
 				"skills": ["D3 Dynamic Data-Updates", " D3 Transitions", " Socrata ODN API"],
 				"id": "death",
 				"img": [

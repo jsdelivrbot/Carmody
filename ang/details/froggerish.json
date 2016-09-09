@@ -5,7 +5,7 @@
 		"date": "January 8, 2015 - February 7, 2016",
 		"skills": ["HTML5 Canvas", " Separation of Concerns", " Object Prototypes", " Code Simplification"],
 		"id": "froggerish",
-		"description": "According to the Udacity instructor who",
+		"description": "By using the HTML5 Canvas (and with some help from Udacity instructors), I was able to create a Frogger-esque type game. Choose your character, collect some gems, and watch out for enemies as you make your way to the water using the arrow keys.",
 		"img": [
 			{
 				"second": "img/arcade.png",

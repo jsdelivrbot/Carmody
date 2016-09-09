@@ -4,7 +4,7 @@
 				"url": "https://rawgit.com/jackmasterson/HealthApp/master/app/index.html",
 				"date": "May 20 - May 30, 2016",
 				"skills": ["BackboneJS/MVC", " Underscore", " Local Storage"],
-				"description": "Filler Text",
+				"description": "The goal here is to create a web app that utilizes local storage to save user data on a day-by-day basis. Queries the Nutritionix API for its food data.",
 				"id": "calorie",
 				"img": [
 					{

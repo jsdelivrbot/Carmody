@@ -21,6 +21,9 @@ angular.
 				}).
 				when('/about', {
 					template: '<about-details></about-details>'
+				}).
+				when('/about/:id', {
+					template: '<about-more></about-more>'
 				})
 		}
 	]);

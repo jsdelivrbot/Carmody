@@ -1,3 +1,5 @@
 <div ng-repeat="info in $ctrl.about">
-	<h3>{{info.section}}</h3>
+	<h3>
+		<a href="#!/about/{{info.id}}">{{info.section}}</a>
+	</h3>
 </div>

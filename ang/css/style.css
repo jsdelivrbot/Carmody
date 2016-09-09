@@ -206,6 +206,15 @@ a {
 .description {
   margin: auto 5% 5% 5%; }
 
+.deets {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.deets-name {
+  padding-top: 5vh;
+}
+
 .header {
   font-size: 20px;
   min-width: 100%;
