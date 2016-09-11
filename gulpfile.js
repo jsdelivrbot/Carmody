@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var ngAnnotate = require('gulp-ng-annotate');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
@@ -36,7 +37,6 @@ gulp.task('browserSync', function() {
 gulp.task('useref', function() {
 	return gulp.src('ang/*.html')
 		.pipe(useref())
-		.pipe(gulpIf('*.js', uglify()))
 		.pipe(gulpIf('*.css', cssnano()))
 		.pipe(gulp.dest('dist'))
 });
@@ -62,4 +62,10 @@ gulp.task('default', function (callback) {
 	runSequence(['sass', 'browserSync', 'watch'],
 		callback
 	)
+});
+
+gulp.task('shrink', function() {
+	return gulp.src('src/ang.js')
+		.pipe(ngAnnotate())
+		.pipe(gulp.dest('dist'));
 });

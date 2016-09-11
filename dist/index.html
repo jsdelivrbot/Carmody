@@ -1,121 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Jack Masterson - Front End Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en" ng-app="angWork">
+  <head>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script>
+    <title>Jack Masterson - Front End Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <script src="js/script.min.js"></script>
 
-    //includes the two other CSS files at the bottom of the page while still keeping them in the <head>
-      var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-    </script>
 </head>
 <body>
-<div class="intro">
-	<div class="shade">
-		<div class="basic-info" data-bind="foreach: model.contact">
-			<h1 class="name" data-bind="text: name"></h1>
-			<h3 data-bind="text: career"></h3>
-			<img class="head-shot" src="img/headshot.jpg">
-		</div>
-		<div class="more-info-div">
-			<a class="more-info" data-bind="click: toggle.moreInfo">Portfolio</a>
-		</div>
-	</div>
-</div>
-<div class="search" id="search-div">
-	<div class="nav-head">
-		<div class="header" data-bind="foreach: model.sections">
-			<a href="#/" class="scroll" data-bind="click: toggle.slideIn">
-				<li class="nav" data-bind="attr: { id: id }, text: title"></li>
-			</a>
-		</div>
-		<div class="port-nav" data-bind="foreach: model.projects">
-			<ul class="proj-head-ul">
-				<li class="proj-nav-li" data-bind="attr: { id: id }">
-					<a data-bind="click: toggle.portTog, text: title"></a>
-				</li>
-				<li class="divide-hide" data-bind="foreach: divider">
-					<h2 class="divider">|</h2>
-				</li>				
-				<li class="divide-hide">
-					<p data-bind="text: text"></p>
-				</li>
-			</ul>
+    <main-splash></main-splash>
+    <div ng-view></div>
 
-		</div>
-	</div>
-</div>
-<div class="light-back" id="portfolio">
-	<div data-bind="foreach: model.projects">
-		<div data-bind="attr: { id: href }" class="port-sect">
-			<div class="examples" data-bind="foreach: examples">	
-				<a target="_blank" data-bind="attr: { href: url }">
-					<span class="port-name" data-bind="text: name"></span>
-				</a>
-				<span class="port-date" data-bind="text: date"></span>
-				<h3 class="port-skills" data-bind="if: skills">Quick Skills:
-					<h4 data-bind="text: skills"></h4>
-				</h3>
-	 			<div data-bind="foreach: img" class="port-img-div">
-	        		<img class="example-img" data-bind="attr: { src: first }">
-	        		<img class="example-img" data-bind="attr: { src: second }">
-	    		</div>
-	    		<br>
-    		</div>
-    	</div>
-	</div>
-	<div class="scroll-up" data-bind="click: toggle.scrollUp">
-		<h4>Back to the Top</h4>
-	</div>
-</div>
-<div class="light-back" id="education">
-	<div class="box" data-bind="foreach: model.education">
-		<ul class="edu-ul">
-			<img class="work-img" data-bind="attr: { src: img, id: id }">
-			<li class="work-li">
-				<a target="_blank" data-bind="attr: { href: url }, text: school"></a>
-			</li>
-			<li class="work-li" id="degree"> 
-				<span data-bind="text: focus"></span>
-			</li>
-			<li class="work-li" id="gpa"> 
-				<span data-bind="text: heading"></span><span data-bind="text: GPA"></span>
-			</li>
-		</ul>
-	</div>
-</div>
-<div class="intro-sub" data-bind="foreach: model.contact">
-	<div data-bind="foreach: imgNav">
-		<ul class="imgNav-div">
-			<li>
-				<a target="_blank" data-bind="attr: { href: imgHref }">
-					<img class="nav-img" data-bind="attr: { src: imgSrc, id: id }">
-				</a>
-			</li>
-			<li>
-				<h3 class="img-header" data-bind="text: title"></h3>
-			</li>
-		</ul>
-	</div>
-</div>
-
-
-
-
-
-<script src="js/script.min.js"></script>
-
+	
 </body>
 </html>

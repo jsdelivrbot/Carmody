@@ -396,3 +396,9 @@ a {
 .improv-img {
   height: 150px;
   width: 200px; }
+
+.about-details {
+  display: inline-block;
+  margin: 3vw;
+  padding: 0;
+}

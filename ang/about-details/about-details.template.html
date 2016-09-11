@@ -1,5 +1,6 @@
-<div ng-repeat="info in $ctrl.about">
-	<h3>
-		<a href="#!/about/{{info.id}}">{{info.section}}</a>
-	</h3>
-</div>
+
+	<ul class="about-details" ng-repeat="info in $ctrl.about">
+		<li>
+			<a href="#!/about/{{info.id}}">{{info.section}}</a>
+		</li>
+	</ul>
