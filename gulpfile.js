@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 var ngAnnotate = require('gulp-ng-annotate');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
@@ -34,9 +35,16 @@ gulp.task('browserSync', function() {
 	})
 });
 
+gulp.task('js', function() {
+	gulp.src(['ang/js/lib/*.js','ang/*.js','ang/*/*.module.js', 'ang/*/*.component.js', 'ang/*/*.js'])
+		.pipe(concat('ang.js'))
+		.pipe(gulp.dest('ang/'))
+})
+
 gulp.task('useref', function() {
 	return gulp.src('ang/*.html')
 		.pipe(useref())
+		.pipe(gulpIf('ang.js', uglify()))
 		.pipe(gulpIf('*.css', cssnano()))
 		.pipe(gulp.dest('dist'))
 });
@@ -62,10 +70,4 @@ gulp.task('default', function (callback) {
 	runSequence(['sass', 'browserSync', 'watch'],
 		callback
 	)
-});
-
-gulp.task('shrink', function() {
-	return gulp.src('src/ang.js')
-		.pipe(ngAnnotate())
-		.pipe(gulp.dest('dist'));
 });
