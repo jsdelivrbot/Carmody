@@ -1,6 +1,18 @@
 [
 	{
-		"header": "improv comedy",
-		"subheader": "it's kind of my jam"
+		"header": "comedy",
+		"subheader": "it's kind of my jam",
+		"examples": [
+			{
+				"name": "Shore Fun Improv",
+				"url": "http://www.shorefunimprov.com/index.html",
+				"description": "I volunteer to help teaching improv to middle-and-high schoolers at the Jersey Shore."
+			},
+			{
+				"name": "Instagram",
+				"url": "https://www.instagram.com/jmast35/",
+				"description": "I like to make fun of things, especially social media trends. I'm hoping to make a trend out of it."
+			}
+		]
 	}
 ]

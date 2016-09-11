@@ -1,8 +1,7 @@
 <div ng-repeat="info in $ctrl.more">
-	<h3>{{info.header}}</h3>
-	<h4>{{info.subheader}}</h4>
-	<ul ng-repeat="ex in info.examples">
-		<li>
+	<h3 class="writing-header">{{info.header}}</h3>
+	<ul class="writing-blocks" ng-repeat="ex in info.examples">
+		<li class="writing-li">
 			<a target="_blank" href="{{ex.url}}">
 				{{ex.name}}
 			</a>
